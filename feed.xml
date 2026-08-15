@@ -3,16 +3,16 @@
     <title>CyberPrepHub</title>
     <link href="https://cyberprephub.github.io/feed.xml" rel="self" />
     <link href="https://cyberprephub.github.io" />
-    <updated>2026-08-15T20:38:32+01:00</updated>
+    <updated>2026-08-15T20:39:04+01:00</updated>
     <author>
-        <name>Mttyos</name>
+        <name>Mateusz</name>
     </author>
     <id>https://cyberprephub.github.io</id>
 
     <entry>
         <title>Why I Built CyberPrepHub</title>
         <author>
-            <name>Mttyos</name>
+            <name>Mateusz</name>
         </author>
         <link href="https://cyberprephub.github.io/why-i-built-cyberprephub/"/>
         <id>https://cyberprephub.github.io/why-i-built-cyberprephub/</id>
@@ -36,7 +36,7 @@
     <entry>
         <title>The CIA Triad: Confidentiality, Integrity and Availability</title>
         <author>
-            <name>Mttyos</name>
+            <name>Mateusz</name>
         </author>
         <link href="https://cyberprephub.github.io/the-cia-triad-confidentiality-integrity-and-availability/"/>
         <id>https://cyberprephub.github.io/the-cia-triad-confidentiality-integrity-and-availability/</id>
