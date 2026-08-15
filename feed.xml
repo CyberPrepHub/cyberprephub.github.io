@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>CyberPrep</title>
-    <link href="https://redredmat.github.io/cyberprep/feed.xml" rel="self" />
-    <link href="https://redredmat.github.io/cyberprep" />
+    <link href="https://cyberprephub.github.io/feed.xml" rel="self" />
+    <link href="https://cyberprephub.github.io" />
     <updated>2026-08-15T19:32:48+01:00</updated>
     <author>
         <name>Mttyos</name>
     </author>
-    <id>https://redredmat.github.io/cyberprep</id>
+    <id>https://cyberprephub.github.io</id>
 
     <entry>
         <title>The CIA Triad: Confidentiality, Integrity and Availability</title>
         <author>
             <name>Mttyos</name>
         </author>
-        <link href="https://redredmat.github.io/cyberprep/the-cia-triad-confidentiality-integrity-and-availability.html"/>
-        <id>https://redredmat.github.io/cyberprep/the-cia-triad-confidentiality-integrity-and-availability.html</id>
+        <link href="https://cyberprephub.github.io/the-cia-triad-confidentiality-integrity-and-availability.html"/>
+        <id>https://cyberprephub.github.io/the-cia-triad-confidentiality-integrity-and-availability.html</id>
             <category term="CISSP"/>
             <category term="1. Security and Risk Management"/>
 
