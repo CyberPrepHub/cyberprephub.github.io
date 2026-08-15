@@ -3,7 +3,7 @@
     <title>CyberPrepHub</title>
     <link href="https://cyberprephub.github.io/feed.xml" rel="self" />
     <link href="https://cyberprephub.github.io" />
-    <updated>2026-08-15T20:30:30+01:00</updated>
+    <updated>2026-08-15T20:38:32+01:00</updated>
     <author>
         <name>Mttyos</name>
     </author>
@@ -16,6 +16,7 @@
         </author>
         <link href="https://cyberprephub.github.io/why-i-built-cyberprephub/"/>
         <id>https://cyberprephub.github.io/why-i-built-cyberprephub/</id>
+            <category term="Blog"/>
 
         <updated>2026-08-15T20:29:39+01:00</updated>
             <summary type="html">
