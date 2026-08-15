@@ -1,0 +1,968 @@
+<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><title>1.9 Risk Management - CyberPrepHub</title><meta name="description" content="CISSP Domain 1 · 1.9 Risk Management at a glance Cybersecurity risk management is the process of identifying, understanding, prioritising&amp;hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://cyberprephub.github.io/19-risk-management/"><link rel="alternate" type="application/atom+xml" href="https://cyberprephub.github.io/feed.xml" title="CyberPrepHub - RSS"><link rel="alternate" type="application/json" href="https://cyberprephub.github.io/feed.json" title="CyberPrepHub - JSON"><meta property="og:title" content="1.9 Risk Management"><meta property="og:image" content="https://cyberprephub.github.io/media/website/ChatGPT-Image-Aug-15-2026-07_53_03-PM.png"><meta property="og:image:width" content="2172"><meta property="og:image:height" content="724"><meta property="og:site_name" content="CyberPrepHub"><meta property="og:description" content="CISSP Domain 1 · 1.9 Risk Management at a glance Cybersecurity risk management is the process of identifying, understanding, prioritising&amp;hellip;"><meta property="og:url" content="https://cyberprephub.github.io/19-risk-management/"><meta property="og:type" content="article"><link rel="stylesheet" href="https://cyberprephub.github.io/assets/css/fontawesome-all.min.css?v&#x3D;85514f933f9e0b82460af63f1a403fa5"><link rel="stylesheet" href="https://cyberprephub.github.io/assets/css/style.css?v&#x3D;b6313075409cf9af2fc486684c9a77bc"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://cyberprephub.github.io/19-risk-management/"},"headline":"1.9 Risk Management","datePublished":"2026-08-15T22:10+01:00","dateModified":"2026-08-15T22:16+01:00","image":{"@type":"ImageObject","url":"https://cyberprephub.github.io/media/website/ChatGPT-Image-Aug-15-2026-07_53_03-PM.png","height":724,"width":2172},"description":"CISSP Domain 1 · 1.9 Risk Management at a glance Cybersecurity risk management is the process of identifying, understanding, prioritising&hellip;","author":{"@type":"Person","name":"Mateusz","url":"https://cyberprephub.github.io/authors/mateusz/"},"publisher":{"@type":"Organization","name":"Mateusz","logo":{"@type":"ImageObject","url":"https://cyberprephub.github.io/media/website/ChatGPT-Image-Aug-15-2026-07_53_03-PM.png","height":724,"width":2172}}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript></head><body class="is-preload page-template"><div id="wrapper"><div id="main"><div class="inner"><header id="header"><a class="logo logo-image" href="https://cyberprephub.github.io/"><img src="https://cyberprephub.github.io/media/website/ChatGPT-Image-Aug-15-2026-07_53_03-PM.png" alt="CyberPrepHub" width="2172" height="724"></a><ul class="icons"><li><a href="https://www.linkedin.com/in/mateusz-o-1a580a28/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li></ul></header><article class="post"><header class="main post__header"><h1>1.9 Risk Management</h1></header><div class="post__inner post__entry"><div><div class="cph-article"><section class="cph-hero-box"><span class="cph-eyebrow">CISSP Domain 1 · 1.9</span><h2>Risk Management at a glance</h2><p>Cybersecurity risk management is the process of identifying, understanding, prioritising and responding to risks that could affect organisational objectives.</p><p>The objective is not to eliminate every possible risk. The objective is to understand risk well enough that informed decisions can be made about what should be treated, transferred, avoided or accepted.</p><div class="cph-cia-grid"><div class="cph-cia-card"><div class="cph-icon">🔍</div><h3>Identify</h3><p>Understand assets, threats, vulnerabilities and potential events.</p><strong>What could happen?</strong></div><div class="cph-cia-card"><div class="cph-icon">📊</div><h3>Assess</h3><p>Estimate likelihood and potential business impact.</p><strong>How serious is it?</strong></div><div class="cph-cia-card"><div class="cph-icon">🛡️</div><h3>Respond</h3><p>Decide how the organisation should treat the risk.</p><strong>What will we do about it?</strong></div></div></section><section class="cph-dad"><h2>How cybersecurity risk develops</h2><div class="cph-dad-row"><span>💎 Asset</span> <span>→</span> <strong>Something the organisation values</strong></div><div class="cph-dad-row"><span>⚡ Threat</span> <span>→</span> <strong>Something capable of causing harm</strong></div><div class="cph-dad-row"><span>🕳️ Vulnerability</span> <span>→</span> <strong>A weakness that can contribute to harm</strong></div><div class="cph-dad-row"><span>💥 Threat Event</span> <span>→</span> <strong>The harmful scenario occurs</strong></div><div class="cph-dad-row"><span>📉 Impact</span> <span>→</span> <strong>The organisation suffers consequences</strong></div><div class="cph-dad-row"><span>⚖️ Risk</span> <span>→</span> <strong>Likelihood + Impact considered together</strong></div></section><details class="cph-accordion"><summary><span class="cph-number">1</span> <span><strong>Risk Management Fundamentals</strong> <small>Asset, threat, vulnerability, exposure and risk</small></span></summary><div class="cph-accordion-content"><h3>Asset</h3><p>An asset is something that has value to the organisation.</p><p>Assets may include:</p><div class="cph-chip-list"><span>Information</span> <span>Applications</span> <span>Systems</span> <span>People</span> <span>Facilities</span> <span>Reputation</span> <span>Services</span> <span>Intellectual Property</span></div><h3>Threat</h3><p>A threat is a potential cause of an unwanted event that could harm an asset or organisational objective.</p><div class="cph-control-grid"><div><strong>Adversarial</strong><p>Cybercriminals, insiders, competitors or nation-state actors.</p></div><div><strong>Accidental</strong><p>Human mistakes, configuration errors or accidental deletion.</p></div><div><strong>Technical</strong><p>Hardware failure, software defects or infrastructure failure.</p></div><div><strong>Environmental</strong><p>Fire, flood, extreme weather or power failure.</p></div></div><h3>Vulnerability</h3><p>A vulnerability is a weakness that may contribute to a threat causing harm.</p><p>Vulnerabilities are not limited to software bugs.</p><div class="cph-chip-list"><span>Unpatched Software</span> <span>Weak Configuration</span> <span>Poor Process</span> <span>Excessive Privilege</span> <span>Weak Physical Security</span> <span>Lack of Training</span> <span>Single Point of Failure</span></div><div class="cph-example"><span>Example</span><p>An internet-facing application contains a vulnerability allowing authentication to be bypassed.</p><p>A threat actor could exploit that weakness to access confidential customer information.</p><strong>The vulnerability is not itself the complete risk. Risk comes from considering the scenario, likelihood and potential consequences.</strong></div><h3>Exposure</h3><p>Exposure describes the organisation's potential for loss or harm associated with a risk scenario.</p><div class="cph-callout"><strong>Do not confuse these terms</strong><p><strong>Threat</strong> = something capable of causing harm.</p><p><strong>Vulnerability</strong> = weakness that may enable harm.</p><p><strong>Risk</strong> = uncertainty about the consequences of the scenario, commonly considered through likelihood and impact.</p></div></div></details><details class="cph-accordion"><summary><span>⚡</span> <span><strong>Threat and Vulnerability Identification</strong> <small>Understand realistic risk scenarios</small></span></summary><div class="cph-accordion-content"><p>Identifying vulnerabilities without considering threats can produce a long technical list without explaining the real business risk.</p><p>Similarly, identifying threats without understanding the organisation's weaknesses gives an incomplete picture.</p><div class="cph-example"><span>Weak risk statement</span><p>"The server has CVE-XXXX-XXXX."</p></div><div class="cph-example"><span>More useful risk scenario</span><p>"An external attacker could exploit an unpatched vulnerability on the internet-facing customer portal to gain unauthorised access to customer information, potentially causing a reportable data breach and service disruption."</p></div><div class="cph-callout"><strong>Think in scenarios</strong><p>Useful risk discussions connect:</p><p><strong>Threat → Vulnerability → Asset → Event → Business Impact</strong></p></div></div></details><details class="cph-accordion"><summary><span>✍️</span> <span><strong>Writing a useful risk statement</strong> <small>Translate technical findings into business risk</small></span></summary><div class="cph-accordion-content"><p>A good risk statement should communicate the event and its potential consequences clearly enough for a decision-maker to understand.</p><div class="cph-question-box"><strong>Because of...</strong><p>What threat or condition exists?</p></div><div class="cph-question-box"><strong>There is a possibility that...</strong><p>What event could occur?</p></div><div class="cph-question-box"><strong>Which could result in...</strong><p>What business impact could follow?</p></div><div class="cph-example"><span>Example</span><p>Because privileged accounts do not currently require MFA, there is a possibility that stolen administrator credentials could be used to access production systems, resulting in unauthorised changes, service disruption and exposure of sensitive information.</p></div><div class="cph-callout"><strong>Executive communication</strong><p>Security professionals should translate technical weaknesses into business consequences rather than expecting senior leaders to interpret scanner output.</p></div></div></details><details class="cph-accordion"><summary><span class="cph-number">2</span> <span><strong>Likelihood and Impact</strong> <small>The two major dimensions of risk</small></span></summary><div class="cph-accordion-content"><h3>Likelihood</h3><p>Likelihood considers the chance that a relevant event or risk scenario will occur.</p><p>Factors may include:</p><div class="cph-chip-list"><span>Threat Capability</span> <span>Threat Intent</span> <span>Exposure</span> <span>Exploitability</span> <span>Existing Controls</span> <span>Historical Events</span></div><h3>Impact</h3><p>Impact considers the consequences if the event occurs.</p><div class="cph-control-grid"><div><strong>Financial</strong><p>Loss of revenue, fraud, recovery costs or penalties.</p></div><div><strong>Operational</strong><p>Loss or degradation of critical business services.</p></div><div><strong>Legal / Regulatory</strong><p>Potential legal obligations or regulatory consequences.</p></div><div><strong>Reputational</strong><p>Loss of customer or stakeholder confidence.</p></div><div><strong>Safety</strong><p>Potential harm to people.</p></div><div><strong>Strategic</strong><p>Failure to achieve important organisational objectives.</p></div></div><div class="cph-callout"><strong>Simplified learning model</strong><p>Risk is often taught using:</p><p><strong>Risk ≈ Likelihood × Impact</strong></p><p>This is a useful conceptual model, but real risk methodologies can use more sophisticated calculations, scales and contextual factors.</p></div></div></details><section class="cph-section"><h2>Simple qualitative risk matrix</h2><p>Organisations commonly use qualitative scales to help prioritise risks.</p><div class="cph-table-wrap"><table class="cph-table cph-centred"><thead><tr><th>Likelihood ↓ / Impact →</th><th>Low</th><th>Medium</th><th>High</th></tr></thead><tbody><tr><td><strong>High</strong></td><td>Medium</td><td>High</td><td><strong>Critical</strong></td></tr><tr><td><strong>Medium</strong></td><td>Low</td><td>Medium</td><td>High</td></tr><tr><td><strong>Low</strong></td><td>Low</td><td>Low</td><td>Medium</td></tr></tbody></table></div><p class="cph-note">Risk matrices vary between organisations. This example is illustrative, not a universal scoring model.</p></section><details class="cph-accordion"><summary><span class="cph-number">3</span> <span><strong>Qualitative Risk Analysis</strong> <small>Describe risk using categories and judgement</small></span></summary><div class="cph-accordion-content"><p>Qualitative analysis uses descriptive ratings rather than attempting to assign exact monetary values.</p><div class="cph-chip-list"><span>Very Low</span> <span>Low</span> <span>Medium</span> <span>High</span> <span>Critical</span></div><h3>Advantages</h3><ul class="cph-clean-list"><li>relatively quick;</li><li>easy for stakeholders to understand;</li><li>useful when precise financial data is unavailable;</li><li>effective for prioritising large numbers of risks.</li></ul><h3>Limitations</h3><ul class="cph-clean-list"><li>ratings may be subjective;</li><li>different people may interpret categories differently;</li><li>two "High" risks may still represent very different exposures;</li><li>poorly defined scales can produce inconsistent assessments.</li></ul><div class="cph-example"><span>Example</span><p>Likelihood: <strong>High</strong></p><p>Impact: <strong>High</strong></p><p>Overall risk: <strong>Critical</strong></p></div></div></details><details class="cph-accordion"><summary><span class="cph-number">4</span> <span><strong>Quantitative Risk Analysis</strong> <small>Estimate risk numerically</small></span></summary><div class="cph-accordion-content"><p>Quantitative analysis attempts to express risk using numerical values.</p><p>In traditional CISSP study material, several useful terms are commonly used for estimating financial loss.</p><div class="cph-control-grid"><div><strong>AV — Asset Value</strong><p>The monetary value assigned to the asset or loss exposure being analysed.</p></div><div><strong>EF — Exposure Factor</strong><p>The estimated percentage of asset value lost during one event.</p></div><div><strong>SLE — Single Loss Expectancy</strong><p>Estimated financial loss from one occurrence.</p></div><div><strong>ARO — Annualised Rate of Occurrence</strong><p>Estimated frequency of the event per year.</p></div><div><strong>ALE — Annualised Loss Expectancy</strong><p>Estimated annual financial loss associated with the scenario.</p></div></div><section class="cph-memory"><h2>Quantitative formulas</h2><div><strong>SLE</strong> <span>AV × EF</span></div><div><strong>ALE</strong> <span>SLE × ARO</span></div><p class="cph-memory-short"><strong>One Loss → SLE · One Year → ALE</strong></p></section></div></details><details class="cph-accordion"><summary><span>🧮</span> <span><strong>Worked quantitative example</strong> <small>AV → EF → SLE → ARO → ALE</small></span></summary><div class="cph-accordion-content"><h3>Scenario</h3><p>A business system has an estimated asset value of <strong>£500,000</strong>.</p><p>A particular incident is expected to cause approximately <strong>20%</strong> loss if it occurs.</p><p>The incident is estimated to happen approximately once every <strong>five years</strong>.</p><div class="cph-question-box"><strong>Step 1 — Asset Value</strong><p>AV = £500,000</p></div><div class="cph-question-box"><strong>Step 2 — Exposure Factor</strong><p>EF = 20% = 0.20</p></div><div class="cph-question-box"><strong>Step 3 — Single Loss Expectancy</strong><p>SLE = £500,000 × 0.20</p><p><strong>SLE = £100,000</strong></p></div><div class="cph-question-box"><strong>Step 4 — Annualised Rate of Occurrence</strong><p>Once every five years = 1 ÷ 5</p><p><strong>ARO = 0.2</strong></p></div><div class="cph-question-box"><strong>Step 5 — Annualised Loss Expectancy</strong><p>ALE = £100,000 × 0.2</p><p><strong>ALE = £20,000 per year</strong></p></div><div class="cph-callout"><strong>What does this help us do?</strong><p>The estimate provides information that can contribute to decisions about how much it may be reasonable to spend reducing the risk.</p></div><p class="cph-note">Quantitative estimates are only as useful as their assumptions. Asset value, frequency and exposure can all contain uncertainty.</p></div></details><section class="cph-memory"><h2>Qualitative vs Quantitative</h2><div><strong>Qualitative</strong> <span>Low · Medium · High</span></div><div><strong>Quantitative</strong> <span>Numbers · Frequency · Financial estimates</span></div><div><strong>Qualitative</strong> <span>Usually easier and faster</span></div><div><strong>Quantitative</strong> <span>Can support financial decision-making</span></div><p class="cph-memory-short"><strong>Qualitative = WORDS · Quantitative = NUMBERS</strong></p></section><details class="cph-accordion"><summary><span>🎯</span> <span><strong>Risk Assessment Scope</strong> <small>Know what you are assessing</small></span></summary><div class="cph-accordion-content"><p>A risk assessment needs a defined scope.</p><p>Without clear scope, important assets or dependencies may be missed and the conclusions may be misleading.</p><h3>Scope may include</h3><div class="cph-chip-list"><span>Organisation</span> <span>Business Process</span> <span>Application</span> <span>Technology Service</span> <span>Project</span> <span>Supplier</span> <span>Facility</span> <span>Data</span></div><div class="cph-example"><span>Example</span><p>A risk assessment examines a customer-facing application but excludes the external identity provider on which all authentication depends.</p><strong>The assessment may underestimate risk because a critical dependency sits outside the stated scope.</strong></div></div></details><details class="cph-accordion"><summary><span>🛡️</span> <span><strong>Inherent and Residual Risk</strong> <small>Before controls vs after controls</small></span></summary><div class="cph-accordion-content"><div class="cph-control-grid"><div><strong>Inherent Risk</strong><p>Risk considered before direct or focused management actions are applied to reduce its severity.</p><p>Think: <strong>Before controls.</strong></p></div><div><strong>Residual Risk</strong><p>Risk remaining after risk responses or controls have been applied.</p><p>Think: <strong>After controls.</strong></p></div></div><section class="cph-dad"><div class="cph-dad-row"><span>🔥 Inherent Risk</span> <span>→</span> <strong>Risk before treatment</strong></div><div class="cph-dad-row"><span>🛡️ Controls</span> <span>→</span> <strong>Reduce likelihood and/or impact</strong></div><div class="cph-dad-row"><span>⚖️ Residual Risk</span> <span>→</span> <strong>Risk that remains</strong></div></section><div class="cph-callout"><strong>Controls rarely reduce risk to zero</strong><p>Management needs to understand the remaining residual risk and decide whether further treatment is required.</p></div></div></details><details class="cph-accordion"><summary><span>🍽️</span> <span><strong>Risk Appetite and Risk Tolerance</strong> <small>How much risk is the organisation prepared to take?</small></span></summary><div class="cph-accordion-content"><h3>Risk appetite</h3><p>Risk appetite describes the broad level and type of risk an organisation is willing to pursue or retain in support of its objectives.</p><h3>Risk tolerance</h3><p>Risk tolerance provides more specific boundaries or acceptable variation around risk-taking.</p><div class="cph-example"><span>Example</span><p>An organisation may have a very low appetite for risks that could expose large quantities of regulated customer data.</p><p>It might establish specific tolerance thresholds requiring particular risk scenarios to be escalated to senior management.</p></div><div class="cph-callout"><strong>Risk appetite is a business decision</strong><p>Security professionals provide analysis and advice, but they should not independently decide how much enterprise risk the organisation is willing to accept.</p></div></div></details><details class="cph-accordion"><summary><span class="cph-number">5</span> <span><strong>Risk Response and Treatment</strong> <small>Avoid · Mitigate · Transfer · Accept</small></span></summary><div class="cph-accordion-content"><p>Once risk has been assessed, the organisation needs to decide what to do about it.</p><div class="cph-control-grid"><div><strong>🚫 Avoid</strong><p>Stop the activity creating the risk.</p></div><div><strong>🛡️ Mitigate</strong><p>Implement controls to reduce likelihood and/or impact.</p></div><div><strong>🤝 Transfer / Share</strong><p>Shift or share financial or operational consequences through mechanisms such as insurance or contracts.</p></div><div><strong>✅ Accept</strong><p>Make an informed decision to retain the remaining risk.</p></div></div></div></details><details class="cph-accordion"><summary><span>🎲</span> <span><strong>Risk Treatment examples</strong> <small>See the four responses in practice</small></span></summary><div class="cph-accordion-content"><div class="cph-scenario"><h3>🚫 Avoid</h3><p>An organisation plans to offer a high-risk online service but decides the potential exposure outweighs its business value.</p><p>The project is cancelled.</p></div><div class="cph-scenario"><h3>🛡️ Mitigate</h3><p>Privileged accounts are vulnerable to password theft.</p><p>The organisation introduces phishing-resistant MFA, stronger monitoring and privileged-access controls.</p></div><div class="cph-scenario"><h3>🤝 Transfer</h3><p>The organisation purchases cybersecurity insurance to reduce some of the financial consequences associated with certain cyber incidents.</p></div><div class="cph-scenario"><h3>✅ Accept</h3><p>A low-impact internal system has a minor residual risk.</p><p>Management determines that further remediation would cost far more than the risk justifies and formally accepts it.</p></div><div class="cph-callout"><strong>Important: transferring risk does not make it disappear</strong><p>Cyber insurance may transfer some financial consequences, but an organisation may still experience operational disruption, reputational damage, regulatory consequences and customer harm.</p></div></div></details><details class="cph-accordion"><summary><span>✍️</span> <span><strong>Risk Acceptance</strong> <small>Acceptance should be informed and authorised</small></span></summary><div class="cph-accordion-content"><p>Risk acceptance does not mean:</p><div class="cph-mistake"><strong>"We haven't fixed it yet."</strong><p>Doing nothing through neglect is not the same as an informed risk decision.</p></div><p>A sound acceptance process may include:</p><ul class="cph-clean-list"><li>a clearly documented risk scenario;</li><li>likelihood and impact assessment;</li><li>existing controls;</li><li>residual risk;</li><li>business justification;</li><li>appropriate risk-owner approval;</li><li>review or expiry date;</li><li>ongoing monitoring.</li></ul><div class="cph-callout"><strong>Who accepts risk?</strong><p>The person accepting the risk should have appropriate authority over the business consequence.</p><p>A vulnerability analyst or penetration tester should not normally accept enterprise risk simply because they discovered it.</p></div></div></details><details class="cph-accordion"><summary><span class="cph-number">6</span> <span><strong>Types of Security Controls</strong> <small>What role does the control perform?</small></span></summary><div class="cph-accordion-content"><div class="cph-control-grid"><div><strong>Preventive</strong><p>Attempts to stop an unwanted event before it occurs.</p><p>Example: MFA.</p></div><div><strong>Detective</strong><p>Identifies events that have occurred or are occurring.</p><p>Example: intrusion detection or monitoring.</p></div><div><strong>Corrective</strong><p>Corrects a problem or reduces its effects after detection.</p><p>Example: applying a patch after identifying a vulnerability.</p></div><div><strong>Deterrent</strong><p>Discourages inappropriate behaviour.</p><p>Example: warning notices or visible surveillance.</p></div><div><strong>Recovery</strong><p>Helps restore capability after an event.</p><p>Example: restoring systems from backups.</p></div><div><strong>Compensating</strong><p>Provides alternative protection when the preferred control cannot be implemented.</p></div></div><section class="cph-memory"><h2>Control function memory aid</h2><div><strong>Preventive</strong> <span>STOP it</span></div><div><strong>Detective</strong> <span>FIND it</span></div><div><strong>Corrective</strong> <span>FIX it</span></div><div><strong>Recovery</strong> <span>RESTORE it</span></div></section></div></details><details class="cph-accordion"><summary><span>🧱</span> <span><strong>Control implementation categories</strong> <small>Administrative · Technical · Physical</small></span></summary><div class="cph-accordion-content"><div class="cph-control-grid"><div><strong>Administrative / Managerial</strong><p>Policies, governance, risk-management processes, training and organisational procedures.</p></div><div><strong>Technical / Logical</strong><p>Technology-based controls such as authentication, encryption, firewalls and monitoring.</p></div><div><strong>Physical</strong><p>Controls protecting facilities and physical assets, such as locks, barriers and guards.</p></div></div><div class="cph-example"><span>Important distinction</span><p>A control can have both a <strong>type</strong> and a <strong>function</strong>.</p><p>For example, a locked data-centre door may be a <strong>physical preventive control</strong>.</p></div></div></details><details class="cph-accordion"><summary><span class="cph-number">7</span> <span><strong>Control Assessments</strong> <small>Having a control is not enough</small></span></summary><div class="cph-accordion-content"><p>Risk management should consider whether security and privacy controls are properly implemented and operating as intended.</p><p>A control assessment may examine:</p><div class="cph-question-box"><strong>Design</strong><p>Is the control capable of addressing the risk?</p></div><div class="cph-question-box"><strong>Implementation</strong><p>Has it actually been deployed correctly?</p></div><div class="cph-question-box"><strong>Operation</strong><p>Is it operating consistently?</p></div><div class="cph-question-box"><strong>Effectiveness</strong><p>Is it reducing the risk as expected?</p></div><div class="cph-example"><span>Example</span><p>Policy requires MFA for privileged access.</p><p>MFA technology exists, but 15% of administrator accounts are excluded from enforcement.</p><strong>The presence of an MFA product does not prove that the control is completely effective.</strong></div><div class="cph-callout"><strong>Control effectiveness changes residual risk</strong><p>If an assumed control is ineffective, the organisation's real residual risk may be higher than its risk register suggests.</p></div></div></details><details class="cph-accordion"><summary><span>💰</span> <span><strong>Cost-Benefit Considerations</strong> <small>Security investment should be proportionate to risk</small></span></summary><div class="cph-accordion-content"><p>Risk treatment has a cost.</p><p>Organisations therefore need to consider whether proposed controls provide reasonable risk reduction relative to their cost and business impact.</p><div class="cph-example"><span>Example</span><p>A low-value internal application produces an estimated annual loss expectancy of approximately £5,000.</p><p>A proposed dedicated security solution would cost £300,000 every year.</p><strong>The organisation should consider whether a different treatment provides better value.</strong></div><div class="cph-callout"><strong>This does not mean "never spend more than ALE"</strong><p>Risk decisions may also involve safety, legal obligations, regulatory requirements, reputational consequences and uncertainty that are not captured by a simple financial estimate.</p></div></div></details><details class="cph-accordion"><summary><span>📒</span> <span><strong>Risk Register</strong> <small>Document and track important risks</small></span></summary><div class="cph-accordion-content"><p>A risk register provides a structured record of identified risks and their management.</p><p>Fields might include:</p><div class="cph-chip-list"><span>Risk ID</span> <span>Description</span> <span>Asset</span> <span>Threat</span> <span>Vulnerability</span> <span>Likelihood</span> <span>Impact</span> <span>Risk Rating</span> <span>Controls</span> <span>Owner</span> <span>Treatment</span> <span>Residual Risk</span> <span>Review Date</span></div><div class="cph-example"><span>Example risk register entry</span><p><strong>Risk:</strong> Theft of privileged credentials could enable unauthorised production access.</p><p><strong>Likelihood:</strong> High</p><p><strong>Impact:</strong> High</p><p><strong>Treatment:</strong> Implement phishing-resistant MFA and PAM.</p><p><strong>Owner:</strong> Technology service owner.</p></div><div class="cph-callout"><strong>A risk register is a management tool, not a graveyard</strong><p>Risks should be reviewed, updated and actively managed rather than simply recorded once and forgotten.</p></div></div></details><details class="cph-accordion"><summary><span>👤</span> <span><strong>Risk Ownership</strong> <small>Someone must be accountable for the risk</small></span></summary><div class="cph-accordion-content"><p>Identified risks should normally have an appropriate owner.</p><p>The owner should be capable of understanding and influencing the business consequences of the risk.</p><div class="cph-example"><span>Example</span><p>A security consultant identifies a serious weakness in an online banking service.</p><p>The consultant can assess and communicate the risk.</p><strong>The relevant business or service owner is typically better placed to own the resulting business-risk decision.</strong></div><div class="cph-callout"><strong>Security advises — the business owns business risk</strong><p>Risk ownership should reflect organisational authority and accountability.</p></div></div></details><details class="cph-accordion"><summary><span class="cph-number">8</span> <span><strong>Continuous Monitoring and Measurement</strong> <small>Risk changes over time</small></span></summary><div class="cph-accordion-content"><p>Risk assessments represent a view of risk at a particular point in time.</p><p>Threats, vulnerabilities, controls and business conditions change.</p><p>Risk therefore needs ongoing monitoring.</p><h3>Changes that may alter risk</h3><div class="cph-chip-list"><span>New Vulnerability</span> <span>New Threat Actor</span> <span>Control Failure</span> <span>System Change</span> <span>Acquisition</span> <span>New Supplier</span> <span>New Regulation</span> <span>Incident</span> <span>Business Growth</span></div><div class="cph-example"><span>Example</span><p>A vulnerability is initially considered low likelihood because no public exploit exists.</p><p>Two weeks later, reliable exploitation code becomes widely available and active attacks are observed.</p><strong>The original risk assessment should be reconsidered.</strong></div></div></details><details class="cph-accordion"><summary><span>📈</span> <span><strong>Risk Measurement: KRI and KPI</strong> <small>Know what you are measuring</small></span></summary><div class="cph-accordion-content"><div class="cph-control-grid"><div><strong>KRI — Key Risk Indicator</strong><p>Provides information about exposure or changing risk.</p></div><div><strong>KPI — Key Performance Indicator</strong><p>Provides information about the performance of an activity or process.</p></div></div><div class="cph-example"><span>KRI example</span><p>Number of critical internet-facing vulnerabilities older than the organisation's risk threshold.</p></div><div class="cph-example"><span>KPI example</span><p>Percentage of vulnerability-remediation tickets completed within the agreed service target.</p></div><div class="cph-callout"><strong>Performance and risk are related, but not identical</strong><p>A process can perform efficiently while the organisation still has significant underlying risk.</p></div></div></details><details class="cph-accordion"><summary><span class="cph-number">9</span> <span><strong>Risk Reporting</strong> <small>Internal and external communication</small></span></summary><div class="cph-accordion-content"><p>Risk information should reach the people who need it in a form they can understand and act upon.</p><h3>Internal reporting</h3><div class="cph-chip-list"><span>Risk Owners</span> <span>CISO</span> <span>Management</span> <span>Risk Committees</span> <span>Executives</span> <span>Board</span></div><h3>External reporting</h3><p>Depending on circumstances, risk or incident information may also need to be communicated externally.</p><div class="cph-chip-list"><span>Regulators</span> <span>Customers</span> <span>Auditors</span> <span>Insurers</span> <span>Partners</span> <span>Authorities</span></div><div class="cph-example"><span>Poor executive report</span><p>"There are 84,392 open CVEs."</p></div><div class="cph-example"><span>Better risk communication</span><p>"Three critical vulnerabilities affect the service responsible for approximately 40% of online revenue. Two are internet-accessible and one has confirmed active exploitation."</p></div><div class="cph-callout"><strong>Communicate consequences, not just technical data</strong><p>Decision-makers need enough context to understand business exposure and make informed risk decisions.</p></div></div></details><details class="cph-accordion"><summary><span class="cph-number">10</span> <span><strong>Continuous Improvement</strong> <small>Risk management should become more mature over time</small></span></summary><div class="cph-accordion-content"><p>Mature risk management is not a one-time annual assessment exercise.</p><p>Organisations should learn from:</p><div class="cph-chip-list"><span>Incidents</span> <span>Near Misses</span> <span>Audits</span> <span>Control Testing</span> <span>Threat Intelligence</span> <span>Risk Reviews</span> <span>Business Change</span></div><h3>Signs of increasing maturity</h3><div class="cph-control-grid"><div><strong>Consistent methodology</strong><p>Teams assess similar risks using comparable approaches.</p></div><div><strong>Clear ownership</strong><p>Important risks have accountable owners.</p></div><div><strong>Business integration</strong><p>Cybersecurity risk feeds into wider enterprise decisions.</p></div><div><strong>Useful measurement</strong><p>Risk indicators provide meaningful information.</p></div><div><strong>Continuous monitoring</strong><p>Significant changes trigger reassessment.</p></div><div><strong>Learning</strong><p>Lessons from incidents and assessments improve future decisions.</p></div></div></div></details><details class="cph-accordion"><summary><span>📶</span> <span><strong>Risk Maturity</strong> <small>From reactive to integrated</small></span></summary><div class="cph-accordion-content"><p>Risk maturity models help organisations evaluate how developed and repeatable their risk-management capability is.</p><p>Models differ, but a simplified maturity progression might look like:</p><div class="cph-question-box"><strong>1. Ad hoc</strong><p>Risk decisions are inconsistent and mainly reactive.</p></div><div class="cph-question-box"><strong>2. Repeatable</strong><p>Some common processes exist but may vary between teams.</p></div><div class="cph-question-box"><strong>3. Defined</strong><p>Organisation-wide processes and responsibilities are documented.</p></div><div class="cph-question-box"><strong>4. Measured</strong><p>Risk performance and outcomes are monitored using meaningful data.</p></div><div class="cph-question-box"><strong>5. Optimised</strong><p>Risk management is integrated into strategic decisions and continuously improved.</p></div><p class="cph-note">Maturity models use different names and numbers of levels. The important concept is progression from inconsistent risk management toward repeatable, measured and continuously improved processes.</p></div></details><details class="cph-accordion"><summary><span class="cph-number">11</span> <span><strong>Risk Frameworks</strong> <small>Structured approaches to managing security risk</small></span></summary><div class="cph-accordion-content"><p>Organisations can use established frameworks to create consistent approaches to cybersecurity risk.</p><div class="cph-scenario"><h3>🇺🇸 NIST</h3><p>NIST provides extensive guidance for identifying, assessing, responding to and monitoring cybersecurity risk.</p><p>The NIST Risk Management Framework and IR 8286 series connect cybersecurity risk with organisational and enterprise risk management.</p></div><div class="cph-scenario"><h3>🌐 ISO</h3><p>ISO/IEC standards provide internationally recognised approaches to information security and risk management, including the ISO/IEC 27000 family.</p></div><div class="cph-scenario"><h3>🏛️ COBIT</h3><p>COBIT provides governance and management guidance connecting enterprise information and technology risk with business objectives.</p></div><div class="cph-scenario"><h3>🏗️ SABSA</h3><p>SABSA provides a business-driven security architecture approach in which security requirements are derived from business needs.</p></div><div class="cph-scenario"><h3>💳 PCI</h3><p>Payment Card Industry standards establish security expectations for environments handling payment-card information.</p></div><div class="cph-callout"><strong>No universal "best" framework</strong><p>Framework selection should reflect organisational requirements, industry, objectives, regulatory environment and risk-management needs.</p></div></div></details><section class="cph-dad"><h2>A useful NIST risk-management view</h2><div class="cph-dad-row"><span>🖼️ Frame</span> <span>→</span> <strong>Establish the context for risk</strong></div><div class="cph-dad-row"><span>📊 Assess</span> <span>→</span> <strong>Identify and analyse risk</strong></div><div class="cph-dad-row"><span>🛡️ Respond</span> <span>→</span> <strong>Select an appropriate risk response</strong></div><div class="cph-dad-row"><span>👁️ Monitor</span> <span>→</span> <strong>Track risk and changes over time</strong></div></section><details class="cph-accordion"><summary><span>🏢</span> <span><strong>Cybersecurity Risk and Enterprise Risk</strong> <small>Cyber risk is business risk</small></span></summary><div class="cph-accordion-content"><p>Cybersecurity risks should not remain trapped inside a security department.</p><p>Major cybersecurity risks can affect:</p><div class="cph-chip-list"><span>Revenue</span> <span>Customers</span> <span>Strategy</span> <span>Operations</span> <span>Compliance</span> <span>Safety</span> <span>Reputation</span></div><div class="cph-example"><span>Example</span><p>A ransomware risk affecting a manufacturing plant is not merely an "IT risk".</p><p>It may affect production, customer delivery, revenue, safety, contractual obligations and corporate reputation.</p><strong>Significant cybersecurity risk therefore belongs within wider enterprise-risk discussions.</strong></div></div></details><details class="cph-accordion"><summary><span>⚠️</span> <span><strong>Common mistakes</strong> <small>Risk concepts people frequently confuse</small></span></summary><div class="cph-accordion-content"><div class="cph-mistake"><strong>"A vulnerability is a risk."</strong><p>A vulnerability is a weakness. Risk requires consideration of the threat scenario and potential consequences.</p></div><div class="cph-mistake"><strong>"Risk = vulnerability severity."</strong><p>Technical severity is important, but organisational risk also depends on exposure, likelihood, business context and impact.</p></div><div class="cph-mistake"><strong>"The goal of risk management is zero risk."</strong><p>Zero risk is rarely achievable. Organisations manage risk in the context of objectives, cost, appetite and tolerance.</p></div><div class="cph-mistake"><strong>"Insurance eliminates cyber risk."</strong><p>Insurance may transfer some financial consequences but cannot remove every operational, legal or reputational consequence.</p></div><div class="cph-mistake"><strong>"Residual risk means the control failed."</strong><p>Controls commonly reduce rather than completely eliminate risk. Residual risk is the portion remaining afterward.</p></div><div class="cph-mistake"><strong>"Risk acceptance means doing nothing."</strong><p>Proper acceptance is an informed, documented and authorised business decision.</p></div><div class="cph-mistake"><strong>"High CVSS means high business risk."</strong><p>A technically severe vulnerability may present limited organisational risk if the vulnerable component is not exposed or does not support important assets.</p></div><div class="cph-mistake"><strong>"Low CVSS means low business risk."</strong><p>A lower-severity technical weakness could still create significant risk in a sensitive business context.</p></div><div class="cph-mistake"><strong>"The security team accepts the business risk."</strong><p>Security provides expertise and assessment. Risk acceptance should be made by an appropriately authorised risk owner.</p></div><div class="cph-mistake"><strong>"Risk assessments are annual documents."</strong><p>Significant changes in threats, controls, systems or business context may require reassessment before the next scheduled review.</p></div></div></details><section class="cph-exam-box"><span class="cph-eyebrow">CISSP Exam Perspective</span><h2>Think like a risk advisor, not only a technician</h2><p>CISSP questions often present a technical problem but ask for the best risk-management response.</p><p>Understand the business context before jumping directly to a technical control.</p><div class="cph-exam-grid"><div><h3>⚡ Identify</h3><div class="cph-chip-list"><span>Threat</span> <span>Vulnerability</span> <span>Asset</span> <span>Scenario</span> <span>Scope</span></div></div><div><h3>📊 Analyse</h3><div class="cph-chip-list"><span>Likelihood</span> <span>Impact</span> <span>Qualitative</span> <span>Quantitative</span> <span>Residual</span></div></div><div><h3>🛡️ Respond</h3><div class="cph-chip-list"><span>Avoid</span> <span>Mitigate</span> <span>Transfer</span> <span>Accept</span> <span>Controls</span></div></div><div><h3>👤 Governance</h3><div class="cph-chip-list"><span>Risk Owner</span> <span>Authority</span> <span>Appetite</span> <span>Tolerance</span> <span>Business</span></div></div><div><h3>👁️ Monitor</h3><div class="cph-chip-list"><span>KRI</span> <span>KPI</span> <span>Control Effectiveness</span> <span>Change</span> <span>Review</span></div></div><div><h3>📣 Communicate</h3><div class="cph-chip-list"><span>Risk Register</span> <span>Management</span> <span>Board</span> <span>Regulator</span> <span>Reporting</span></div></div></div></section><details class="cph-accordion"><summary><span>📝</span> <span><strong>Practice scenarios</strong> <small>Apply risk-management thinking</small></span></summary><div class="cph-accordion-content"><div class="cph-scenario"><h3>Scenario 1 — Vulnerability discovered</h3><p>A vulnerability scanner reports a critical vulnerability.</p><p><strong>What should happen next?</strong></p><p>Understand the affected asset, exposure, relevant threats, existing controls and potential business impact before determining the appropriate risk response.</p></div><div class="cph-scenario"><h3>Scenario 2 — Remove the risky service</h3><p>Management decides that a risky service provides insufficient business benefit and permanently closes it.</p><p><strong>Risk treatment:</strong></p><p>Avoidance.</p></div><div class="cph-scenario"><h3>Scenario 3 — Install MFA</h3><p>The organisation introduces MFA to reduce the likelihood that stolen passwords can be used successfully.</p><p><strong>Risk treatment:</strong></p><p>Mitigation.</p></div><div class="cph-scenario"><h3>Scenario 4 — Cyber insurance</h3><p>The organisation purchases an insurance policy covering certain incident-response costs.</p><p><strong>Risk treatment concept:</strong></p><p>Transfer or sharing of some financial consequences.</p></div><div class="cph-scenario"><h3>Scenario 5 — Low residual risk</h3><p>Existing controls reduce a risk to a level management considers acceptable.</p><p><strong>Risk response:</strong></p><p>Formal acceptance of the residual risk may be appropriate.</p></div><div class="cph-scenario"><h3>Scenario 6 — SLE calculation</h3><p>Asset Value = £200,000</p><p>Exposure Factor = 25%</p><p><strong>What is the SLE?</strong></p><p>£200,000 × 0.25 = <strong>£50,000</strong>.</p></div><div class="cph-scenario"><h3>Scenario 7 — ALE calculation</h3><p>SLE = £50,000</p><p>ARO = 0.5</p><p><strong>What is the ALE?</strong></p><p>£50,000 × 0.5 = <strong>£25,000 per year</strong>.</p></div><div class="cph-scenario"><h3>Scenario 8 — Control exists</h3><p>Management believes MFA protects every privileged account, but an assessment discovers that several legacy administrator accounts bypass MFA.</p><p><strong>What should be reconsidered?</strong></p><p>Control effectiveness and therefore the residual risk.</p></div><div class="cph-scenario"><h3>Scenario 9 — Threat environment changes</h3><p>A vulnerability previously had no known exploitation. Active attacks are now being widely reported.</p><p><strong>What should happen?</strong></p><p>Reassess the risk because likelihood has changed.</p></div><div class="cph-scenario"><h3>Scenario 10 — Who accepts?</h3><p>A penetration tester identifies a serious weakness and decides that the organisation should simply accept it.</p><p><strong>What is wrong?</strong></p><p>The tester can advise on risk, but acceptance should be made by an appropriately authorised risk owner.</p></div><div class="cph-scenario"><h3>Scenario 11 — Qualitative assessment</h3><p>A risk is described as "High likelihood and Medium impact."</p><p><strong>Analysis type:</strong></p><p>Qualitative.</p></div><div class="cph-scenario"><h3>Scenario 12 — Quantitative assessment</h3><p>A risk is estimated to produce an average annual financial loss of £75,000.</p><p><strong>Analysis type:</strong></p><p>Quantitative.</p></div></div></details><section class="cph-dad"><h2>Risk Management thinking flow</h2><div class="cph-dad-row"><span>💎 Asset</span> <span>→</span> <strong>What do we value?</strong></div><div class="cph-dad-row"><span>⚡ Threat</span> <span>→</span> <strong>What could cause harm?</strong></div><div class="cph-dad-row"><span>🕳️ Vulnerability</span> <span>→</span> <strong>What weakness exists?</strong></div><div class="cph-dad-row"><span>📊 Analyse</span> <span>→</span> <strong>How likely and how damaging?</strong></div><div class="cph-dad-row"><span>🛡️ Treat</span> <span>→</span> <strong>Avoid, mitigate, transfer or accept?</strong></div><div class="cph-dad-row"><span>⚖️ Residual Risk</span> <span>→</span> <strong>What remains?</strong></div><div class="cph-dad-row"><span>👁️ Monitor</span> <span>→</span> <strong>Has anything changed?</strong></div></section><section class="cph-memory"><h2>Quick memory aid</h2><div><strong>Threat</strong> <span>What could HARM us?</span></div><div><strong>Vulnerability</strong> <span>What WEAKNESS exists?</span></div><div><strong>Likelihood</strong> <span>How likely is it to HAPPEN?</span></div><div><strong>Impact</strong> <span>How BAD would it be?</span></div><div><strong>Risk</strong> <span>Should we CARE?</span></div><div><strong>Treatment</strong> <span>What will we DO?</span></div><p class="cph-memory-short"><strong>Identify. Analyse. Treat. Monitor.</strong></p></section><section class="cph-memory"><h2>Risk treatment memory aid</h2><div><strong>Avoid</strong> <span>STOP the activity</span></div><div><strong>Mitigate</strong> <span>REDUCE the risk</span></div><div><strong>Transfer</strong> <span>SHARE some consequence</span></div><div><strong>Accept</strong> <span>KEEP the residual risk</span></div><p class="cph-memory-short"><strong>Stop. Reduce. Share. Keep.</strong></p></section><section class="cph-memory"><h2>Quantitative risk memory aid</h2><div><strong>AV</strong> <span>Asset Value</span></div><div><strong>EF</strong> <span>Percentage lost in one event</span></div><div><strong>SLE</strong> <span>AV × EF</span></div><div><strong>ARO</strong> <span>Events per year</span></div><div><strong>ALE</strong> <span>SLE × ARO</span></div><p class="cph-memory-short"><strong>SLE = ONE EVENT · ALE = ONE YEAR</strong></p></section><section class="cph-takeaways"><h2>Key takeaways</h2><p><strong>Risk management supports informed business decision-making.</strong> Its purpose is not simply to produce vulnerability lists or eliminate every possible risk.</p><p>A useful risk scenario connects <strong>assets, threats, vulnerabilities, events and business consequences.</strong></p><p>Risk is commonly considered through <strong>likelihood and impact.</strong></p><p><strong>Qualitative analysis</strong> uses descriptive categories such as Low, Medium and High.</p><p><strong>Quantitative analysis</strong> uses numerical estimates.</p><p>Traditional quantitative CISSP calculations include <strong>SLE = AV × EF</strong> and <strong>ALE = SLE × ARO.</strong></p><p><strong>Inherent risk</strong> represents risk before focused management action, while <strong>residual risk</strong> remains after risk treatment and controls.</p><p>Risk can be <strong>avoided, mitigated, transferred/shared or accepted.</strong></p><p>Cybersecurity insurance can transfer some financial consequences but does not make the underlying operational or security risk disappear.</p><p>Controls can serve functions including <strong>preventive, detective, corrective, deterrent, recovery and compensating</strong> purposes.</p><p>Controls should be assessed for implementation and effectiveness rather than assumed to work simply because they exist.</p><p>Significant risks should have appropriate <strong>risk ownership</strong> and should be recorded, monitored and reviewed.</p><p>Risk changes as threats, vulnerabilities, systems, controls and business conditions change.</p><p><strong>Cybersecurity risk is ultimately business risk.</strong> Important cyber risks should therefore connect to wider enterprise-risk management and organisational objectives.</p><p>Most importantly: <strong>security professionals identify and explain risk so that the right people can make informed decisions about it.</strong></p></section><details class="cph-accordion"><summary><span>📚</span> <span><strong>Sources & Further Reading</strong> <small>Authoritative references</small></span></summary><div class="cph-accordion-content"><ul class="cph-clean-list"><li><strong>ISC2 — CISSP Certification Exam Outline</strong><br><a href="https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline" target="_blank" rel="noopener">View official CISSP exam outline</a></li><li><strong>NIST SP 800-30 Rev. 1 — Guide for Conducting Risk Assessments</strong><br><a href="https://csrc.nist.gov/pubs/sp/800/30/r1/final" target="_blank" rel="noopener">View NIST risk-assessment guidance</a></li><li><strong>NIST IR 8286 Rev. 1 — Integrating Cybersecurity and Enterprise Risk Management</strong><br><a href="https://csrc.nist.gov/pubs/ir/8286/r1/final" target="_blank" rel="noopener">View NIST ERM guidance</a></li><li><strong>NIST IR 8286A Rev. 1 — Identifying and Estimating Cybersecurity Risk</strong><br><a href="https://csrc.nist.gov/pubs/ir/8286/a/r1/final" target="_blank" rel="noopener">View NIST cybersecurity-risk guidance</a></li><li><strong>NIST — Residual Risk</strong><br><a href="https://csrc.nist.gov/glossary/term/residual_risk" target="_blank" rel="noopener">View NIST definition</a></li><li><strong>NIST — Inherent Risk</strong><br><a href="https://csrc.nist.gov/glossary/term/inherent_risk" target="_blank" rel="noopener">View NIST definition</a></li></ul></div></details></div></div></div></article></div></div><div id="sidebar"><div class="inner"><nav id="menu"><header class="major"><h2>Menu</h2></header><ul><li><a href="https://cyberprephub.github.io/" target="_self">Home</a></li><li class="active-parent has-submenu"><span aria-haspopup="true" class="opener">CISSP</span><ul class="submenu level-2" aria-hidden="true"><li class="active-parent has-submenu"><span aria-haspopup="true" class="opener">1. Security and Risk Management</span><ul class="submenu level-3" aria-hidden="true"><li><a href="https://cyberprephub.github.io/11-professional-ethics/" target="_self">1.1 Professional Ethics</a></li><li><a href="https://cyberprephub.github.io/the-cia-triad-confidentiality-integrity-and-availability-2/" target="_self">1.2 CIA Triad &amp; Security Concepts</a></li><li><a href="https://cyberprephub.github.io/13-security-governance/" target="_self">1.3 Security Governance</a></li><li><a href="https://cyberprephub.github.io/14-law-compliance-and-privacy/" target="_self">1.4 Law, Compliance &amp; Privacy</a></li><li><a href="https://cyberprephub.github.io/15-security-investigations/" target="_self">1.5 Security Investigations</a></li><li><a href="https://cyberprephub.github.io/16-security-policies-and-standards/" target="_self">1.6 Security Policies &amp; Standards</a></li><li><a href="https://cyberprephub.github.io/17-business-continuity-and-bia/" target="_self">1.7 Business Continuity &amp; BIA</a></li><li><a href="https://cyberprephub.github.io/18-personnel-security/" target="_self">1.8 Personnel Security</a></li><li class="active"><a href="https://cyberprephub.github.io/19-risk-management/" target="_self">1.9 Risk Management</a></li><li><a href="https://cyberprephub.github.io/110-threat-modeling/" target="_self">1.10 Threat Modeling</a></li><li><a href="https://cyberprephub.github.io/111-supply-chain-risk/" target="_self">1.11 Supply Chain Risk</a></li><li><a href="https://cyberprephub.github.io/112-security-awareness-and-training/" target="_self">1.12 Security Awareness &amp; Training</a></li></ul></li><li><span class="is-separator">2. Asset Security</span></li></ul></li><li><a href="https://cyberprephub.github.io/abbreviations/" target="_self">Abbreviations</a></li><li><a href="https://cyberprephub.github.io/tags/blog/" target="_self">Blog</a></li></ul></nav><section><header class="major"><h2>Get in touch</h2></header><p>I’m always happy to connect with others working in cybersecurity, technology and security consulting. You can find me on LinkedIn below.<br><br><a href="https://www.linkedin.com/in/mateusz-o-1a580a28/" target="_blank" rel="noopener">Connect with me on LinkedIn</a></p></section><footer id="footer"><p class="copyright">© Editorial 2 - All rights reserved<br>Design by: <a href="https://html5up.net" target="_blank" rel="noopener">HTML5 UP</a>, Powered by Publii</p></footer></div></div></div><script src="https://cyberprephub.github.io/assets/js/jquery.min.js?v&#x3D;7c14a783dfeb3d238ccd3edd840d82ee"></script><script src="https://cyberprephub.github.io/assets/js/browser.min.js?v&#x3D;c07298dd19048a8a69ad97e754dfe8d0"></script><script src="https://cyberprephub.github.io/assets/js/breakpoints.min.js?v&#x3D;81a479eb099e3b187613943b085923b8"></script><script src="https://cyberprephub.github.io/assets/js/util.min.js?v&#x3D;cbdaf7c20ac2883c77ae23acfbabd47e"></script><script src="https://cyberprephub.github.io/assets/js/main.min.js?v&#x3D;08add7f6d435054ad38ec38d7cf8be40"></script><script>var images=document.querySelectorAll("img[loading]");for(var i=0;i<images.length;i++){if(images[i].complete){images[i].classList.add("is-loaded")}else{images[i].addEventListener("load",function(){this.classList.add("is-loaded")},false)}};</script><script>document.addEventListener('DOMContentLoaded', function () {
+
+    const container = document.getElementById('cyberprep-abbreviations');
+    if (!container) return;
+
+    /*
+     * CYBERPREPHUB ABBREVIATION DATABASE
+     *
+     * FORMAT:
+     * ABBREVIATION|Full name|Description
+     *
+     * To add a new abbreviation later, simply add another line.
+     */
+
+    const abbreviationText = `
+AAA|Authentication, Authorization and Accounting|A framework for verifying identity, determining permitted access and recording user or system activity.
+ABAC|Attribute-Based Access Control|An access control model that makes decisions using attributes associated with users, resources and environmental conditions.
+ACL|Access Control List|A set of rules defining which users, systems or network traffic can access a resource.
+AD|Active Directory|Microsoft's directory service for managing identities, computers, groups and other resources within a Windows domain.
+AES|Advanced Encryption Standard|A widely used symmetric encryption algorithm supporting 128, 192 and 256-bit keys.
+AH|Authentication Header|An IPsec protocol that provides integrity and authentication for IP packets but does not encrypt their contents.
+ALE|Annualized Loss Expectancy|The expected financial loss from a particular risk over one year. ALE is calculated as SLE multiplied by ARO.
+API|Application Programming Interface|A defined mechanism allowing applications or systems to communicate and exchange data or functionality.
+APT|Advanced Persistent Threat|A sophisticated threat actor or campaign designed to maintain long-term access to a target environment.
+ARP|Address Resolution Protocol|A protocol used to map IPv4 addresses to MAC addresses on a local network.
+ARO|Annualized Rate of Occurrence|The estimated number of times a particular risk event is expected to occur during one year.
+ASLR|Address Space Layout Randomization|A security technique that randomises memory locations to make memory exploitation more difficult.
+AV|Asset Value|The financial or business value assigned to an asset when performing quantitative risk analysis.
+
+BCP|Business Continuity Plan|A documented plan for maintaining or restoring critical business operations during a disruption.
+BGP|Border Gateway Protocol|The routing protocol primarily used to exchange routing information between autonomous systems on the internet.
+BIA|Business Impact Analysis|An assessment used to identify critical business processes and determine the effects of their disruption.
+BYOD|Bring Your Own Device|A policy allowing users to use personally owned devices for organisational work or access.
+BYOK|Bring Your Own Key|A cloud security model in which an organisation supplies or controls the cryptographic keys used by a cloud service.
+
+C2|Command and Control|Infrastructure or communication channels used by attackers to control compromised systems or malware.
+CA|Certificate Authority|A trusted entity responsible for issuing and managing digital certificates within a Public Key Infrastructure.
+CASB|Cloud Access Security Broker|Technology positioned between users and cloud services to provide security controls, visibility and policy enforcement.
+CDE|Cardholder Data Environment|Systems, people and processes that store, process or transmit payment card information.
+CERT|Computer Emergency Response Team|A team responsible for helping organisations prepare for, detect and respond to cybersecurity incidents.
+CIA|Confidentiality, Integrity and Availability|The three fundamental security objectives collectively known as the CIA Triad.
+CIDR|Classless Inter-Domain Routing|A method of allocating IP addresses and representing network ranges using prefix notation such as /24.
+CISO|Chief Information Security Officer|The senior executive responsible for an organisation's information security programme and strategy.
+CNAPP|Cloud-Native Application Protection Platform|A platform combining multiple cloud security capabilities to protect cloud-native applications and workloads.
+COPE|Corporate-Owned, Personally Enabled|A device ownership model where an organisation owns a device but permits some personal use.
+CSP|Cloud Service Provider|A company providing cloud computing services such as infrastructure, platforms or applications.
+CSP|Content Security Policy|A browser security mechanism that restricts which sources a web page can load content or execute scripts from.
+CSPM|Cloud Security Posture Management|Technology used to identify cloud misconfigurations, policy violations and security weaknesses.
+CSRF|Cross-Site Request Forgery|An attack that causes an authenticated user's browser to perform an unintended action on a website.
+CSIRT|Computer Security Incident Response Team|A team responsible for coordinating the investigation and response to cybersecurity incidents.
+CSR|Certificate Signing Request|A request containing information and a public key that is submitted to a Certificate Authority to obtain a certificate.
+CVE|Common Vulnerabilities and Exposures|A standard system for assigning unique identifiers to publicly known cybersecurity vulnerabilities.
+CVSS|Common Vulnerability Scoring System|A framework for describing and scoring the technical severity of vulnerabilities.
+CWE|Common Weakness Enumeration|A catalogue of common software and hardware weakness types that can lead to vulnerabilities.
+CWPP|Cloud Workload Protection Platform|Technology designed to secure workloads such as virtual machines, containers and serverless applications.
+
+DAC|Discretionary Access Control|An access control model in which resource owners can determine who receives access to their resources.
+DAST|Dynamic Application Security Testing|Security testing performed against a running application to identify exploitable vulnerabilities.
+DDoS|Distributed Denial of Service|An attack using multiple systems to overwhelm a service or network and make it unavailable.
+DH|Diffie-Hellman|A cryptographic key exchange method allowing two parties to establish a shared secret over an insecure channel.
+DHCP|Dynamic Host Configuration Protocol|A network protocol that automatically provides devices with IP addresses and related network configuration.
+DKIM|DomainKeys Identified Mail|An email authentication mechanism that uses digital signatures to help verify that email has not been altered.
+DLP|Data Loss Prevention|Technologies and processes designed to prevent sensitive information from being disclosed or transferred improperly.
+DMARC|Domain-based Message Authentication, Reporting and Conformance|An email authentication policy that builds on SPF and DKIM to help prevent email spoofing.
+DMZ|Demilitarized Zone|A network segment that separates externally accessible services from an organisation's internal network.
+DNS|Domain Name System|The distributed system that translates domain names into IP addresses and other DNS records.
+DoS|Denial of Service|An attack intended to make a service, system or resource unavailable to legitimate users.
+DRP|Disaster Recovery Plan|A documented plan describing how technology and data will be restored following a serious disruption.
+
+EAP|Extensible Authentication Protocol|An authentication framework supporting multiple authentication methods, commonly used in network access technologies.
+ECC|Elliptic Curve Cryptography|Public-key cryptography based on elliptic curves that provides strong security with relatively small key sizes.
+EDR|Endpoint Detection and Response|Technology that monitors endpoints to detect, investigate and respond to suspicious activity.
+EF|Exposure Factor|The percentage of an asset's value expected to be lost if a particular risk event occurs.
+EOL|End of Life|The point at which a product or technology is no longer supported by its manufacturer or developer.
+EPP|Endpoint Protection Platform|A security platform providing preventative protection for endpoint devices against malware and other threats.
+ESP|Encapsulating Security Payload|An IPsec protocol that can provide encryption, integrity and authentication for network traffic.
+
+FDE|Full-Disk Encryption|Encryption protecting the contents of an entire storage device or disk.
+FIDO|Fast Identity Online|Authentication standards designed to reduce reliance on passwords and support strong cryptographic authentication.
+FIM|File Integrity Monitoring|A security control that detects unexpected or unauthorised changes to important files.
+FQDN|Fully Qualified Domain Name|The complete domain name identifying a specific host within the DNS hierarchy.
+FTP|File Transfer Protocol|A protocol used for transferring files that does not provide encryption by default.
+FTPS|File Transfer Protocol Secure|FTP protected using TLS to provide encrypted file transfer.
+
+GCM|Galois/Counter Mode|An authenticated encryption mode commonly used with AES to provide confidentiality and integrity.
+GDPR|General Data Protection Regulation|European legislation governing the processing and protection of personal data.
+GPO|Group Policy Object|A collection of Microsoft Active Directory configuration settings applied to users and computers.
+GRC|Governance, Risk and Compliance|An organisational approach combining governance, risk management and compliance activities.
+
+HIDS|Host-based Intrusion Detection System|An intrusion detection system that monitors activity occurring on an individual endpoint or host.
+HIPS|Host-based Intrusion Prevention System|A security system that monitors and can actively block suspicious activity on an individual host.
+HMAC|Hash-based Message Authentication Code|A mechanism combining a cryptographic hash function with a secret key to provide integrity and authentication.
+HOTP|HMAC-based One-Time Password|A one-time password algorithm based on HMAC and a counter value.
+HSM|Hardware Security Module|A specialised hardware device used to securely generate, protect and use cryptographic keys.
+HTTP|Hypertext Transfer Protocol|The application-layer protocol primarily used to transfer web content.
+HTTPS|Hypertext Transfer Protocol Secure|HTTP protected using TLS to provide encrypted and authenticated web communication.
+
+IaaS|Infrastructure as a Service|A cloud model providing virtualised computing infrastructure such as servers, networks and storage.
+IAM|Identity and Access Management|Policies, processes and technologies for managing digital identities and controlling access to resources.
+IAST|Interactive Application Security Testing|Application security testing that analyses applications while they operate during testing.
+ICMP|Internet Control Message Protocol|A network protocol used for diagnostics and error reporting, including tools such as ping.
+IDS|Intrusion Detection System|A system that monitors activity for signs of attacks or security policy violations and generates alerts.
+IdP|Identity Provider|A system that authenticates users and provides identity information to applications or service providers.
+IoA|Indicator of Attack|Evidence suggesting that malicious activity or an attack is currently occurring.
+IoC|Indicator of Compromise|Evidence such as a malicious IP address, domain or file hash that may indicate compromise.
+IoT|Internet of Things|Physical devices containing computing and networking capabilities that communicate with other systems.
+IP|Internet Protocol|The network-layer protocol responsible for addressing and routing packets across networks.
+IPS|Intrusion Prevention System|A system capable of detecting malicious network activity and automatically blocking or preventing it.
+IPsec|Internet Protocol Security|A suite of protocols used to authenticate and encrypt IP network communications.
+IR|Incident Response|The organised process for identifying, investigating, containing and recovering from cybersecurity incidents.
+ISMS|Information Security Management System|A structured system of policies, processes and controls used to manage information security risk.
+ISO|International Organization for Standardization|An international standards body responsible for standards including the ISO/IEC 27000 information security family.
+IV|Initialization Vector|A value used with some encryption algorithms to ensure identical plaintext does not always produce identical ciphertext.
+
+JWT|JSON Web Token|A compact token format commonly used to securely transmit claims between systems.
+
+KDC|Key Distribution Center|A trusted component in Kerberos responsible for issuing authentication tickets and session keys.
+KDF|Key Derivation Function|A cryptographic function used to derive secure cryptographic keys from another secret value.
+KMS|Key Management System|A system for generating, storing, distributing, rotating and managing cryptographic keys.
+
+LAN|Local Area Network|A network connecting devices within a relatively limited geographical area.
+LDAP|Lightweight Directory Access Protocol|A protocol used to access and manage information stored in directory services.
+
+MAC|Mandatory Access Control|An access control model in which access decisions are enforced centrally using security labels and classifications.
+MAC|Media Access Control|A networking mechanism and addressing system associated primarily with the data link layer.
+MAC|Message Authentication Code|A cryptographic value used to verify the integrity and authenticity of a message.
+MAM|Mobile Application Management|Technology used to manage and secure applications installed on mobile devices.
+MDR|Managed Detection and Response|A managed security service providing continuous threat monitoring, investigation and response.
+MFA|Multi-Factor Authentication|Authentication requiring evidence from two or more different authentication factor categories.
+MITM|Man-in-the-Middle|An attack where an adversary intercepts communications between two parties and may observe or alter them.
+MPLS|Multiprotocol Label Switching|A networking technique that forwards traffic using labels rather than traditional IP routing alone.
+MTBF|Mean Time Between Failures|A reliability metric representing the average operating time between system failures.
+MTD|Maximum Tolerable Downtime|The longest period a business process can remain unavailable before unacceptable consequences occur.
+MTTR|Mean Time to Repair|A metric representing the average time required to restore a failed system or service.
+
+NAC|Network Access Control|Technology used to enforce security requirements before allowing devices to connect to a network.
+NAT|Network Address Translation|A mechanism that translates one set of IP addresses into another, commonly private addresses to public addresses.
+NDR|Network Detection and Response|Technology that analyses network activity to identify and investigate suspicious behaviour.
+NIDS|Network Intrusion Detection System|An intrusion detection system that analyses network traffic for malicious activity.
+NIST|National Institute of Standards and Technology|A US organisation publishing widely used cybersecurity standards, frameworks and guidance.
+NTP|Network Time Protocol|A protocol used to synchronise clocks across networked systems.
+
+OAuth|OAuth Authorization Framework|A framework enabling applications to obtain delegated access to resources without receiving a user's password.
+OCSP|Online Certificate Status Protocol|A protocol used to determine whether a digital certificate has been revoked.
+OIDC|OpenID Connect|An identity layer built on OAuth 2.0 that enables authentication and exchange of identity information.
+OSI|Open Systems Interconnection|A seven-layer conceptual model describing how network communication functions.
+OSINT|Open-Source Intelligence|Intelligence collected and analysed from publicly available information sources.
+OTP|One-Time Password|A password or authentication code that is valid for only one authentication attempt or limited period.
+OWASP|Open Worldwide Application Security Project|A nonprofit organisation providing open resources, tools and guidance for improving application security.
+
+PaaS|Platform as a Service|A cloud model providing a managed platform on which customers can develop and run applications.
+PAM|Privileged Access Management|Processes and technologies used to secure and monitor accounts with elevated privileges.
+PAT|Port Address Translation|A type of NAT that allows multiple private hosts to share a public IP address using different ports.
+PCI DSS|Payment Card Industry Data Security Standard|A security standard establishing requirements for environments that handle payment card data.
+PFS|Perfect Forward Secrecy|A property ensuring compromise of a long-term cryptographic key does not expose previously established session keys.
+PII|Personally Identifiable Information|Information that can identify or be linked to a specific individual.
+PKI|Public Key Infrastructure|The certificates, keys, authorities, policies and processes supporting public-key cryptography.
+PoLP|Principle of Least Privilege|The principle that users and systems should receive only the minimum access required to perform their functions.
+PRNG|Pseudo-Random Number Generator|An algorithm that generates sequences of values designed to behave like random numbers.
+PSK|Pre-Shared Key|A secret cryptographic key shared between parties before secure communication begins.
+
+QoS|Quality of Service|Techniques used to prioritise and manage network traffic to meet performance requirements.
+
+RA|Registration Authority|An entity that verifies certificate applicants before a Certificate Authority issues a digital certificate.
+RADIUS|Remote Authentication Dial-In User Service|A protocol commonly used for centralised network authentication, authorization and accounting.
+RASP|Runtime Application Self-Protection|Security technology operating within an application to detect and potentially block attacks during execution.
+RBAC|Role-Based Access Control|An access control model where permissions are assigned to roles and users are assigned those roles.
+RCE|Remote Code Execution|A vulnerability or attack that allows an attacker to execute code on another system remotely.
+RPO|Recovery Point Objective|The maximum acceptable amount of data loss measured in time following a disruption.
+RSA|Rivest-Shamir-Adleman|A public-key cryptographic algorithm used for encryption, digital signatures and key-related operations.
+RTO|Recovery Time Objective|The target maximum time within which a system or business process should be restored following disruption.
+
+SaaS|Software as a Service|A cloud model where complete applications are provided and managed by a service provider.
+SAML|Security Assertion Markup Language|An XML-based standard commonly used to exchange authentication and authorization information for federated identity.
+SASE|Secure Access Service Edge|An architecture combining networking and cloud-delivered security capabilities into an integrated service.
+SAST|Static Application Security Testing|Security testing that analyses application source code or compiled code without running the application.
+SBOM|Software Bill of Materials|An inventory identifying software components and dependencies contained within an application or product.
+SCA|Software Composition Analysis|Technology used to identify open-source components, dependencies and associated vulnerabilities.
+SDLC|Software Development Life Cycle|The structured process covering planning, development, testing, deployment and maintenance of software.
+SDN|Software-Defined Networking|A networking architecture that separates network control logic from packet-forwarding infrastructure.
+SFTP|SSH File Transfer Protocol|A secure file transfer protocol operating over SSH.
+SHA|Secure Hash Algorithm|A family of cryptographic hash functions including SHA-256 and SHA-3.
+SIEM|Security Information and Event Management|A platform that collects and analyses security logs and events to support monitoring and investigation.
+SLE|Single Loss Expectancy|The expected financial loss from one occurrence of a risk event. SLE equals Asset Value multiplied by Exposure Factor.
+SOAR|Security Orchestration, Automation and Response|Technology for coordinating security tools, automating workflows and supporting incident response.
+SOC|Security Operations Centre|A team or function responsible for monitoring, detecting, investigating and responding to cybersecurity threats.
+SQLi|SQL Injection|A vulnerability where malicious SQL input can alter database queries executed by an application.
+SSH|Secure Shell|A cryptographic protocol commonly used for secure remote administration and command-line access.
+SSL|Secure Sockets Layer|A deprecated cryptographic protocol that preceded TLS and should no longer be used for secure communications.
+SSO|Single Sign-On|An authentication approach allowing a user to authenticate once and access multiple connected services.
+SSRF|Server-Side Request Forgery|A vulnerability that allows an attacker to cause a server to make unintended network requests.
+STIX|Structured Threat Information eXpression|A standardised language and format for representing and sharing cyber threat intelligence.
+
+TACACS+|Terminal Access Controller Access-Control System Plus|A protocol commonly used to provide centralised authentication, authorization and accounting for network devices.
+TCP|Transmission Control Protocol|A connection-oriented transport protocol providing reliable and ordered data delivery.
+TGT|Ticket Granting Ticket|A Kerberos ticket that allows an authenticated user to request service tickets without repeatedly providing credentials.
+TLS|Transport Layer Security|A cryptographic protocol used to protect data in transit through encryption, integrity and authentication.
+TOTP|Time-based One-Time Password|A temporary authentication code generated from a shared secret and the current time.
+TPM|Trusted Platform Module|A hardware security component used for protected cryptographic operations and secure key storage.
+TTP|Tactics, Techniques and Procedures|A description of how threat actors operate, including their strategic goals, methods and specific actions.
+
+UDP|User Datagram Protocol|A connectionless transport protocol prioritising speed and low overhead over guaranteed delivery.
+UEBA|User and Entity Behavior Analytics|Technology that analyses behavioural patterns to identify potentially suspicious user or system activity.
+UEFI|Unified Extensible Firmware Interface|Modern firmware technology used to initialise hardware and start an operating system.
+URL|Uniform Resource Locator|The address used to identify and locate a resource on a network or the web.
+
+VLAN|Virtual Local Area Network|A logical network segment allowing devices to be grouped independently of their physical network location.
+VM|Virtual Machine|A software-based computer running an operating system within a virtualised environment.
+VPN|Virtual Private Network|Technology that creates a protected network connection across another network such as the internet.
+
+WAF|Web Application Firewall|A security control that monitors and filters web traffic to protect applications from malicious requests.
+WAN|Wide Area Network|A network connecting systems across large geographical areas.
+WEP|Wired Equivalent Privacy|An obsolete and insecure wireless encryption standard that has been replaced by stronger technologies.
+WPA2|Wi-Fi Protected Access 2|A widely used wireless security standard that replaced WEP and introduced stronger cryptographic protection.
+WPA3|Wi-Fi Protected Access 3|A newer Wi-Fi security standard providing stronger authentication and protection than WPA2.
+
+X.509|X.509 Certificate Standard|A standard defining the structure and use of public-key digital certificates.
+XDR|Extended Detection and Response|Security technology combining and correlating detection data from multiple security layers.
+XML|Extensible Markup Language|A structured markup language used to represent and exchange data.
+XSS|Cross-Site Scripting|A web vulnerability allowing attacker-controlled script content to execute in another user's browser.
+
+ZTA|Zero Trust Architecture|A security architecture based on continuously evaluating access rather than implicitly trusting users or systems.
+ZTNA|Zero Trust Network Access|Technology providing application access according to Zero Trust principles rather than broad network-level access.
+    `;
+
+
+    /*
+     * CONVERT DATABASE INTO JAVASCRIPT OBJECTS
+     *
+     * Blank lines are deliberately ignored.
+     * Malformed lines are also ignored so that one typo does not
+     * break the entire dictionary.
+     */
+
+    const abbreviations = abbreviationText
+        .trim()
+        .split('\n')
+        .map(function(line) {
+            return line.trim();
+        })
+        .filter(function(line) {
+            return line.length > 0;
+        })
+        .map(function(line) {
+
+            const parts = line.split('|');
+
+            if (parts.length < 3) {
+                return null;
+            }
+
+            return {
+                abbr: parts[0].trim(),
+                name: parts[1].trim(),
+                description: parts.slice(2).join('|').trim()
+            };
+
+        })
+        .filter(function(item) {
+            return item !== null;
+        })
+        .sort(function(a, b) {
+
+            return a.abbr.localeCompare(
+                b.abbr,
+                undefined,
+                {
+                    numeric: true,
+                    sensitivity: 'base'
+                }
+            );
+
+        });
+
+
+    /*
+     * PAGE ELEMENTS
+     */
+
+    const input =
+        document.getElementById('abbr-search-input');
+
+    const alphabet =
+        document.getElementById('abbr-alphabet');
+
+    const list =
+        document.getElementById('abbr-list');
+
+    const count =
+        document.getElementById('abbr-results-count');
+
+    const noResults =
+        document.getElementById('abbr-no-results');
+
+
+    if (
+        !input ||
+        !alphabet ||
+        !list ||
+        !count ||
+        !noResults
+    ) {
+        return;
+    }
+
+
+    /*
+     * DETERMINE WHICH LETTER AN ABBREVIATION BELONGS TO
+     */
+
+    function getLetter(abbreviation) {
+
+        const match =
+            abbreviation.match(/[A-Za-z]/);
+
+        return match
+            ? match[0].toUpperCase()
+            : '#';
+    }
+
+
+    /*
+     * GROUP ABBREVIATIONS BY LETTER
+     */
+
+    function createGroups() {
+
+        const groups = {};
+
+        abbreviations.forEach(function(item) {
+
+            const letter =
+                getLetter(item.abbr);
+
+            if (!groups[letter]) {
+                groups[letter] = [];
+            }
+
+            groups[letter].push(item);
+
+        });
+
+        return groups;
+    }
+
+
+    /*
+     * BUILD THE PAGE
+     */
+
+    function renderAbbreviations() {
+
+        alphabet.innerHTML = '';
+        list.innerHTML = '';
+
+        const groups = createGroups();
+
+        Object.keys(groups)
+            .sort()
+            .forEach(function(letter) {
+
+
+                /*
+                 * A-Z BUTTON
+                 */
+
+                const alphabetLink =
+                    document.createElement('a');
+
+                alphabetLink.href =
+                    '#abbr-' + letter.toLowerCase();
+
+                alphabetLink.textContent =
+                    letter;
+
+                alphabet.appendChild(
+                    alphabetLink
+                );
+
+
+                /*
+                 * LETTER SECTION
+                 */
+
+                const section =
+                    document.createElement('section');
+
+                section.className =
+                    'abbr-section abbr-collapsed';
+
+                section.id =
+                    'abbr-' + letter.toLowerCase();
+
+
+                /*
+                 * LETTER HEADING
+                 */
+
+                const heading =
+                    document.createElement('h2');
+
+                heading.className =
+                    'abbr-toggle';
+
+                heading.textContent =
+                    letter;
+
+                heading.setAttribute(
+                    'role',
+                    'button'
+                );
+
+                heading.setAttribute(
+                    'tabindex',
+                    '0'
+                );
+
+                heading.setAttribute(
+                    'aria-expanded',
+                    'false'
+                );
+
+                section.appendChild(
+                    heading
+                );
+
+
+                /*
+                 * ABBREVIATIONS UNDER THIS LETTER
+                 */
+
+                groups[letter].forEach(
+                    function(item) {
+
+                        const abbreviationItem =
+                            document.createElement('div');
+
+                        abbreviationItem.className =
+                            'abbr-item';
+
+
+                        /*
+                         * TEXT USED BY SEARCH
+                         */
+
+                        abbreviationItem.dataset.search =
+                            (
+                                item.abbr +
+                                ' ' +
+                                item.name +
+                                ' ' +
+                                item.description
+                            ).toLowerCase();
+
+
+                        /*
+                         * ABBREVIATION HEADING
+                         */
+
+                        const itemHeading =
+                            document.createElement('h3');
+
+                        itemHeading.textContent =
+                            item.abbr +
+                            ' — ' +
+                            item.name;
+
+
+                        /*
+                         * DESCRIPTION
+                         */
+
+                        const description =
+                            document.createElement('p');
+
+                        description.textContent =
+                            item.description;
+
+
+                        abbreviationItem.appendChild(
+                            itemHeading
+                        );
+
+                        abbreviationItem.appendChild(
+                            description
+                        );
+
+                        section.appendChild(
+                            abbreviationItem
+                        );
+
+                    }
+                );
+
+
+                list.appendChild(section);
+
+
+                /*
+                 * OPEN/CLOSE A LETTER
+                 */
+
+                function toggleSection() {
+
+                    const isCollapsed =
+                        section.classList.toggle(
+                            'abbr-collapsed'
+                        );
+
+                    heading.setAttribute(
+                        'aria-expanded',
+                        isCollapsed
+                            ? 'false'
+                            : 'true'
+                    );
+
+                }
+
+
+                heading.addEventListener(
+                    'click',
+                    toggleSection
+                );
+
+
+                heading.addEventListener(
+                    'keydown',
+                    function(event) {
+
+                        if (
+                            event.key === 'Enter' ||
+                            event.key === ' '
+                        ) {
+
+                            event.preventDefault();
+
+                            toggleSection();
+
+                        }
+
+                    }
+                );
+
+
+                /*
+                 * CLICKING A LETTER IN A-Z
+                 */
+
+                alphabetLink.addEventListener(
+                    'click',
+                    function(event) {
+
+                        event.preventDefault();
+
+                        section.classList.remove(
+                            'abbr-collapsed'
+                        );
+
+                        heading.setAttribute(
+                            'aria-expanded',
+                            'true'
+                        );
+
+                        section.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+
+                    }
+                );
+
+            });
+
+
+        count.textContent =
+            abbreviations.length +
+            ' abbreviations';
+
+    }
+
+
+    renderAbbreviations();
+
+
+    /*
+     * GET GENERATED ELEMENTS
+     */
+
+    const items =
+        Array.from(
+            container.querySelectorAll(
+                '.abbr-item'
+            )
+        );
+
+    const sections =
+        Array.from(
+            container.querySelectorAll(
+                '.abbr-section'
+            )
+        );
+
+
+    /*
+     * SEARCH
+     */
+
+    function filterAbbreviations() {
+
+        const search =
+            input.value
+                .trim()
+                .toLowerCase();
+
+        let visibleCount = 0;
+
+
+        /*
+         * SHOW/HIDE INDIVIDUAL ABBREVIATIONS
+         */
+
+        items.forEach(function(item) {
+
+            const matches =
+                item.dataset.search.includes(
+                    search
+                );
+
+            item.style.display =
+                matches ? '' : 'none';
+
+            if (matches) {
+                visibleCount++;
+            }
+
+        });
+
+
+        /*
+         * SHOW/HIDE LETTER SECTIONS
+         */
+
+        sections.forEach(function(section) {
+
+            const visibleItems =
+                Array.from(
+                    section.querySelectorAll(
+                        '.abbr-item'
+                    )
+                )
+                .filter(function(item) {
+
+                    return (
+                        item.style.display !==
+                        'none'
+                    );
+
+                });
+
+
+            const heading =
+                section.querySelector(
+                    '.abbr-toggle'
+                );
+
+
+            /*
+             * WHILE SEARCHING:
+             * Hide letters with no matches and
+             * automatically open letters with matches.
+             */
+
+            if (search !== '') {
+
+                if (visibleItems.length > 0) {
+
+                    section.style.display = '';
+
+                    section.classList.remove(
+                        'abbr-collapsed'
+                    );
+
+                    heading.setAttribute(
+                        'aria-expanded',
+                        'true'
+                    );
+
+                } else {
+
+                    section.style.display =
+                        'none';
+
+                }
+
+            }
+
+
+            /*
+             * WHEN SEARCH IS EMPTY:
+             * Show every letter but collapse them.
+             */
+
+            else {
+
+                section.style.display = '';
+
+                section.classList.add(
+                    'abbr-collapsed'
+                );
+
+                heading.setAttribute(
+                    'aria-expanded',
+                    'false'
+                );
+
+            }
+
+        });
+
+
+        /*
+         * RESULTS COUNTER
+         */
+
+        if (search === '') {
+
+            count.textContent =
+                abbreviations.length +
+                ' abbreviations';
+
+        } else {
+
+            count.textContent =
+                visibleCount +
+                (
+                    visibleCount === 1
+                        ? ' result'
+                        : ' results'
+                );
+
+        }
+
+
+        /*
+         * NO RESULTS MESSAGE
+         */
+
+        noResults.hidden =
+            visibleCount !== 0;
+
+    }
+
+
+    input.addEventListener(
+        'input',
+        filterAbbreviations
+    );
+
+});</script><script>document.addEventListener('DOMContentLoaded', function () {
+
+    const menu = document.getElementById('menu');
+
+    if (!menu) return;
+
+
+    function getDirectOpener(li) {
+
+        for (const child of li.children) {
+
+            if (
+                child.classList &&
+                child.classList.contains('opener')
+            ) {
+                return child;
+            }
+
+        }
+
+        return null;
+    }
+
+
+    function closeBranch(li) {
+
+        li.querySelectorAll('.opener.active')
+            .forEach(function (opener) {
+                opener.classList.remove('active');
+            });
+
+    }
+
+
+    /*
+     * Replace Editorial 2's default submenu behaviour.
+     *
+     * This allows:
+     *
+     * CISSP
+     *   └ Security and Risk Management
+     *       └ CIA Triad
+     *
+     * without closing CISSP when the nested section opens.
+     */
+
+    document.addEventListener(
+        'click',
+        function (event) {
+
+            const target = event.target;
+
+            if (!target.closest) return;
+
+            const opener =
+                target.closest('#menu .opener');
+
+            if (!opener) return;
+
+
+            /*
+             * Stop Editorial 2's original click handler.
+             */
+
+            event.preventDefault();
+            event.stopPropagation();
+
+
+            const currentLi =
+                opener.parentElement;
+
+            const parentList =
+                currentLi.parentElement;
+
+            const wasOpen =
+                opener.classList.contains('active');
+
+
+            /*
+             * Close other items at THIS SAME LEVEL only.
+             *
+             * Crucially, this does not close parent menus.
+             */
+
+            Array.from(parentList.children)
+                .forEach(function (siblingLi) {
+
+                    if (siblingLi === currentLi) {
+                        return;
+                    }
+
+                    const siblingOpener =
+                        getDirectOpener(siblingLi);
+
+                    if (siblingOpener) {
+
+                        siblingOpener.classList.remove(
+                            'active'
+                        );
+
+                        closeBranch(siblingLi);
+                    }
+
+                });
+
+
+            /*
+             * Toggle clicked menu.
+             */
+
+            if (wasOpen) {
+
+                opener.classList.remove('active');
+
+                /*
+                 * Also close anything nested underneath it.
+                 */
+
+                currentLi
+                    .querySelectorAll('.opener.active')
+                    .forEach(function (childOpener) {
+
+                        if (childOpener !== opener) {
+                            childOpener.classList.remove(
+                                'active'
+                            );
+                        }
+
+                    });
+
+            } else {
+
+                opener.classList.add('active');
+
+            }
+
+
+            /*
+             * Tell Editorial 2 to recalculate sidebar height.
+             */
+
+            if (window.jQuery) {
+
+                window.jQuery(window)
+                    .triggerHandler(
+                        'resize.sidebar-lock'
+                    );
+
+            }
+
+        },
+        true
+    );
+
+
+    /*
+     * If we're currently viewing a submenu page,
+     * automatically open all of its parent sections.
+     */
+
+    const currentUrl =
+        window.location.href.replace(/\/$/, '');
+
+    menu.querySelectorAll('a')
+        .forEach(function (link) {
+
+            const linkUrl =
+                link.href.replace(/\/$/, '');
+
+            if (linkUrl !== currentUrl) {
+                return;
+            }
+
+            let parentLi =
+                link.closest('li');
+
+            while (parentLi) {
+
+                const parentList =
+                    parentLi.parentElement;
+
+                if (!parentList) break;
+
+                const parentMenuLi =
+                    parentList.closest(
+                        'li.has-submenu'
+                    );
+
+                if (!parentMenuLi) break;
+
+                const parentOpener =
+                    getDirectOpener(
+                        parentMenuLi
+                    );
+
+                if (parentOpener) {
+                    parentOpener.classList.add(
+                        'active'
+                    );
+                }
+
+                parentLi =
+                    parentMenuLi;
+            }
+
+        });
+
+});</script></body></html>
