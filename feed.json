@@ -24,20 +24,6 @@
             ],
             "date_published": "2026-08-15T19:26:15+01:00",
             "date_modified": "2026-08-15T19:32:48+01:00"
-        },
-        {
-            "id": "https://redredmat.github.io/cyberprep/welcome-to-cyberprep.html",
-            "url": "https://redredmat.github.io/cyberprep/welcome-to-cyberprep.html",
-            "title": "Welcome to CyberPrep",
-            "summary": "Cybersecurity learning, concepts and certification notes.",
-            "content_html": "\n  <p>\n    Cybersecurity learning, concepts and certification notes.\n  </p>",
-            "author": {
-                "name": "Mttyos"
-            },
-            "tags": [
-            ],
-            "date_published": "2026-08-15T19:07:08+01:00",
-            "date_modified": "2026-08-15T19:07:08+01:00"
         }
     ]
 }

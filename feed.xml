@@ -34,27 +34,4 @@
             ]]>
         </content>
     </entry>
-    <entry>
-        <title>Welcome to CyberPrep</title>
-        <author>
-            <name>Mttyos</name>
-        </author>
-        <link href="https://redredmat.github.io/cyberprep/welcome-to-cyberprep.html"/>
-        <id>https://redredmat.github.io/cyberprep/welcome-to-cyberprep.html</id>
-
-        <updated>2026-08-15T19:07:08+01:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    Cybersecurity learning, concepts and certification notes.
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-  <p>
-    Cybersecurity learning, concepts and certification notes.
-  </p>
-            ]]>
-        </content>
-    </entry>
 </feed>
