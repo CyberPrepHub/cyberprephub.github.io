@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
-    <title>CyberPrep</title>
+    <title>CyberPrepHub</title>
     <link href="https://cyberprephub.github.io/feed.xml" rel="self" />
     <link href="https://cyberprephub.github.io" />
     <updated>2026-08-15T19:32:48+01:00</updated>
