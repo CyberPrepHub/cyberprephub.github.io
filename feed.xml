@@ -3,12 +3,35 @@
     <title>CyberPrepHub</title>
     <link href="https://cyberprephub.github.io/feed.xml" rel="self" />
     <link href="https://cyberprephub.github.io" />
-    <updated>2026-08-15T19:32:48+01:00</updated>
+    <updated>2026-08-15T20:30:30+01:00</updated>
     <author>
         <name>Mttyos</name>
     </author>
     <id>https://cyberprephub.github.io</id>
 
+    <entry>
+        <title>Why I Built CyberPrepHub</title>
+        <author>
+            <name>Mttyos</name>
+        </author>
+        <link href="https://cyberprephub.github.io/blog/why-i-built-cyberprephub/"/>
+        <id>https://cyberprephub.github.io/blog/why-i-built-cyberprephub/</id>
+
+        <updated>2026-08-15T20:29:39+01:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Cybersecurity is one of those fields where you are always learning something new. While studying for CISSP and working across&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    Cybersecurity is one of those fields where you are always learning something new. While studying for CISSP and working across different areas of security, I kept finding myself going back to the same concepts and looking for a simple explanation that actually made sense.<br><br>That is basically why I created CyberPrepHub.<br><br>I wanted one place where I could organise useful cybersecurity notes, explain concepts in plain language and keep building on what I learn over time. Some of the content will be focused on CISSP, but I also want to cover broader security and technology topics that are useful in day-to-day work.<br><br>This blog will be a more informal part of the site where I can write about cybersecurity, learning, certifications and things I come across along the way.<br><br>CyberPrepHub is still very new, but I’m looking forward to building it up gradually.
+  </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>The CIA Triad: Confidentiality, Integrity and Availability</title>
         <author>

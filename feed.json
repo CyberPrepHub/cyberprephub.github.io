@@ -11,6 +11,20 @@
     },
     "items": [
         {
+            "id": "https://cyberprephub.github.io/blog/why-i-built-cyberprephub/",
+            "url": "https://cyberprephub.github.io/blog/why-i-built-cyberprephub/",
+            "title": "Why I Built CyberPrepHub",
+            "summary": "Cybersecurity is one of those fields where you are always learning something new. While studying for CISSP and working across&hellip;",
+            "content_html": "\n  <p>\n    Cybersecurity is one of those fields where you are always learning something new. While studying for CISSP and working across different areas of security, I kept finding myself going back to the same concepts and looking for a simple explanation that actually made sense.<br><br>That is basically why I created CyberPrepHub.<br><br>I wanted one place where I could organise useful cybersecurity notes, explain concepts in plain language and keep building on what I learn over time. Some of the content will be focused on CISSP, but I also want to cover broader security and technology topics that are useful in day-to-day work.<br><br>This blog will be a more informal part of the site where I can write about cybersecurity, learning, certifications and things I come across along the way.<br><br>CyberPrepHub is still very new, but I’m looking forward to building it up gradually.\n  </p>",
+            "author": {
+                "name": "Mttyos"
+            },
+            "tags": [
+            ],
+            "date_published": "2026-08-15T20:29:39+01:00",
+            "date_modified": "2026-08-15T20:30:30+01:00"
+        },
+        {
             "id": "https://cyberprephub.github.io/blog/the-cia-triad-confidentiality-integrity-and-availability/",
             "url": "https://cyberprephub.github.io/blog/the-cia-triad-confidentiality-integrity-and-availability/",
             "title": "The CIA Triad: Confidentiality, Integrity and Availability",
