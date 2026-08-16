@@ -1,0 +1,968 @@
+<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><title>3.5 Architecture &amp; Technology Vulnerabilities - CyberPrepHub</title><meta name="description" content="CISSP Domain 3 · Security Architecture and Engineering 3.5 Architecture &amp;amp; Technology Vulnerabilities Every architecture introduces assumptions, dependencies and trust&amp;hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://cyberprephub.github.io/35-architecture-and-technology-vulnerabilities/"><link rel="alternate" type="application/atom+xml" href="https://cyberprephub.github.io/feed.xml" title="CyberPrepHub - RSS"><link rel="alternate" type="application/json" href="https://cyberprephub.github.io/feed.json" title="CyberPrepHub - JSON"><meta property="og:title" content="3.5 Architecture &amp; Technology Vulnerabilities"><meta property="og:image" content="https://cyberprephub.github.io/media/website/ChatGPT-Image-Aug-16-2026-12_12_02-AM.png"><meta property="og:image:width" content="2804"><meta property="og:image:height" content="561"><meta property="og:site_name" content="CyberPrepHub"><meta property="og:description" content="CISSP Domain 3 · Security Architecture and Engineering 3.5 Architecture &amp;amp; Technology Vulnerabilities Every architecture introduces assumptions, dependencies and trust&amp;hellip;"><meta property="og:url" content="https://cyberprephub.github.io/35-architecture-and-technology-vulnerabilities/"><meta property="og:type" content="article"><link rel="stylesheet" href="https://cyberprephub.github.io/assets/css/fontawesome-all.min.css?v&#x3D;85514f933f9e0b82460af63f1a403fa5"><link rel="stylesheet" href="https://cyberprephub.github.io/assets/css/style.css?v&#x3D;b6313075409cf9af2fc486684c9a77bc"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://cyberprephub.github.io/35-architecture-and-technology-vulnerabilities/"},"headline":"3.5 Architecture & Technology Vulnerabilities","datePublished":"2026-08-16T15:16+01:00","dateModified":"2026-08-16T15:33+01:00","image":{"@type":"ImageObject","url":"https://cyberprephub.github.io/media/website/ChatGPT-Image-Aug-16-2026-12_12_02-AM.png","height":561,"width":2804},"description":"CISSP Domain 3 · Security Architecture and Engineering 3.5 Architecture &amp; Technology Vulnerabilities Every architecture introduces assumptions, dependencies and trust&hellip;","author":{"@type":"Person","name":"Mateusz","url":"https://cyberprephub.github.io/authors/mateusz/"},"publisher":{"@type":"Organization","name":"Mateusz","logo":{"@type":"ImageObject","url":"https://cyberprephub.github.io/media/website/ChatGPT-Image-Aug-16-2026-12_12_02-AM.png","height":561,"width":2804}}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript><meta name="google-adsense-account" content="ca-pub-5833088653079961"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5833088653079961" crossorigin="anonymous"></script></head><body class="is-preload page-template"><div id="wrapper"><div id="main"><div class="inner"><header id="header"><a class="logo logo-image" href="https://cyberprephub.github.io/"><img src="https://cyberprephub.github.io/media/website/ChatGPT-Image-Aug-16-2026-12_12_02-AM.png" alt="CyberPrepHub" width="2804" height="561"></a><ul class="icons"><li><a href="https://www.linkedin.com/in/mateusz-o-1a580a28/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li></ul></header><article class="post"><header class="main post__header"><h1>3.5 Architecture &amp; Technology Vulnerabilities</h1></header><div class="post__inner post__entry"><div><div class="cph-article"><section class="cph-hero-box"><span class="cph-eyebrow">CISSP Domain 3 · Security Architecture and Engineering</span><h2>3.5 Architecture &amp; Technology Vulnerabilities</h2><p>Every architecture introduces assumptions, dependencies and trust boundaries.</p><p>Security architects must understand how different technologies can fail, how those failures affect the wider system and which controls can reduce the resulting risk.</p><div class="cph-cia-grid"><div class="cph-cia-card"><div class="cph-icon">🔍</div><h3>Understand</h3><p>Identify components, dependencies, interfaces and trust boundaries.</p><strong>KNOW THE ARCHITECTURE</strong></div><div class="cph-cia-card"><div class="cph-icon">⚠️</div><h3>Assess</h3><p>Determine how the architecture could be compromised or fail.</p><strong>KNOW THE WEAKNESS</strong></div><div class="cph-cia-card"><div class="cph-icon">🛡️</div><h3>Mitigate</h3><p>Apply controls that reduce likelihood, impact and blast radius.</p><strong>REDUCE THE RISK</strong></div></div></section><section class="cph-section"><h2>The Big Idea</h2><p>A technology is not secure or insecure simply because of its name.</p><p>Security depends on:</p><section class="cph-dad"><div class="cph-dad-row"><span>🏗️ Architecture</span> <span>→</span> <strong>How is the system designed?</strong></div><div class="cph-dad-row"><span>⚙️ Configuration</span> <span>→</span> <strong>How has it been implemented?</strong></div><div class="cph-dad-row"><span>🔑 Access</span> <span>→</span> <strong>Who and what can interact with it?</strong></div><div class="cph-dad-row"><span>➡️ Interfaces</span> <span>→</span> <strong>Where does information cross boundaries?</strong></div><div class="cph-dad-row"><span>🔗 Dependencies</span> <span>→</span> <strong>What else must remain trustworthy?</strong></div><div class="cph-dad-row"><span>💥 Failure</span> <span>→</span> <strong>What happens when a component is compromised?</strong></div></section><div class="cph-memory"><h2>Architecture Assessment Memory Aid</h2><div><strong>COMPONENTS</strong> <span>What exists?</span></div><div><strong>BOUNDARIES</strong> <span>Where does trust change?</span></div><div><strong>INTERFACES</strong> <span>How do components communicate?</span></div><div><strong>DEPENDENCIES</strong> <span>What does the system rely on?</span></div><div><strong>FAILURE</strong> <span>What happens if one component is compromised?</span></div><p class="cph-memory-short"><strong>Components · Boundaries · Interfaces · Dependencies · Failure</strong></p></div></section><section class="cph-exam-box"><span class="cph-eyebrow">CISSP 3.5 Scope</span><h2>Architectures You Need to Understand</h2><div class="cph-control-grid"><div><strong>Client-Based Systems</strong><p>Endpoints, browsers, applications and user devices.</p></div><div><strong>Server-Based Systems</strong><p>Shared services and central processing infrastructure.</p></div><div><strong>Database Systems</strong><p>Structured information and data-management platforms.</p></div><div><strong>Cryptographic Systems</strong><p>Algorithms, keys and cryptographic implementations.</p></div><div><strong>ICS / OT</strong><p>Systems controlling physical processes.</p></div><div><strong>Cloud Systems</strong><p>SaaS, PaaS and IaaS architectures.</p></div><div><strong>Distributed Systems</strong><p>Multiple interconnected components operating together.</p></div><div><strong>Internet of Things</strong><p>Connected physical devices and associated services.</p></div><div><strong>Microservices &amp; APIs</strong><p>Loosely coupled services communicating through interfaces.</p></div><div><strong>Containers</strong><p>OS-level workload isolation and application packaging.</p></div><div><strong>Serverless</strong><p>Provider-managed execution triggered by events.</p></div><div><strong>Embedded Systems</strong><p>Special-purpose computing integrated into devices.</p></div><div><strong>High-Performance Computing</strong><p>Highly parallel and powerful computational environments.</p></div><div><strong>Edge Computing</strong><p>Processing positioned closer to users, devices or data sources.</p></div><div><strong>Virtualized Systems</strong><p>Multiple logical systems sharing physical resources.</p></div></div></section><section class="cph-section"><span class="cph-eyebrow">Before the Technologies</span><h2>Common Architectural Vulnerabilities</h2><p>Different technologies have different attack surfaces, but many weaknesses appear repeatedly.</p><div class="cph-control-grid"><div><strong>Misconfiguration</strong><p>Secure technology can become insecure through poor configuration.</p></div><div><strong>Excessive Privilege</strong><p>Users, applications and services receive more authority than required.</p></div><div><strong>Unpatched Components</strong><p>Known vulnerabilities remain exploitable.</p></div><div><strong>Weak Interfaces</strong><p>APIs, management ports and other interfaces become attack paths.</p></div><div><strong>Implicit Trust</strong><p>Components trust each other based only on network location or architecture.</p></div><div><strong>Shared Components</strong><p>Compromise of one shared dependency affects multiple workloads.</p></div><div><strong>Single Points of Failure</strong><p>One component failure causes widespread loss of service.</p></div><div><strong>Insecure Defaults</strong><p>Systems begin operation with unnecessary exposure.</p></div><div><strong>Insufficient Logging</strong><p>Attacks may occur without adequate evidence for detection.</p></div><div><strong>Supply Chain Risk</strong><p>Hardware, software, libraries and services depend on external suppliers.</p></div><div><strong>Weak Cryptography</strong><p>Inappropriate algorithms, implementations or key management undermine protection.</p></div><div><strong>Complexity</strong><p>Large numbers of components and dependencies make security harder to understand and maintain.</p></div></div><div class="cph-callout"><strong>Complexity is itself a security consideration</strong><p>Every additional interface, dependency and trust relationship creates something that must be understood, configured, monitored and protected.</p></div></section><details class="cph-accordion" open><summary><span>💻</span> <span><strong>Client-Based Systems</strong> <small>The attacker is often interacting directly with the endpoint</small></span></summary><div class="cph-accordion-content"><p>Client systems include user workstations, laptops, browsers, mobile devices and locally installed applications.</p><p>They frequently process sensitive information while operating in environments the organisation cannot completely control.</p><h3>Typical Vulnerabilities</h3><div class="cph-control-grid"><div><strong>Malware</strong><p>Malicious code may execute with the user's privileges.</p></div><div><strong>Local Data Exposure</strong><p>Sensitive information may remain in files, caches, temporary storage or browser data.</p></div><div><strong>Excessive Privilege</strong><p>Users operating as local administrators increase potential impact.</p></div><div><strong>Untrusted Networks</strong><p>Mobile users may connect through networks outside organisational control.</p></div><div><strong>Physical Loss</strong><p>Laptops and mobile devices can be stolen or lost.</p></div><div><strong>Browser Attacks</strong><p>Browsers process active content from many external sources.</p></div></div><h3>Mitigations</h3><div class="cph-chip-list"><span>Endpoint Hardening</span> <span>Patch Management</span> <span>Least Privilege</span> <span>EDR</span> <span>Disk Encryption</span> <span>Application Control</span> <span>MFA</span> <span>Secure Configuration</span> <span>Device Management</span></div><div class="cph-callout"><strong>Assume the endpoint may eventually be compromised</strong><p>Architecture should limit what one compromised endpoint can access and how far an attacker can move afterwards.</p></div></div></details><details class="cph-accordion"><summary><span>🖥️</span> <span><strong>Server-Based Systems</strong> <small>Central services concentrate value and dependency</small></span></summary><div class="cph-accordion-content"><p>Servers often host applications, authentication services, databases, business processes and shared infrastructure.</p><p>This makes them attractive targets and important availability dependencies.</p><h3>Typical Vulnerabilities</h3><div class="cph-control-grid"><div><strong>Unnecessary Services</strong><p>Additional services increase attack surface.</p></div><div><strong>Missing Patches</strong><p>Vulnerable operating-system or application components remain exploitable.</p></div><div><strong>Privileged Accounts</strong><p>Server administrators often possess powerful access.</p></div><div><strong>Remote Management</strong><p>Management interfaces can become high-value attack paths.</p></div><div><strong>Single Point of Failure</strong><p>A critical service running on one server may create unnecessary dependency.</p></div><div><strong>Configuration Drift</strong><p>Production systems gradually diverge from approved secure baselines.</p></div></div><h3>Mitigations</h3><div class="cph-chip-list"><span>Hardening</span> <span>Secure Baselines</span> <span>Patch Management</span> <span>PAM</span> <span>Network Segmentation</span> <span>Monitoring</span> <span>Redundancy</span> <span>Change Control</span></div><div class="cph-memory"><h2>Server Security</h2><div><strong>MINIMISE</strong> <span>Services</span></div><div><strong>CONTROL</strong> <span>Privilege</span></div><div><strong>MAINTAIN</strong> <span>Patches and configuration</span></div><div><strong>MONITOR</strong> <span>Activity</span></div></div></div></details><details class="cph-accordion"><summary><span>🗄️</span> <span><strong>Database Systems</strong> <small>Large concentrations of valuable information</small></span></summary><div class="cph-accordion-content"><p>Databases may hold some of an organisation's most sensitive and valuable information.</p><h3>Typical Vulnerabilities</h3><div class="cph-control-grid"><div><strong>Injection</strong><p>Untrusted input may manipulate database queries.</p></div><div><strong>Excessive Database Privilege</strong><p>Applications or users receive broader rights than required.</p></div><div><strong>Direct Database Access</strong><p>Users bypass controlled application transactions.</p></div><div><strong>Unencrypted Information</strong><p>Sensitive records or backups may be exposed.</p></div><div><strong>Weak Auditability</strong><p>Sensitive queries and changes may not be sufficiently logged.</p></div><div><strong>Inference</strong><p>Users may derive sensitive information from apparently harmless authorised queries.</p></div><div><strong>Aggregation</strong><p>Multiple low-sensitivity data elements may become highly sensitive when combined.</p></div><div><strong>Backup Exposure</strong><p>Database backups can contain complete copies of protected information.</p></div></div><h3>Mitigations</h3><div class="cph-chip-list"><span>Parameterized Queries</span> <span>Least Privilege</span> <span>Encryption</span> <span>Database Activity Monitoring</span> <span>Access Controls</span> <span>Data Masking</span> <span>Segmentation</span> <span>Secure Backups</span></div><div class="cph-example"><span>Application account example</span><p>A reporting application needs only:</p><p><strong>SELECT</strong></p><p>on three reporting tables.</p><p>Giving it full database administrator rights creates unnecessary exposure.</p></div><div class="cph-memory"><h2>Database Risks</h2><div><strong>INJECTION</strong> <span>Manipulate queries</span></div><div><strong>INFERENCE</strong> <span>Derive secrets</span></div><div><strong>AGGREGATION</strong> <span>Combine data into something more sensitive</span></div></div></div></details><details class="cph-accordion"><summary><span>🔐</span> <span><strong>Cryptographic Systems</strong> <small>Strong algorithms can still be implemented badly</small></span></summary><div class="cph-accordion-content"><p>Cryptographic systems rely on algorithms, protocols, implementations and key-management processes.</p><p>Failure in any one of those areas can undermine the protection.</p><h3>Typical Vulnerabilities</h3><div class="cph-control-grid"><div><strong>Weak Algorithms</strong><p>Obsolete or inappropriate algorithms may no longer provide sufficient protection.</p></div><div><strong>Weak Keys</strong><p>Poor key length, randomness or generation reduces security.</p></div><div><strong>Poor Key Storage</strong><p>Keys stored beside encrypted information may expose the entire system.</p></div><div><strong>Implementation Errors</strong><p>Secure algorithms can become vulnerable when implemented incorrectly.</p></div><div><strong>Side Channels</strong><p>Timing, power, cache or electromagnetic behaviour may reveal useful information.</p></div><div><strong>Protocol Weaknesses</strong><p>Secure cryptographic primitives can be combined into an insecure protocol.</p></div></div><div class="cph-callout"><strong>Do not confuse encryption with key management</strong><p>A strong cipher does not protect information if an attacker can simply obtain the decryption key.</p></div><p>Cryptographic architecture is covered in much greater depth in:</p><p><strong>3.6 Cryptographic Solutions &amp; PKI</strong></p></div></details><details class="cph-accordion" open><summary><span>🏭</span> <span><strong>Industrial Control Systems - ICS / OT</strong> <small>Cybersecurity can affect physical processes and human safety</small></span></summary><div class="cph-accordion-content"><p>Industrial Control Systems and Operational Technology monitor or control physical processes.</p><p>Examples include:</p><div class="cph-chip-list"><span>SCADA</span> <span>PLC</span> <span>DCS</span> <span>Manufacturing</span> <span>Power</span> <span>Water</span> <span>Building Automation</span> <span>Transport</span></div><div class="cph-callout"><strong>ICS security has a physical consequence</strong><p>A compromised business application may expose information.</p><p>A compromised industrial controller may alter a physical process.</p></div><h3>Important Priorities</h3><section class="cph-dad"><div class="cph-dad-row"><span>👷 Safety</span> <span>→</span> <strong>Protect people and physical processes</strong></div><div class="cph-dad-row"><span>⚡ Availability</span> <span>→</span> <strong>Operations may need continuous service</strong></div><div class="cph-dad-row"><span>✅ Integrity</span> <span>→</span> <strong>Commands and sensor information must remain trustworthy</strong></div><div class="cph-dad-row"><span>🔒 Confidentiality</span> <span>→</span> <strong>Still important, but not always the highest operational concern</strong></div></section><h3>Typical Vulnerabilities</h3><div class="cph-control-grid"><div><strong>Legacy Technology</strong><p>Systems may remain operational for many years.</p></div><div><strong>Difficult Patching</strong><p>Updating systems may require production shutdowns or extensive safety testing.</p></div><div><strong>Insecure Protocols</strong><p>Older industrial protocols may lack modern authentication or encryption.</p></div><div><strong>IT / OT Connectivity</strong><p>Connections between corporate and operational networks create attack paths.</p></div><div><strong>Physical Access</strong><p>Field devices may be physically distributed and difficult to protect.</p></div><div><strong>Safety Constraints</strong><p>Security controls cannot be introduced without considering their effect on safe operation.</p></div></div><h3>Mitigations</h3><div class="cph-chip-list"><span>Network Segmentation</span> <span>Strict Remote Access</span> <span>Asset Inventory</span> <span>Application Allowlisting</span> <span>Monitoring</span> <span>Compensating Controls</span> <span>Controlled Change</span> <span>Physical Security</span></div><div class="cph-mistake"><strong>Common CISSP trap</strong><p>Do not apply an IT security control to an industrial system without considering operational and safety consequences.</p></div><div class="cph-memory"><h2>ICS / OT</h2><div><strong>SAFETY</strong> <span>People and process</span></div><div><strong>AVAILABILITY</strong> <span>Keep operations running</span></div><div><strong>INTEGRITY</strong> <span>Trust commands and measurements</span></div><p class="cph-memory-short"><strong>Cyber compromise can become physical impact.</strong></p></div></div></details><details class="cph-accordion" open><summary><span>☁️</span> <span><strong>Cloud-Based Systems</strong> <small>SaaS · PaaS · IaaS and shared responsibility</small></span></summary><div class="cph-accordion-content"><p>Cloud computing changes where infrastructure runs, how resources are provisioned and which party is responsible for particular security activities.</p><h3>Service Models</h3><div class="cph-table-wrap"><table class="cph-table"><thead><tr><th>Model</th><th>Customer generally manages more of...</th><th>Provider generally manages more of...</th></tr></thead><tbody><tr><td><strong>IaaS</strong></td><td>Operating systems, applications, identities, data and many configurations.</td><td>Physical infrastructure and virtualisation platform.</td></tr><tr><td><strong>PaaS</strong></td><td>Applications, application configuration, identities and data.</td><td>More of the operating platform and underlying infrastructure.</td></tr><tr><td><strong>SaaS</strong></td><td>Users, access, data, tenant configuration and appropriate use.</td><td>Application platform and underlying infrastructure.</td></tr></tbody></table></div><h3>Typical Vulnerabilities</h3><div class="cph-control-grid"><div><strong>Misconfiguration</strong><p>Public storage, permissive network rules or insecure tenant settings expose resources.</p></div><div><strong>Identity Compromise</strong><p>Powerful cloud identities can control large numbers of resources.</p></div><div><strong>Exposed APIs</strong><p>Cloud environments are heavily managed through APIs.</p></div><div><strong>Shared Infrastructure</strong><p>Multi-tenancy creates dependence on provider isolation controls.</p></div><div><strong>Data Location</strong><p>Replication and geographic distribution can create legal and governance concerns.</p></div><div><strong>Visibility Gaps</strong><p>Customers may not have the same low-level visibility available on-premises.</p></div><div><strong>Provider Dependency</strong><p>Outages or supplier problems can affect many customer services.</p></div><div><strong>Shadow Cloud</strong><p>Business units may use cloud services outside approved governance.</p></div></div><h3>Mitigations</h3><div class="cph-chip-list"><span>Strong IAM</span> <span>Least Privilege</span> <span>MFA</span> <span>Secure Configuration</span> <span>Cloud Logging</span> <span>Encryption</span> <span>CSPM</span> <span>Segmentation</span> <span>Supplier Assurance</span> <span>Resilience Planning</span></div><div class="cph-callout"><strong>Cloud changes responsibility - it does not remove responsibility</strong><p>The exact boundary differs between SaaS, PaaS and IaaS, but the customer still retains security responsibilities.</p></div><div class="cph-memory"><h2>Cloud Memory Aid</h2><div><strong>IaaS</strong> <span>Customer manages MORE</span></div><div><strong>PaaS</strong> <span>Provider manages MORE</span></div><div><strong>SaaS</strong> <span>Provider manages MOST of the technology stack</span></div><p class="cph-memory-short"><strong>Provider responsibility grows - customer responsibility never becomes zero.</strong></p></div></div></details><details class="cph-accordion"><summary><span>🌐</span> <span><strong>Distributed Systems</strong> <small>Many components must behave securely as one system</small></span></summary><div class="cph-accordion-content"><p>Distributed systems divide processing or data across multiple systems that communicate through networks.</p><p>This can improve scalability and resilience, but also increases coordination and trust complexity.</p><h3>Typical Vulnerabilities</h3><div class="cph-control-grid"><div><strong>Network Dependency</strong><p>Components rely on network communication and availability.</p></div><div><strong>Authentication Between Nodes</strong><p>Systems must know which other components are legitimate.</p></div><div><strong>Consistency Problems</strong><p>Multiple copies of information may temporarily disagree.</p></div><div><strong>Partial Failure</strong><p>One component may fail while the rest of the system continues.</p></div><div><strong>Complex Trust Relationships</strong><p>Compromise of one trusted node may affect others.</p></div><div><strong>Distributed Logging</strong><p>Events must be correlated across many systems.</p></div></div><h3>Mitigations</h3><div class="cph-chip-list"><span>Mutual Authentication</span> <span>Encryption</span> <span>Redundancy</span> <span>Consensus Controls</span> <span>Time Synchronisation</span> <span>Centralised Monitoring</span> <span>Resilient Design</span> <span>Least Trust</span></div><div class="cph-callout"><strong>Partial failure is a key distributed-system concept</strong><p>A distributed application must handle situations where some components remain available while others fail or become unreachable.</p></div></div></details><details class="cph-accordion"><summary><span>📡</span> <span><strong>Internet of Things - IoT</strong> <small>Large numbers of connected devices with physical presence</small></span></summary><div class="cph-accordion-content"><p>IoT systems combine connected devices, sensors, software, networks and cloud or backend services.</p><h3>Typical Vulnerabilities</h3><div class="cph-control-grid"><div><strong>Default Credentials</strong><p>Devices may ship with weak or shared credentials.</p></div><div><strong>Poor Update Capability</strong><p>Devices may be difficult or impossible to patch securely.</p></div><div><strong>Long Lifecycles</strong><p>Devices may remain deployed longer than their software support.</p></div><div><strong>Physical Exposure</strong><p>Devices may be placed in homes, factories or public locations.</p></div><div><strong>Limited Resources</strong><p>Small devices may have limited processing, storage or security capabilities.</p></div><div><strong>Privacy</strong><p>Sensors may collect significant behavioural or environmental data.</p></div><div><strong>Large Scale</strong><p>Thousands or millions of devices can create large attack surfaces.</p></div><div><strong>Supply Chain</strong><p>Devices can depend on firmware and components from many suppliers.</p></div></div><h3>Mitigations</h3><div class="cph-chip-list"><span>Unique Credentials</span> <span>Secure Updates</span> <span>Device Identity</span> <span>Inventory</span> <span>Segmentation</span> <span>Encryption</span> <span>Lifecycle Planning</span> <span>Minimal Data Collection</span></div><div class="cph-example"><span>IoT botnet scenario</span><p>Thousands of internet-connected cameras use the same default administrator password.</p><p>Compromise of one pattern of device can therefore scale rapidly across a large population.</p></div><div class="cph-memory"><h2>IoT Risks</h2><div><strong>MANY</strong> <span>Devices</span></div><div><strong>SMALL</strong> <span>Security capabilities</span></div><div><strong>LONG</strong> <span>Lifecycles</span></div><div><strong>PHYSICAL</strong> <span>Exposure</span></div></div></div></details><details class="cph-accordion" open><summary><span>🧩</span> <span><strong>Microservices &amp; APIs</strong> <small>Many small services create many trust relationships</small></span></summary><div class="cph-accordion-content"><p>Microservices divide an application into smaller independently deployable services.</p><p>Those services commonly communicate through APIs.</p><section class="cph-dad"><div class="cph-dad-row"><span>User</span> <span>→</span> <strong>API Gateway</strong></div><div class="cph-dad-row"><span>API Gateway</span> <span>→</span> <strong>Customer Service</strong></div><div class="cph-dad-row"><span>Customer Service</span> <span>→</span> <strong>Payment Service</strong></div><div class="cph-dad-row"><span>Payment Service</span> <span>→</span> <strong>Database Service</strong></div></section><div class="cph-callout"><strong>Every arrow is a trust boundary to think about</strong><p>The architecture must determine how services authenticate, authorise, communicate and fail.</p></div><h3>Typical Vulnerabilities</h3><div class="cph-control-grid"><div><strong>Broken API Authorization</strong><p>A caller accesses resources or functions they should not be able to use.</p></div><div><strong>Service Impersonation</strong><p>One malicious service pretends to be another.</p></div><div><strong>API Exposure</strong><p>Every new API endpoint may expand the attack surface.</p></div><div><strong>Service Discovery Abuse</strong><p>Attackers manipulate or misuse mechanisms used to locate services.</p></div><div><strong>Dependency Complexity</strong><p>Large numbers of services create complex relationships.</p></div><div><strong>Cascading Failure</strong><p>Failure of one service can overload or break dependent services.</p></div><div><strong>Secrets Exposure</strong><p>API keys, tokens and service credentials require careful protection.</p></div><div><strong>Observability Gaps</strong><p>Transactions span multiple services and can be difficult to trace.</p></div></div><h3>Mitigations</h3><div class="cph-chip-list"><span>API Gateway</span> <span>Strong Authorization</span> <span>Mutual Authentication</span> <span>mTLS</span> <span>Rate Limiting</span> <span>Service Mesh</span> <span>Secrets Management</span> <span>Distributed Tracing</span> <span>Circuit Breakers</span> <span>Monitoring</span></div><div class="cph-memory"><h2>Microservices</h2><div><strong>MORE SERVICES</strong> <span>More identities</span></div><div><strong>MORE APIs</strong> <span>More interfaces</span></div><div><strong>MORE DEPENDENCIES</strong> <span>More failure paths</span></div><p class="cph-memory-short"><strong>Small services do not mean a small attack surface.</strong></p></div></div></details><details class="cph-accordion" open><summary><span>📦</span> <span><strong>Containerization</strong> <small>Lightweight isolation with a shared host kernel</small></span></summary><div class="cph-accordion-content"><p>Containers package an application and its dependencies while relying on operating-system isolation mechanisms.</p><p>Unlike traditional virtual machines, containers commonly share the host operating-system kernel.</p><section class="cph-dad"><div class="cph-dad-row"><span>Container A</span> <span>↘</span> <strong>Shared Host Kernel</strong></div><div class="cph-dad-row"><span>Container B</span> <span>→</span> <strong>Shared Host Kernel</strong></div><div class="cph-dad-row"><span>Container C</span> <span>↗</span> <strong>Shared Host Kernel</strong></div></section><h3>Typical Vulnerabilities</h3><div class="cph-control-grid"><div><strong>Vulnerable Images</strong><p>Container images may contain vulnerable packages or malicious components.</p></div><div><strong>Untrusted Registries</strong><p>Images may originate from insecure or unauthorised sources.</p></div><div><strong>Excessive Privilege</strong><p>Privileged containers can weaken isolation from the host.</p></div><div><strong>Shared Kernel</strong><p>Kernel vulnerabilities can potentially affect multiple containers.</p></div><div><strong>Container Escape</strong><p>An attacker may attempt to break out of the container isolation boundary.</p></div><div><strong>Secrets in Images</strong><p>Credentials embedded in images can persist through registries and deployment pipelines.</p></div><div><strong>Orchestrator Compromise</strong><p>A container orchestration platform can control many workloads.</p></div><div><strong>Ephemeral Workloads</strong><p>Short-lived containers can make monitoring and forensic collection more difficult.</p></div></div><h3>Mitigations</h3><div class="cph-chip-list"><span>Trusted Images</span> <span>Image Scanning</span> <span>Image Signing</span> <span>Least Privilege</span> <span>Read-Only Filesystems</span> <span>Secrets Management</span> <span>Runtime Monitoring</span> <span>Host Hardening</span> <span>Network Policies</span> <span>Secure Registry</span></div><div class="cph-callout"><strong>Protect the host</strong><p>Container isolation depends heavily on the security of the underlying container runtime, host operating system and kernel.</p></div><div class="cph-memory"><h2>Containers</h2><div><strong>IMAGE</strong> <span>Can it be trusted?</span></div><div><strong>REGISTRY</strong> <span>Where did it come from?</span></div><div><strong>RUNTIME</strong> <span>What privilege does it have?</span></div><div><strong>HOST</strong> <span>Can the shared platform be trusted?</span></div></div></div></details><details class="cph-accordion"><summary><span>⚡</span> <span><strong>Serverless Architectures</strong> <small>No server management does not mean no security responsibility</small></span></summary><div class="cph-accordion-content"><p>In serverless architectures, customers deploy code or functions while the provider manages much of the underlying execution infrastructure.</p><p>Functions are commonly triggered by events such as:</p><div class="cph-chip-list"><span>HTTP Request</span> <span>File Upload</span> <span>Message Queue</span> <span>Database Event</span> <span>Schedule</span></div><h3>Typical Vulnerabilities</h3><div class="cph-control-grid"><div><strong>Over-Privileged Functions</strong><p>One small function may receive broad cloud permissions.</p></div><div><strong>Event Injection</strong><p>Untrusted event data may reach sensitive processing logic.</p></div><div><strong>Secrets Exposure</strong><p>Credentials stored in environment variables or code can be exposed.</p></div><div><strong>Dependency Risk</strong><p>Functions may rely on many third-party packages.</p></div><div><strong>Function Chaining</strong><p>Compromise of one function may affect downstream functions.</p></div><div><strong>Provider Dependency</strong><p>Customers have limited control over underlying execution infrastructure.</p></div></div><h3>Mitigations</h3><div class="cph-chip-list"><span>Least Privilege IAM</span> <span>Input Validation</span> <span>Secrets Management</span> <span>Dependency Scanning</span> <span>Logging</span> <span>Rate Limiting</span> <span>Secure Event Sources</span></div><div class="cph-mistake"><strong>Serverless ≠ server-free</strong><p>Servers still exist.</p><p>The important architectural difference is that the cloud provider manages more of the underlying platform.</p></div><div class="cph-memory"><h2>Serverless</h2><div><strong>PROVIDER</strong> <span>Manages infrastructure</span></div><div><strong>CUSTOMER</strong> <span>Still manages code, data, identities and configuration</span></div></div></div></details><details class="cph-accordion"><summary><span>🔧</span> <span><strong>Embedded Systems</strong> <small>Special-purpose computers inside larger products</small></span></summary><div class="cph-accordion-content"><p>Embedded systems are computing components integrated into larger devices or products.</p><p>Examples include:</p><div class="cph-chip-list"><span>Vehicles</span> <span>Medical Devices</span> <span>Routers</span> <span>Appliances</span> <span>Industrial Equipment</span> <span>Security Systems</span></div><h3>Typical Vulnerabilities</h3><div class="cph-control-grid"><div><strong>Hardcoded Credentials</strong><p>Credentials embedded in firmware may be difficult to change.</p></div><div><strong>Firmware Vulnerabilities</strong><p>Low-level software may remain vulnerable for long periods.</p></div><div><strong>Limited Updates</strong><p>Devices may not support secure or automatic patching.</p></div><div><strong>Debug Interfaces</strong><p>Manufacturing or diagnostic interfaces may remain accessible.</p></div><div><strong>Physical Access</strong><p>Attackers may gain direct access to hardware.</p></div><div><strong>Resource Constraints</strong><p>Limited memory and processing can restrict security functionality.</p></div></div><h3>Mitigations</h3><div class="cph-chip-list"><span>Secure Boot</span> <span>Signed Firmware</span> <span>Secure Update</span> <span>Disable Debug Interfaces</span> <span>Unique Credentials</span> <span>Hardware Roots of Trust</span> <span>Physical Protection</span></div><div class="cph-callout"><strong>Design for the entire lifecycle</strong><p>An embedded product may remain operational for many years after its original development team has moved on.</p></div></div></details><details class="cph-accordion"><summary><span>🚀</span> <span><strong>High-Performance Computing - HPC</strong> <small>Massive computational capability and complex shared infrastructure</small></span></summary><div class="cph-accordion-content"><p>High-Performance Computing systems combine large numbers of processors, nodes or accelerators to perform extremely intensive computational workloads.</p><h3>Typical Vulnerabilities</h3><div class="cph-control-grid"><div><strong>Shared Infrastructure</strong><p>Many users or research workloads may share powerful resources.</p></div><div><strong>High-Speed Interconnects</strong><p>Internal networks may prioritise performance and require specialist security approaches.</p></div><div><strong>Large Attack Surface</strong><p>Clusters can contain thousands of interconnected nodes.</p></div><div><strong>Powerful Accounts</strong><p>Administrators and schedulers may control very large amounts of compute capacity.</p></div><div><strong>Research Data</strong><p>Systems may process highly valuable scientific or proprietary information.</p></div><div><strong>Performance Trade-Offs</strong><p>Security controls must be evaluated for their effect on intensive workloads.</p></div></div><h3>Mitigations</h3><div class="cph-chip-list"><span>Strong Identity</span> <span>Workload Isolation</span> <span>Segmentation</span> <span>Secure Scheduling</span> <span>Monitoring</span> <span>Data Protection</span> <span>Privileged Access Management</span></div><div class="cph-callout"><strong>HPC creates concentration risk</strong><p>Compromise may provide access not only to valuable information but also to significant computational resources.</p></div></div></details><details class="cph-accordion"><summary><span>📍</span> <span><strong>Edge Computing</strong> <small>Move processing closer to where data is generated or consumed</small></span></summary><div class="cph-accordion-content"><p>Edge computing places processing closer to users, sensors, devices or data sources rather than relying entirely on a central data centre or cloud region.</p><section class="cph-dad"><div class="cph-dad-row"><span>Device / Sensor</span> <span>→</span> <strong>Edge Node</strong></div><div class="cph-dad-row"><span>Edge Node</span> <span>→</span> <strong>Local Processing</strong></div><div class="cph-dad-row"><span>Local Processing</span> <span>→</span> <strong>Cloud / Data Centre</strong></div></section><h3>Why Use Edge Computing?</h3><div class="cph-chip-list"><span>Lower Latency</span> <span>Reduced Bandwidth</span> <span>Local Resilience</span> <span>Real-Time Processing</span> <span>Data Locality</span></div><h3>Typical Vulnerabilities</h3><div class="cph-control-grid"><div><strong>Physical Exposure</strong><p>Edge systems may be located outside traditional secure data centres.</p></div><div><strong>Distributed Management</strong><p>Large numbers of remote nodes can be difficult to patch and configure consistently.</p></div><div><strong>Intermittent Connectivity</strong><p>Systems may need to remain secure even when disconnected centrally.</p></div><div><strong>Local Data</strong><p>Sensitive information may be stored or processed outside the core environment.</p></div><div><strong>Trust of Remote Platforms</strong><p>The organisation may need confidence that remote hardware has not been tampered with.</p></div><div><strong>Expanded Attack Surface</strong><p>Processing is distributed across many locations rather than one central environment.</p></div></div><h3>Mitigations</h3><div class="cph-chip-list"><span>Hardware Roots of Trust</span> <span>Secure Boot</span> <span>Encryption</span> <span>Central Management</span> <span>Remote Attestation</span> <span>Physical Security</span> <span>Zero Trust</span> <span>Resilient Local Operation</span></div><div class="cph-memory"><h2>Edge Computing</h2><div><strong>CLOSER</strong> <span>to the data</span></div><div><strong>FASTER</strong> <span>processing</span></div><div><strong>MORE DISTRIBUTED</strong> <span>attack surface</span></div></div></div></details><details class="cph-accordion" open><summary><span>🖥️</span> <span><strong>Virtualized Systems</strong> <small>Many logical machines share physical infrastructure</small></span></summary><div class="cph-accordion-content"><p>Virtualisation allows multiple virtual machines to run on shared physical hardware.</p><section class="cph-dad"><div class="cph-dad-row"><span>VM 1</span> <span>↘</span> <strong>Hypervisor</strong></div><div class="cph-dad-row"><span>VM 2</span> <span>→</span> <strong>Hypervisor</strong></div><div class="cph-dad-row"><span>VM 3</span> <span>↗</span> <strong>Hypervisor</strong></div><div class="cph-dad-row"><span>Hypervisor</span> <span>→</span> <strong>Physical Hardware</strong></div></section><h3>Typical Vulnerabilities</h3><div class="cph-control-grid"><div><strong>Hypervisor Compromise</strong><p>A compromised hypervisor may undermine isolation between multiple guest systems.</p></div><div><strong>VM Escape</strong><p>An attacker attempts to move from a guest VM into the hypervisor or host.</p></div><div><strong>VM Sprawl</strong><p>Virtual machines can be created rapidly and become difficult to inventory and maintain.</p></div><div><strong>Snapshots</strong><p>Snapshots may contain sensitive memory, data and credentials.</p></div><div><strong>Resource Exhaustion</strong><p>One workload may consume shared CPU, memory, storage or network resources.</p></div><div><strong>Virtual Network Visibility</strong><p>Traffic between VMs on the same host may not traverse traditional physical network controls.</p></div><div><strong>Management Plane</strong><p>Virtualisation management platforms control large parts of the environment.</p></div><div><strong>Shared Hardware</strong><p>Multiple trust domains may share underlying physical resources.</p></div></div><h3>Mitigations</h3><div class="cph-chip-list"><span>Hypervisor Hardening</span> <span>Patch Management</span> <span>Management Isolation</span> <span>Least Privilege</span> <span>Virtual Firewalls</span> <span>Inventory</span> <span>Secure Snapshots</span> <span>Monitoring</span></div><div class="cph-callout"><strong>The hypervisor becomes part of the security boundary</strong><p>If multiple sensitive workloads rely on its isolation, its trustworthiness becomes critical.</p></div><div class="cph-memory"><h2>Virtualisation</h2><div><strong>VM</strong> <span>Guest</span></div><div><strong>HYPERVISOR</strong> <span>Isolation boundary</span></div><div><strong>HOST</strong> <span>Shared platform</span></div><p class="cph-memory-short"><strong>Compromise the boundary → threaten the guests.</strong></p></div></div></details><section class="cph-exam-box"><span class="cph-eyebrow">Important Comparison</span><h2>Virtual Machines vs Containers</h2><div class="cph-table-wrap"><table class="cph-table"><thead><tr><th></th><th>Virtual Machine</th><th>Container</th></tr></thead><tbody><tr><td><strong>Isolation layer</strong></td><td>Hypervisor</td><td>Operating-system / container runtime</td></tr><tr><td><strong>Operating system</strong></td><td>Each VM generally runs its own guest OS.</td><td>Containers commonly share the host kernel.</td></tr><tr><td><strong>Typical size</strong></td><td>Heavier</td><td>Lighter</td></tr><tr><td><strong>Key security dependency</strong></td><td>Hypervisor</td><td>Host kernel and container runtime</td></tr><tr><td><strong>Typical vulnerability concept</strong></td><td>VM escape</td><td>Container escape</td></tr></tbody></table></div><div class="cph-memory"><h2>VM vs Container</h2><div><strong>VM</strong> <span>Shares hardware through a hypervisor</span></div><div><strong>CONTAINER</strong> <span>Commonly shares the OS kernel</span></div><p class="cph-memory-short"><strong>VM boundary = Hypervisor · Container boundary = OS / Runtime</strong></p></div></section><section class="cph-section"><h2>Find the Trust Boundaries</h2><p>Many architecture questions become easier when you identify where trust changes.</p><section class="cph-dad"><div class="cph-dad-row"><span>Internet</span> <span>→</span> <strong>Web Application</strong></div><div class="cph-dad-row"><span>Web Application</span> <span>→</span> <strong>Internal API</strong></div><div class="cph-dad-row"><span>Internal API</span> <span>→</span> <strong>Database</strong></div><div class="cph-dad-row"><span>Corporate IT</span> <span>→</span> <strong>OT Network</strong></div><div class="cph-dad-row"><span>Customer Tenant</span> <span>→</span> <strong>Cloud Provider Infrastructure</strong></div><div class="cph-dad-row"><span>Container</span> <span>→</span> <strong>Host Kernel</strong></div></section><div class="cph-callout"><strong>At every boundary ask:</strong><p>Who authenticates whom?</p><p>What information crosses the boundary?</p><p>Is communication protected?</p><p>What happens if one side is compromised?</p></div></section><section class="cph-section"><h2>Concentration &amp; Shared Dependency Risk</h2><p>Modern architectures gain efficiency by sharing components.</p><p>Shared components can also concentrate risk.</p><div class="cph-table-wrap"><table class="cph-table"><thead><tr><th>Shared Component</th><th>Potential Impact if Compromised</th></tr></thead><tbody><tr><td>Identity Provider</td><td>Access to many applications</td></tr><tr><td>Hypervisor</td><td>Multiple virtual machines</td></tr><tr><td>Container Orchestrator</td><td>Large numbers of workloads</td></tr><tr><td>API Gateway</td><td>Many application services</td></tr><tr><td>Cloud Provider</td><td>Multiple customer workloads</td></tr><tr><td>Shared Database</td><td>Multiple applications and datasets</td></tr><tr><td>Software Library</td><td>Every application using the component</td></tr></tbody></table></div><div class="cph-memory"><h2>Concentration Risk</h2><div><strong>SHARED MORE</strong> <span>Greater efficiency</span></div><div><strong>SHARED MORE</strong> <span>Potentially greater blast radius</span></div></div></section><section class="cph-scenario"><span class="cph-eyebrow">Practical Architecture Scenario</span><h2>A Modern Banking Platform</h2><p>Consider a modern banking application using multiple architectural technologies.</p><section class="cph-dad"><div class="cph-dad-row"><span>📱 Mobile Client</span> <span>→</span> <strong>Public API</strong></div><div class="cph-dad-row"><span>🌐 Public API</span> <span>→</span> <strong>API Gateway</strong></div><div class="cph-dad-row"><span>🧩 API Gateway</span> <span>→</span> <strong>Microservices</strong></div><div class="cph-dad-row"><span>📦 Microservices</span> <span>→</span> <strong>Containers</strong></div><div class="cph-dad-row"><span>☁️ Containers</span> <span>→</span> <strong>Cloud Platform</strong></div><div class="cph-dad-row"><span>🗄️ Services</span> <span>→</span> <strong>Database</strong></div></section><h3>Potential Vulnerabilities</h3><div class="cph-control-grid"><div><strong>Mobile Client</strong><p>Stolen credentials, insecure local storage or compromised device.</p></div><div><strong>API</strong><p>Broken authentication or authorisation.</p></div><div><strong>Microservices</strong><p>Excessive service trust and exposed service credentials.</p></div><div><strong>Containers</strong><p>Vulnerable image or excessive runtime privilege.</p></div><div><strong>Cloud</strong><p>Misconfiguration or overly broad cloud identity.</p></div><div><strong>Database</strong><p>Excessive application privileges or exposed sensitive information.</p></div></div><div class="cph-callout"><strong>The system is only as trustworthy as its architecture</strong><p>Security must consider the entire transaction path rather than examining each component in isolation.</p></div></section><details class="cph-accordion"><summary><span>🎓</span> <span><strong>CISSP Scenarios</strong> <small>Recognise the architectural vulnerability</small></span></summary><div class="cph-accordion-content"><div class="cph-question-box"><strong>Scenario 1</strong><p>Employees have local administrator access on all corporate laptops, and malware executes using those privileges.</p><p><strong>Primary architectural issue?</strong></p><p><strong>Excessive privilege on client systems.</strong></p></div><div class="cph-question-box"><strong>Scenario 2</strong><p>An application connects to a database using full administrator privileges even though it performs only several predefined queries.</p><p><strong>Best mitigation?</strong></p><p><strong>Apply least privilege to the application database identity.</strong></p></div><div class="cph-question-box"><strong>Scenario 3</strong><p>A strong encryption algorithm protects backups, but the encryption key is stored in plaintext beside them.</p><p><strong>Primary weakness?</strong></p><p><strong>Key management.</strong></p></div><div class="cph-question-box"><strong>Scenario 4</strong><p>An industrial control system cannot be patched without shutting down a safety-critical manufacturing process.</p><p><strong>Best approach?</strong></p><p><strong>Assess operational risk and use appropriate compensating controls until safe remediation is possible.</strong></p></div><div class="cph-question-box"><strong>Scenario 5</strong><p>A cloud storage service containing sensitive information is accidentally configured for public access.</p><p><strong>Primary weakness?</strong></p><p><strong>Cloud misconfiguration.</strong></p></div><div class="cph-question-box"><strong>Scenario 6</strong><p>One service in a distributed system fails while every other service continues operating.</p><p><strong>What architectural condition must be handled?</strong></p><p><strong>Partial failure.</strong></p></div><div class="cph-question-box"><strong>Scenario 7</strong><p>Ten thousand internet-connected cameras share the same default administrator password.</p><p><strong>Primary IoT weakness?</strong></p><p><strong>Shared or default credentials at scale.</strong></p></div><div class="cph-question-box"><strong>Scenario 8</strong><p>Microservice A assumes every request from the internal network comes from a trusted service and performs no service authentication.</p><p><strong>Primary architectural weakness?</strong></p><p><strong>Implicit trust between services.</strong></p></div><div class="cph-question-box"><strong>Scenario 9</strong><p>A container runs with extensive host privileges and an attacker exploits it.</p><p><strong>What security principle should have reduced the risk?</strong></p><p><strong>Least privilege and container isolation.</strong></p></div><div class="cph-question-box"><strong>Scenario 10</strong><p>A cloud function has administrator rights over the entire cloud account even though it only needs to read one storage object.</p><p><strong>Primary serverless weakness?</strong></p><p><strong>Over-privileged function identity.</strong></p></div><div class="cph-question-box"><strong>Scenario 11</strong><p>An embedded medical device contains a diagnostic interface that remains enabled after manufacturing.</p><p><strong>Primary concern?</strong></p><p><strong>An unnecessary hardware or debug interface expands the attack surface.</strong></p></div><div class="cph-question-box"><strong>Scenario 12</strong><p>A remote edge node is installed in an unattended roadside cabinet.</p><p><strong>Which risk becomes especially important?</strong></p><p><strong>Physical access and tampering.</strong></p></div><div class="cph-question-box"><strong>Scenario 13</strong><p>An attacker compromises the virtualisation layer supporting ten security-sensitive virtual machines.</p><p><strong>Why is this particularly serious?</strong></p><p><strong>The hypervisor is a shared security boundary and compromise may affect multiple guests.</strong></p></div><div class="cph-question-box"><strong>Scenario 14</strong><p>Hundreds of unused virtual machines remain running because teams can create them but there is no lifecycle or inventory process.</p><p><strong>What is this commonly called?</strong></p><p><strong>VM sprawl.</strong></p></div><div class="cph-question-box"><strong>Scenario 15</strong><p>An HPC administrator account controls a large cluster containing highly sensitive research.</p><p><strong>What architecture principle is especially important?</strong></p><p><strong>Privileged access management and least privilege.</strong></p></div></div></details><section class="cph-exam-box"><span class="cph-eyebrow">CISSP Exam Perspective</span><h2>Recognise the Architecture from the Clue</h2><div class="cph-exam-grid"><div><h3>Lost Laptop</h3><p>Endpoint malware, local storage, local admin.</p><strong>Client-Based</strong></div><div><h3>Central Shared Service</h3><p>Hardening, patching, service availability.</p><strong>Server-Based</strong></div><div><h3>Injection / Inference</h3><p>Structured data and application queries.</p><strong>Database</strong></div><div><h3>Keys / Algorithms</h3><p>Implementation and key-management weaknesses.</p><strong>Cryptographic System</strong></div><div><h3>Safety / Physical Process</h3><p>Legacy technology and availability.</p><strong>ICS / OT</strong></div><div><h3>Shared Responsibility</h3><p>SaaS, PaaS, IaaS and misconfiguration.</p><strong>Cloud</strong></div><div><h3>Partial Failure</h3><p>Multiple networked components.</p><strong>Distributed System</strong></div><div><h3>Many Small Devices</h3><p>Weak updates, default credentials and physical exposure.</p><strong>IoT</strong></div><div><h3>Many APIs</h3><p>Service identity and service-to-service trust.</p><strong>Microservices</strong></div><div><h3>Images / Shared Kernel</h3><p>Registry, runtime and container escape.</p><strong>Containers</strong></div><div><h3>Functions / Events</h3><p>Provider-managed execution and function IAM.</p><strong>Serverless</strong></div><div><h3>Firmware / Hardware</h3><p>Special-purpose device with long lifecycle.</p><strong>Embedded System</strong></div><div><h3>Massive Compute</h3><p>Clusters, schedulers and powerful shared infrastructure.</p><strong>HPC</strong></div><div><h3>Processing Near Device</h3><p>Distributed physical nodes and local processing.</p><strong>Edge Computing</strong></div><div><h3>Hypervisor / VM Escape</h3><p>Multiple guests sharing hardware.</p><strong>Virtualisation</strong></div></div></section><details class="cph-accordion"><summary><span>⚠️</span> <span><strong>Common CISSP Mistakes</strong> <small>Architecture questions are about trade-offs and boundaries</small></span></summary><div class="cph-accordion-content"><div class="cph-mistake"><strong>Cloud ≠ automatically secure</strong><p>Cloud providers can provide strong security capabilities while the customer can still create insecure configurations.</p></div><div class="cph-mistake"><strong>Cloud ≠ customer has no responsibility</strong><p>Responsibility changes depending on the service model but does not disappear.</p></div><div class="cph-mistake"><strong>Container ≠ Virtual Machine</strong><p>Containers commonly share the host operating-system kernel.</p><p>Virtual machines generally contain independent guest operating systems.</p></div><div class="cph-mistake"><strong>Serverless ≠ no servers</strong><p>The provider operates the server infrastructure.</p></div><div class="cph-mistake"><strong>Internal service ≠ trusted service</strong><p>Microservices should not rely solely on network location to establish trust.</p></div><div class="cph-mistake"><strong>ICS ≠ ordinary IT</strong><p>Availability and human safety can dramatically change security priorities and remediation options.</p></div><div class="cph-mistake"><strong>IoT ≠ one device</strong><p>A small weakness becomes much more significant when deployed across hundreds of thousands of identical devices.</p></div><div class="cph-mistake"><strong>Virtualisation ≠ perfect isolation</strong><p>Isolation depends on the security of the hypervisor and surrounding management infrastructure.</p></div><div class="cph-mistake"><strong>Encryption ≠ secure cryptographic system</strong><p>Algorithms, implementations, protocols and key management must all be considered.</p></div><div class="cph-mistake"><strong>More distributed ≠ automatically more resilient</strong><p>Distribution can improve resilience but also introduces additional dependencies and partial-failure scenarios.</p></div></div></details><section class="cph-section"><h2>Quick Architecture Reference</h2><div class="cph-table-wrap"><table class="cph-table"><thead><tr><th>Architecture</th><th>Think About</th></tr></thead><tbody><tr><td><strong>Client</strong></td><td>Endpoint compromise, local data, physical loss</td></tr><tr><td><strong>Server</strong></td><td>Hardening, patching, privilege, availability</td></tr><tr><td><strong>Database</strong></td><td>Injection, privilege, inference, aggregation</td></tr><tr><td><strong>Cryptographic</strong></td><td>Algorithms, implementation and key management</td></tr><tr><td><strong>ICS / OT</strong></td><td>Safety, availability, legacy systems</td></tr><tr><td><strong>Cloud</strong></td><td>Shared responsibility, IAM, configuration</td></tr><tr><td><strong>Distributed</strong></td><td>Partial failure and node trust</td></tr><tr><td><strong>IoT</strong></td><td>Scale, updateability, physical exposure</td></tr><tr><td><strong>Microservices</strong></td><td>APIs, service identities, distributed trust</td></tr><tr><td><strong>Containers</strong></td><td>Images, shared kernel, runtime</td></tr><tr><td><strong>Serverless</strong></td><td>Events, function privilege, provider platform</td></tr><tr><td><strong>Embedded</strong></td><td>Firmware, hardware and lifecycle</td></tr><tr><td><strong>HPC</strong></td><td>Scale, shared compute and powerful privileges</td></tr><tr><td><strong>Edge</strong></td><td>Remote nodes, physical security and distributed management</td></tr><tr><td><strong>Virtualisation</strong></td><td>Hypervisor, VM escape and shared hardware</td></tr></tbody></table></div></section><section class="cph-memory"><h2>Architecture Vulnerability Memory Aid</h2><div><strong>CLIENT</strong> <span>Can the endpoint be trusted?</span></div><div><strong>SERVER</strong> <span>Is the shared service hardened?</span></div><div><strong>DATABASE</strong> <span>Who can reach the data?</span></div><div><strong>CRYPTO</strong> <span>Who controls the keys?</span></div><div><strong>ICS</strong> <span>Could cyber impact become physical?</span></div><div><strong>CLOUD</strong> <span>Who is responsible?</span></div><div><strong>DISTRIBUTED</strong> <span>What happens when only part fails?</span></div><div><strong>IOT</strong> <span>Can thousands of devices be secured?</span></div><div><strong>MICROSERVICES</strong> <span>Can every service be trusted?</span></div><div><strong>CONTAINERS</strong> <span>Can the image, runtime and host be trusted?</span></div><div><strong>SERVERLESS</strong> <span>What can the function do?</span></div><div><strong>EMBEDDED</strong> <span>Can firmware remain secure for the device lifetime?</span></div><div><strong>HPC</strong> <span>Who controls the enormous compute capability?</span></div><div><strong>EDGE</strong> <span>Can remote processing remain trustworthy?</span></div><div><strong>VIRTUAL</strong> <span>Can the isolation boundary be trusted?</span></div></section><section class="cph-memory"><h2>The Architect's Five Questions</h2><div><strong>WHERE?</strong> <span>Where are the trust boundaries?</span></div><div><strong>WHO?</strong> <span>Which identities have access?</span></div><div><strong>WHAT?</strong> <span>Which information and services are exposed?</span></div><div><strong>DEPENDS?</strong> <span>Which shared components must remain trustworthy?</span></div><div><strong>WHAT IF?</strong> <span>What happens when one component is compromised?</span></div><p class="cph-memory-short"><strong>Architecture security is largely about boundaries, dependencies and blast radius.</strong></p></section><section class="cph-takeaways"><h2>Key Takeaways</h2><p>Different architectures introduce different security assumptions, dependencies and attack surfaces.</p><p><strong>Architecture assessment begins by identifying components, trust boundaries, interfaces and dependencies.</strong></p><p>Client systems are particularly exposed to malware, physical loss and untrusted environments.</p><p>Server systems concentrate services and privilege and therefore require strong hardening, patching, access control and resilience.</p><p>Database architectures require protection against excessive privilege, injection, inference, aggregation and backup exposure.</p><p>Cryptographic systems depend not only on strong algorithms but also on sound implementation, protocol design and key management.</p><p><strong>ICS and OT environments require security decisions to account for operational availability and human safety.</strong></p><p>Cloud security follows a shared-responsibility model, and customer responsibility changes rather than disappears as services move from IaaS toward PaaS and SaaS.</p><p>Distributed systems must handle node trust, communication security, consistency and partial failure.</p><p>IoT architectures combine large device populations, long lifecycles, physical exposure and sometimes limited security capabilities.</p><p>Microservice architectures create many service identities, APIs and dependencies that must be authenticated, authorised and monitored.</p><p><strong>Containers commonly share the host kernel, making image security, runtime configuration and host security particularly important.</strong></p><p>Serverless platforms remove much infrastructure administration from the customer but do not remove responsibility for code, identities, configuration and information.</p><p>Embedded systems require secure firmware, update mechanisms and lifecycle planning.</p><p>High-Performance Computing environments combine valuable information with extremely powerful shared computational resources.</p><p>Edge computing moves processing closer to devices and users but also expands the physical and distributed attack surface.</p><p>Virtualised systems rely heavily on the hypervisor as an isolation boundary between guest systems.</p><p><strong>Efficiency through shared components can create concentration risk: compromise of one common dependency may affect many systems at once.</strong></p><p>The goal is not simply to identify vulnerabilities. The security architect must understand how a weakness could affect the wider system and select controls that reduce likelihood, impact and blast radius.</p></section><details class="cph-accordion"><summary><span>📚</span> <span><strong>Sources &amp; Further Reading</strong> <small>Architecture and technology security guidance</small></span></summary><div class="cph-accordion-content"><ul class="cph-clean-list"><li><strong>ISC2 - CISSP Certification Exam Outline</strong><br><a href="https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline" target="_blank" rel="noopener">View the current CISSP Exam Outline</a></li><li><strong>NIST SP 800-82 Rev. 3 - Guide to Operational Technology Security</strong><br><a href="https://csrc.nist.gov/pubs/sp/800/82/r3/final" target="_blank" rel="noopener">View NIST OT and ICS security guidance</a></li><li><strong>NIST SP 800-190 - Application Container Security Guide</strong><br><a href="https://csrc.nist.gov/pubs/sp/800/190/final" target="_blank" rel="noopener">View NIST container security guidance</a></li><li><strong>NIST SP 800-204 - Security Strategies for Microservices-Based Application Systems</strong><br><a href="https://csrc.nist.gov/pubs/sp/800/204/final" target="_blank" rel="noopener">View NIST microservices security guidance</a></li><li><strong>NIST SP 800-204A - Building Secure Microservices-Based Applications Using Service-Mesh Architecture</strong><br><a href="https://csrc.nist.gov/pubs/sp/800/204/a/final" target="_blank" rel="noopener">View NIST service-mesh security guidance</a></li><li><strong>NIST IR 8259 Rev. 1 - Foundational Cybersecurity Activities for IoT Product Manufacturers</strong><br><a href="https://csrc.nist.gov/pubs/ir/8259/r1/final" target="_blank" rel="noopener">View current NIST IoT cybersecurity guidance</a></li><li><strong>NIST SP 800-125 - Guide to Security for Full Virtualization Technologies</strong><br><a href="https://csrc.nist.gov/pubs/sp/800/125/final" target="_blank" rel="noopener">View NIST virtualization security guidance</a></li><li><strong>NIST IR 8320 - Hardware-Enabled Security for Cloud and Edge Computing Use Cases</strong><br><a href="https://csrc.nist.gov/pubs/ir/8320/final" target="_blank" rel="noopener">View NIST cloud and edge platform security guidance</a></li><li><strong>NIST Cloud Computing Publications</strong><br><a href="https://csrc.nist.gov/Projects/Cloud-Computing/publications" target="_blank" rel="noopener">Explore NIST cloud security publications</a></li></ul></div></details></div></div></div></article></div></div><div id="sidebar"><div class="inner"><nav id="menu"><header class="major"><h2>Menu</h2></header><ul><li><a href="https://cyberprephub.github.io/" target="_self">Home</a></li><li class="has-submenu"><span aria-haspopup="true" class="opener">CISSP</span><ul class="submenu level-2" aria-hidden="true"><li class="has-submenu"><span aria-haspopup="true" class="opener">1. Security and Risk Management</span><ul class="submenu level-3" aria-hidden="true"><li><a href="https://cyberprephub.github.io/11-professional-ethics/" target="_self">1.1 Professional Ethics</a></li><li><a href="https://cyberprephub.github.io/the-cia-triad-confidentiality-integrity-and-availability-2/" target="_self">1.2 CIA Triad &amp; Security Concepts</a></li><li><a href="https://cyberprephub.github.io/13-security-governance/" target="_self">1.3 Security Governance</a></li><li><a href="https://cyberprephub.github.io/14-law-compliance-and-privacy/" target="_self">1.4 Law, Compliance &amp; Privacy</a></li><li><a href="https://cyberprephub.github.io/15-security-investigations/" target="_self">1.5 Security Investigations</a></li><li><a href="https://cyberprephub.github.io/16-security-policies-and-standards/" target="_self">1.6 Security Policies &amp; Standards</a></li><li><a href="https://cyberprephub.github.io/17-business-continuity-and-bia/" target="_self">1.7 Business Continuity &amp; BIA</a></li><li><a href="https://cyberprephub.github.io/18-personnel-security/" target="_self">1.8 Personnel Security</a></li><li><a href="https://cyberprephub.github.io/19-risk-management/" target="_self">1.9 Risk Management</a></li><li><a href="https://cyberprephub.github.io/110-threat-modeling/" target="_self">1.10 Threat Modeling</a></li><li><a href="https://cyberprephub.github.io/111-supply-chain-risk/" target="_self">1.11 Supply Chain Risk</a></li><li><a href="https://cyberprephub.github.io/112-security-awareness-and-training/" target="_self">1.12 Security Awareness &amp; Training</a></li></ul></li><li class="has-submenu"><span aria-haspopup="true" class="opener">2. Asset Security</span><ul class="submenu level-3" aria-hidden="true"><li><a href="https://cyberprephub.github.io/21-information-and-asset-classification/" target="_self">2.1 Information &amp; Asset Classification</a></li><li><a href="https://cyberprephub.github.io/22-information-and-asset-handling/" target="_self">2.2 Information &amp; Asset Handling</a></li><li><a href="https://cyberprephub.github.io/23-secure-provisioning-and-asset-management/" target="_self">2.3 Secure Provisioning &amp; Asset Management</a></li><li><a href="https://cyberprephub.github.io/24-data-lifecycle-management/" target="_self">2.4 Data Lifecycle Management</a></li><li><a href="https://cyberprephub.github.io/25-asset-retention-eol-and-eos/" target="_self">2.5 Asset Retention, EOL &amp; EOS</a></li><li><a href="https://cyberprephub.github.io/26-data-security-controls/" target="_self">2.6 Data Security Controls</a></li></ul></li><li><a href="https://cyberprephub.github.io/cissp-exam-guide/" target="_self">CISSP Exam Guide</a></li><li><a href="https://cyberprephub.github.io/mock-exams/" target="_self">CISSP Mock Exams &amp; Practice Tests</a></li></ul></li><li><a href="https://cyberprephub.github.io/cissp-exam-guide/" target="_self">CISSP Exam Guide</a></li><li class="has-submenu"><span aria-haspopup="true" class="opener">Study Tools</span><ul class="submenu level-2" aria-hidden="true"><li><a href="https://cyberprephub.github.io/abbreviations/" target="_self">Abbreviations</a></li><li><a href="https://cyberprephub.github.io/cybersecurity-glossary/" target="_self">Cybersecurity Glossary</a></li></ul></li><li><a href="https://cyberprephub.github.io/tags/blog/" target="_self">Blog</a></li><li><a href="https://cyberprephub.github.io/contact/" target="_self">Contact</a></li><li><a href="https://cyberprephub.github.io/about-me/" target="_self">About me</a></li></ul></nav><section><header class="major"><h2>Get in touch</h2></header><p>I’m always happy to connect with others working in cybersecurity, technology and security consulting.<br><br>You can connect with me on LinkedIn or send me a message directly using the CyberPrepHub contact form.<br><br><a href="https://www.linkedin.com/in/mateusz-o-1a580a28/" target="_blank" rel="noopener">Connect with me on LinkedIn</a></p><p><a href="https://cyberprephub.github.io/contact/">Send me a message</a></p></section><footer id="footer"><p class="copyright">© CyberPrepHub - All rights reserved<br><a href="https://cyberprephub.github.io/privacy-and-cookie-policy/">Privacy &amp; Cookie Policy</a> | <a href="https://cyberprephub.github.io/terms/">Terms of Use</a><br>Design by HTML5 UP, Powered by Publii</p></footer></div></div></div><script src="https://cyberprephub.github.io/assets/js/jquery.min.js?v&#x3D;7c14a783dfeb3d238ccd3edd840d82ee"></script><script src="https://cyberprephub.github.io/assets/js/browser.min.js?v&#x3D;c07298dd19048a8a69ad97e754dfe8d0"></script><script src="https://cyberprephub.github.io/assets/js/breakpoints.min.js?v&#x3D;81a479eb099e3b187613943b085923b8"></script><script src="https://cyberprephub.github.io/assets/js/util.min.js?v&#x3D;cbdaf7c20ac2883c77ae23acfbabd47e"></script><script src="https://cyberprephub.github.io/assets/js/main.min.js?v&#x3D;08add7f6d435054ad38ec38d7cf8be40"></script><script>var images=document.querySelectorAll("img[loading]");for(var i=0;i<images.length;i++){if(images[i].complete){images[i].classList.add("is-loaded")}else{images[i].addEventListener("load",function(){this.classList.add("is-loaded")},false)}};</script><script>document.addEventListener('DOMContentLoaded', function () {
+
+    const container = document.getElementById('cyberprep-abbreviations');
+    if (!container) return;
+
+    /*
+     * CYBERPREPHUB ABBREVIATION DATABASE
+     *
+     * FORMAT:
+     * ABBREVIATION|Full name|Description
+     *
+     * To add a new abbreviation later, simply add another line.
+     */
+
+    const abbreviationText = `
+AAA|Authentication, Authorization and Accounting|A framework for verifying identity, determining permitted access and recording user or system activity.
+ABAC|Attribute-Based Access Control|An access control model that makes decisions using attributes associated with users, resources and environmental conditions.
+ACL|Access Control List|A set of rules defining which users, systems or network traffic can access a resource.
+AD|Active Directory|Microsoft's directory service for managing identities, computers, groups and other resources within a Windows domain.
+AES|Advanced Encryption Standard|A widely used symmetric encryption algorithm supporting 128, 192 and 256-bit keys.
+AH|Authentication Header|An IPsec protocol that provides integrity and authentication for IP packets but does not encrypt their contents.
+ALE|Annualized Loss Expectancy|The expected financial loss from a particular risk over one year. ALE is calculated as SLE multiplied by ARO.
+API|Application Programming Interface|A defined mechanism allowing applications or systems to communicate and exchange data or functionality.
+APT|Advanced Persistent Threat|A sophisticated threat actor or campaign designed to maintain long-term access to a target environment.
+ARP|Address Resolution Protocol|A protocol used to map IPv4 addresses to MAC addresses on a local network.
+ARO|Annualized Rate of Occurrence|The estimated number of times a particular risk event is expected to occur during one year.
+ASLR|Address Space Layout Randomization|A security technique that randomises memory locations to make memory exploitation more difficult.
+AV|Asset Value|The financial or business value assigned to an asset when performing quantitative risk analysis.
+
+BCP|Business Continuity Plan|A documented plan for maintaining or restoring critical business operations during a disruption.
+BGP|Border Gateway Protocol|The routing protocol primarily used to exchange routing information between autonomous systems on the internet.
+BIA|Business Impact Analysis|An assessment used to identify critical business processes and determine the effects of their disruption.
+BYOD|Bring Your Own Device|A policy allowing users to use personally owned devices for organisational work or access.
+BYOK|Bring Your Own Key|A cloud security model in which an organisation supplies or controls the cryptographic keys used by a cloud service.
+
+C2|Command and Control|Infrastructure or communication channels used by attackers to control compromised systems or malware.
+CA|Certificate Authority|A trusted entity responsible for issuing and managing digital certificates within a Public Key Infrastructure.
+CASB|Cloud Access Security Broker|Technology positioned between users and cloud services to provide security controls, visibility and policy enforcement.
+CDE|Cardholder Data Environment|Systems, people and processes that store, process or transmit payment card information.
+CERT|Computer Emergency Response Team|A team responsible for helping organisations prepare for, detect and respond to cybersecurity incidents.
+CIA|Confidentiality, Integrity and Availability|The three fundamental security objectives collectively known as the CIA Triad.
+CIDR|Classless Inter-Domain Routing|A method of allocating IP addresses and representing network ranges using prefix notation such as /24.
+CISO|Chief Information Security Officer|The senior executive responsible for an organisation's information security programme and strategy.
+CNAPP|Cloud-Native Application Protection Platform|A platform combining multiple cloud security capabilities to protect cloud-native applications and workloads.
+COPE|Corporate-Owned, Personally Enabled|A device ownership model where an organisation owns a device but permits some personal use.
+CSP|Cloud Service Provider|A company providing cloud computing services such as infrastructure, platforms or applications.
+CSP|Content Security Policy|A browser security mechanism that restricts which sources a web page can load content or execute scripts from.
+CSPM|Cloud Security Posture Management|Technology used to identify cloud misconfigurations, policy violations and security weaknesses.
+CSRF|Cross-Site Request Forgery|An attack that causes an authenticated user's browser to perform an unintended action on a website.
+CSIRT|Computer Security Incident Response Team|A team responsible for coordinating the investigation and response to cybersecurity incidents.
+CSR|Certificate Signing Request|A request containing information and a public key that is submitted to a Certificate Authority to obtain a certificate.
+CVE|Common Vulnerabilities and Exposures|A standard system for assigning unique identifiers to publicly known cybersecurity vulnerabilities.
+CVSS|Common Vulnerability Scoring System|A framework for describing and scoring the technical severity of vulnerabilities.
+CWE|Common Weakness Enumeration|A catalogue of common software and hardware weakness types that can lead to vulnerabilities.
+CWPP|Cloud Workload Protection Platform|Technology designed to secure workloads such as virtual machines, containers and serverless applications.
+
+DAC|Discretionary Access Control|An access control model in which resource owners can determine who receives access to their resources.
+DAST|Dynamic Application Security Testing|Security testing performed against a running application to identify exploitable vulnerabilities.
+DDoS|Distributed Denial of Service|An attack using multiple systems to overwhelm a service or network and make it unavailable.
+DH|Diffie-Hellman|A cryptographic key exchange method allowing two parties to establish a shared secret over an insecure channel.
+DHCP|Dynamic Host Configuration Protocol|A network protocol that automatically provides devices with IP addresses and related network configuration.
+DKIM|DomainKeys Identified Mail|An email authentication mechanism that uses digital signatures to help verify that email has not been altered.
+DLP|Data Loss Prevention|Technologies and processes designed to prevent sensitive information from being disclosed or transferred improperly.
+DMARC|Domain-based Message Authentication, Reporting and Conformance|An email authentication policy that builds on SPF and DKIM to help prevent email spoofing.
+DMZ|Demilitarized Zone|A network segment that separates externally accessible services from an organisation's internal network.
+DNS|Domain Name System|The distributed system that translates domain names into IP addresses and other DNS records.
+DoS|Denial of Service|An attack intended to make a service, system or resource unavailable to legitimate users.
+DRP|Disaster Recovery Plan|A documented plan describing how technology and data will be restored following a serious disruption.
+
+EAP|Extensible Authentication Protocol|An authentication framework supporting multiple authentication methods, commonly used in network access technologies.
+ECC|Elliptic Curve Cryptography|Public-key cryptography based on elliptic curves that provides strong security with relatively small key sizes.
+EDR|Endpoint Detection and Response|Technology that monitors endpoints to detect, investigate and respond to suspicious activity.
+EF|Exposure Factor|The percentage of an asset's value expected to be lost if a particular risk event occurs.
+EOL|End of Life|The point at which a product or technology is no longer supported by its manufacturer or developer.
+EPP|Endpoint Protection Platform|A security platform providing preventative protection for endpoint devices against malware and other threats.
+ESP|Encapsulating Security Payload|An IPsec protocol that can provide encryption, integrity and authentication for network traffic.
+
+FDE|Full-Disk Encryption|Encryption protecting the contents of an entire storage device or disk.
+FIDO|Fast Identity Online|Authentication standards designed to reduce reliance on passwords and support strong cryptographic authentication.
+FIM|File Integrity Monitoring|A security control that detects unexpected or unauthorised changes to important files.
+FQDN|Fully Qualified Domain Name|The complete domain name identifying a specific host within the DNS hierarchy.
+FTP|File Transfer Protocol|A protocol used for transferring files that does not provide encryption by default.
+FTPS|File Transfer Protocol Secure|FTP protected using TLS to provide encrypted file transfer.
+
+GCM|Galois/Counter Mode|An authenticated encryption mode commonly used with AES to provide confidentiality and integrity.
+GDPR|General Data Protection Regulation|European legislation governing the processing and protection of personal data.
+GPO|Group Policy Object|A collection of Microsoft Active Directory configuration settings applied to users and computers.
+GRC|Governance, Risk and Compliance|An organisational approach combining governance, risk management and compliance activities.
+
+HIDS|Host-based Intrusion Detection System|An intrusion detection system that monitors activity occurring on an individual endpoint or host.
+HIPS|Host-based Intrusion Prevention System|A security system that monitors and can actively block suspicious activity on an individual host.
+HMAC|Hash-based Message Authentication Code|A mechanism combining a cryptographic hash function with a secret key to provide integrity and authentication.
+HOTP|HMAC-based One-Time Password|A one-time password algorithm based on HMAC and a counter value.
+HSM|Hardware Security Module|A specialised hardware device used to securely generate, protect and use cryptographic keys.
+HTTP|Hypertext Transfer Protocol|The application-layer protocol primarily used to transfer web content.
+HTTPS|Hypertext Transfer Protocol Secure|HTTP protected using TLS to provide encrypted and authenticated web communication.
+
+IaaS|Infrastructure as a Service|A cloud model providing virtualised computing infrastructure such as servers, networks and storage.
+IAM|Identity and Access Management|Policies, processes and technologies for managing digital identities and controlling access to resources.
+IAST|Interactive Application Security Testing|Application security testing that analyses applications while they operate during testing.
+ICMP|Internet Control Message Protocol|A network protocol used for diagnostics and error reporting, including tools such as ping.
+IDS|Intrusion Detection System|A system that monitors activity for signs of attacks or security policy violations and generates alerts.
+IdP|Identity Provider|A system that authenticates users and provides identity information to applications or service providers.
+IoA|Indicator of Attack|Evidence suggesting that malicious activity or an attack is currently occurring.
+IoC|Indicator of Compromise|Evidence such as a malicious IP address, domain or file hash that may indicate compromise.
+IoT|Internet of Things|Physical devices containing computing and networking capabilities that communicate with other systems.
+IP|Internet Protocol|The network-layer protocol responsible for addressing and routing packets across networks.
+IPS|Intrusion Prevention System|A system capable of detecting malicious network activity and automatically blocking or preventing it.
+IPsec|Internet Protocol Security|A suite of protocols used to authenticate and encrypt IP network communications.
+IR|Incident Response|The organised process for identifying, investigating, containing and recovering from cybersecurity incidents.
+ISMS|Information Security Management System|A structured system of policies, processes and controls used to manage information security risk.
+ISO|International Organization for Standardization|An international standards body responsible for standards including the ISO/IEC 27000 information security family.
+IV|Initialization Vector|A value used with some encryption algorithms to ensure identical plaintext does not always produce identical ciphertext.
+
+JWT|JSON Web Token|A compact token format commonly used to securely transmit claims between systems.
+
+KDC|Key Distribution Center|A trusted component in Kerberos responsible for issuing authentication tickets and session keys.
+KDF|Key Derivation Function|A cryptographic function used to derive secure cryptographic keys from another secret value.
+KMS|Key Management System|A system for generating, storing, distributing, rotating and managing cryptographic keys.
+
+LAN|Local Area Network|A network connecting devices within a relatively limited geographical area.
+LDAP|Lightweight Directory Access Protocol|A protocol used to access and manage information stored in directory services.
+
+MAC|Mandatory Access Control|An access control model in which access decisions are enforced centrally using security labels and classifications.
+MAC|Media Access Control|A networking mechanism and addressing system associated primarily with the data link layer.
+MAC|Message Authentication Code|A cryptographic value used to verify the integrity and authenticity of a message.
+MAM|Mobile Application Management|Technology used to manage and secure applications installed on mobile devices.
+MDR|Managed Detection and Response|A managed security service providing continuous threat monitoring, investigation and response.
+MFA|Multi-Factor Authentication|Authentication requiring evidence from two or more different authentication factor categories.
+MITM|Man-in-the-Middle|An attack where an adversary intercepts communications between two parties and may observe or alter them.
+MPLS|Multiprotocol Label Switching|A networking technique that forwards traffic using labels rather than traditional IP routing alone.
+MTBF|Mean Time Between Failures|A reliability metric representing the average operating time between system failures.
+MTD|Maximum Tolerable Downtime|The longest period a business process can remain unavailable before unacceptable consequences occur.
+MTTR|Mean Time to Repair|A metric representing the average time required to restore a failed system or service.
+
+NAC|Network Access Control|Technology used to enforce security requirements before allowing devices to connect to a network.
+NAT|Network Address Translation|A mechanism that translates one set of IP addresses into another, commonly private addresses to public addresses.
+NDR|Network Detection and Response|Technology that analyses network activity to identify and investigate suspicious behaviour.
+NIDS|Network Intrusion Detection System|An intrusion detection system that analyses network traffic for malicious activity.
+NIST|National Institute of Standards and Technology|A US organisation publishing widely used cybersecurity standards, frameworks and guidance.
+NTP|Network Time Protocol|A protocol used to synchronise clocks across networked systems.
+
+OAuth|OAuth Authorization Framework|A framework enabling applications to obtain delegated access to resources without receiving a user's password.
+OCSP|Online Certificate Status Protocol|A protocol used to determine whether a digital certificate has been revoked.
+OIDC|OpenID Connect|An identity layer built on OAuth 2.0 that enables authentication and exchange of identity information.
+OSI|Open Systems Interconnection|A seven-layer conceptual model describing how network communication functions.
+OSINT|Open-Source Intelligence|Intelligence collected and analysed from publicly available information sources.
+OTP|One-Time Password|A password or authentication code that is valid for only one authentication attempt or limited period.
+OWASP|Open Worldwide Application Security Project|A nonprofit organisation providing open resources, tools and guidance for improving application security.
+
+PaaS|Platform as a Service|A cloud model providing a managed platform on which customers can develop and run applications.
+PAM|Privileged Access Management|Processes and technologies used to secure and monitor accounts with elevated privileges.
+PAT|Port Address Translation|A type of NAT that allows multiple private hosts to share a public IP address using different ports.
+PCI DSS|Payment Card Industry Data Security Standard|A security standard establishing requirements for environments that handle payment card data.
+PFS|Perfect Forward Secrecy|A property ensuring compromise of a long-term cryptographic key does not expose previously established session keys.
+PII|Personally Identifiable Information|Information that can identify or be linked to a specific individual.
+PKI|Public Key Infrastructure|The certificates, keys, authorities, policies and processes supporting public-key cryptography.
+PoLP|Principle of Least Privilege|The principle that users and systems should receive only the minimum access required to perform their functions.
+PRNG|Pseudo-Random Number Generator|An algorithm that generates sequences of values designed to behave like random numbers.
+PSK|Pre-Shared Key|A secret cryptographic key shared between parties before secure communication begins.
+
+QoS|Quality of Service|Techniques used to prioritise and manage network traffic to meet performance requirements.
+
+RA|Registration Authority|An entity that verifies certificate applicants before a Certificate Authority issues a digital certificate.
+RADIUS|Remote Authentication Dial-In User Service|A protocol commonly used for centralised network authentication, authorization and accounting.
+RASP|Runtime Application Self-Protection|Security technology operating within an application to detect and potentially block attacks during execution.
+RBAC|Role-Based Access Control|An access control model where permissions are assigned to roles and users are assigned those roles.
+RCE|Remote Code Execution|A vulnerability or attack that allows an attacker to execute code on another system remotely.
+RPO|Recovery Point Objective|The maximum acceptable amount of data loss measured in time following a disruption.
+RSA|Rivest-Shamir-Adleman|A public-key cryptographic algorithm used for encryption, digital signatures and key-related operations.
+RTO|Recovery Time Objective|The target maximum time within which a system or business process should be restored following disruption.
+
+SaaS|Software as a Service|A cloud model where complete applications are provided and managed by a service provider.
+SAML|Security Assertion Markup Language|An XML-based standard commonly used to exchange authentication and authorization information for federated identity.
+SASE|Secure Access Service Edge|An architecture combining networking and cloud-delivered security capabilities into an integrated service.
+SAST|Static Application Security Testing|Security testing that analyses application source code or compiled code without running the application.
+SBOM|Software Bill of Materials|An inventory identifying software components and dependencies contained within an application or product.
+SCA|Software Composition Analysis|Technology used to identify open-source components, dependencies and associated vulnerabilities.
+SDLC|Software Development Life Cycle|The structured process covering planning, development, testing, deployment and maintenance of software.
+SDN|Software-Defined Networking|A networking architecture that separates network control logic from packet-forwarding infrastructure.
+SFTP|SSH File Transfer Protocol|A secure file transfer protocol operating over SSH.
+SHA|Secure Hash Algorithm|A family of cryptographic hash functions including SHA-256 and SHA-3.
+SIEM|Security Information and Event Management|A platform that collects and analyses security logs and events to support monitoring and investigation.
+SLE|Single Loss Expectancy|The expected financial loss from one occurrence of a risk event. SLE equals Asset Value multiplied by Exposure Factor.
+SOAR|Security Orchestration, Automation and Response|Technology for coordinating security tools, automating workflows and supporting incident response.
+SOC|Security Operations Centre|A team or function responsible for monitoring, detecting, investigating and responding to cybersecurity threats.
+SQLi|SQL Injection|A vulnerability where malicious SQL input can alter database queries executed by an application.
+SSH|Secure Shell|A cryptographic protocol commonly used for secure remote administration and command-line access.
+SSL|Secure Sockets Layer|A deprecated cryptographic protocol that preceded TLS and should no longer be used for secure communications.
+SSO|Single Sign-On|An authentication approach allowing a user to authenticate once and access multiple connected services.
+SSRF|Server-Side Request Forgery|A vulnerability that allows an attacker to cause a server to make unintended network requests.
+STIX|Structured Threat Information eXpression|A standardised language and format for representing and sharing cyber threat intelligence.
+
+TACACS+|Terminal Access Controller Access-Control System Plus|A protocol commonly used to provide centralised authentication, authorization and accounting for network devices.
+TCP|Transmission Control Protocol|A connection-oriented transport protocol providing reliable and ordered data delivery.
+TGT|Ticket Granting Ticket|A Kerberos ticket that allows an authenticated user to request service tickets without repeatedly providing credentials.
+TLS|Transport Layer Security|A cryptographic protocol used to protect data in transit through encryption, integrity and authentication.
+TOTP|Time-based One-Time Password|A temporary authentication code generated from a shared secret and the current time.
+TPM|Trusted Platform Module|A hardware security component used for protected cryptographic operations and secure key storage.
+TTP|Tactics, Techniques and Procedures|A description of how threat actors operate, including their strategic goals, methods and specific actions.
+
+UDP|User Datagram Protocol|A connectionless transport protocol prioritising speed and low overhead over guaranteed delivery.
+UEBA|User and Entity Behavior Analytics|Technology that analyses behavioural patterns to identify potentially suspicious user or system activity.
+UEFI|Unified Extensible Firmware Interface|Modern firmware technology used to initialise hardware and start an operating system.
+URL|Uniform Resource Locator|The address used to identify and locate a resource on a network or the web.
+
+VLAN|Virtual Local Area Network|A logical network segment allowing devices to be grouped independently of their physical network location.
+VM|Virtual Machine|A software-based computer running an operating system within a virtualised environment.
+VPN|Virtual Private Network|Technology that creates a protected network connection across another network such as the internet.
+
+WAF|Web Application Firewall|A security control that monitors and filters web traffic to protect applications from malicious requests.
+WAN|Wide Area Network|A network connecting systems across large geographical areas.
+WEP|Wired Equivalent Privacy|An obsolete and insecure wireless encryption standard that has been replaced by stronger technologies.
+WPA2|Wi-Fi Protected Access 2|A widely used wireless security standard that replaced WEP and introduced stronger cryptographic protection.
+WPA3|Wi-Fi Protected Access 3|A newer Wi-Fi security standard providing stronger authentication and protection than WPA2.
+
+X.509|X.509 Certificate Standard|A standard defining the structure and use of public-key digital certificates.
+XDR|Extended Detection and Response|Security technology combining and correlating detection data from multiple security layers.
+XML|Extensible Markup Language|A structured markup language used to represent and exchange data.
+XSS|Cross-Site Scripting|A web vulnerability allowing attacker-controlled script content to execute in another user's browser.
+
+ZTA|Zero Trust Architecture|A security architecture based on continuously evaluating access rather than implicitly trusting users or systems.
+ZTNA|Zero Trust Network Access|Technology providing application access according to Zero Trust principles rather than broad network-level access.
+    `;
+
+
+    /*
+     * CONVERT DATABASE INTO JAVASCRIPT OBJECTS
+     *
+     * Blank lines are deliberately ignored.
+     * Malformed lines are also ignored so that one typo does not
+     * break the entire dictionary.
+     */
+
+    const abbreviations = abbreviationText
+        .trim()
+        .split('\n')
+        .map(function(line) {
+            return line.trim();
+        })
+        .filter(function(line) {
+            return line.length > 0;
+        })
+        .map(function(line) {
+
+            const parts = line.split('|');
+
+            if (parts.length < 3) {
+                return null;
+            }
+
+            return {
+                abbr: parts[0].trim(),
+                name: parts[1].trim(),
+                description: parts.slice(2).join('|').trim()
+            };
+
+        })
+        .filter(function(item) {
+            return item !== null;
+        })
+        .sort(function(a, b) {
+
+            return a.abbr.localeCompare(
+                b.abbr,
+                undefined,
+                {
+                    numeric: true,
+                    sensitivity: 'base'
+                }
+            );
+
+        });
+
+
+    /*
+     * PAGE ELEMENTS
+     */
+
+    const input =
+        document.getElementById('abbr-search-input');
+
+    const alphabet =
+        document.getElementById('abbr-alphabet');
+
+    const list =
+        document.getElementById('abbr-list');
+
+    const count =
+        document.getElementById('abbr-results-count');
+
+    const noResults =
+        document.getElementById('abbr-no-results');
+
+
+    if (
+        !input ||
+        !alphabet ||
+        !list ||
+        !count ||
+        !noResults
+    ) {
+        return;
+    }
+
+
+    /*
+     * DETERMINE WHICH LETTER AN ABBREVIATION BELONGS TO
+     */
+
+    function getLetter(abbreviation) {
+
+        const match =
+            abbreviation.match(/[A-Za-z]/);
+
+        return match
+            ? match[0].toUpperCase()
+            : '#';
+    }
+
+
+    /*
+     * GROUP ABBREVIATIONS BY LETTER
+     */
+
+    function createGroups() {
+
+        const groups = {};
+
+        abbreviations.forEach(function(item) {
+
+            const letter =
+                getLetter(item.abbr);
+
+            if (!groups[letter]) {
+                groups[letter] = [];
+            }
+
+            groups[letter].push(item);
+
+        });
+
+        return groups;
+    }
+
+
+    /*
+     * BUILD THE PAGE
+     */
+
+    function renderAbbreviations() {
+
+        alphabet.innerHTML = '';
+        list.innerHTML = '';
+
+        const groups = createGroups();
+
+        Object.keys(groups)
+            .sort()
+            .forEach(function(letter) {
+
+
+                /*
+                 * A-Z BUTTON
+                 */
+
+                const alphabetLink =
+                    document.createElement('a');
+
+                alphabetLink.href =
+                    '#abbr-' + letter.toLowerCase();
+
+                alphabetLink.textContent =
+                    letter;
+
+                alphabet.appendChild(
+                    alphabetLink
+                );
+
+
+                /*
+                 * LETTER SECTION
+                 */
+
+                const section =
+                    document.createElement('section');
+
+                section.className =
+                    'abbr-section abbr-collapsed';
+
+                section.id =
+                    'abbr-' + letter.toLowerCase();
+
+
+                /*
+                 * LETTER HEADING
+                 */
+
+                const heading =
+                    document.createElement('h2');
+
+                heading.className =
+                    'abbr-toggle';
+
+                heading.textContent =
+                    letter;
+
+                heading.setAttribute(
+                    'role',
+                    'button'
+                );
+
+                heading.setAttribute(
+                    'tabindex',
+                    '0'
+                );
+
+                heading.setAttribute(
+                    'aria-expanded',
+                    'false'
+                );
+
+                section.appendChild(
+                    heading
+                );
+
+
+                /*
+                 * ABBREVIATIONS UNDER THIS LETTER
+                 */
+
+                groups[letter].forEach(
+                    function(item) {
+
+                        const abbreviationItem =
+                            document.createElement('div');
+
+                        abbreviationItem.className =
+                            'abbr-item';
+
+
+                        /*
+                         * TEXT USED BY SEARCH
+                         */
+
+                        abbreviationItem.dataset.search =
+                            (
+                                item.abbr +
+                                ' ' +
+                                item.name +
+                                ' ' +
+                                item.description
+                            ).toLowerCase();
+
+
+                        /*
+                         * ABBREVIATION HEADING
+                         */
+
+                        const itemHeading =
+                            document.createElement('h3');
+
+                        itemHeading.textContent =
+                            item.abbr +
+                            ' — ' +
+                            item.name;
+
+
+                        /*
+                         * DESCRIPTION
+                         */
+
+                        const description =
+                            document.createElement('p');
+
+                        description.textContent =
+                            item.description;
+
+
+                        abbreviationItem.appendChild(
+                            itemHeading
+                        );
+
+                        abbreviationItem.appendChild(
+                            description
+                        );
+
+                        section.appendChild(
+                            abbreviationItem
+                        );
+
+                    }
+                );
+
+
+                list.appendChild(section);
+
+
+                /*
+                 * OPEN/CLOSE A LETTER
+                 */
+
+                function toggleSection() {
+
+                    const isCollapsed =
+                        section.classList.toggle(
+                            'abbr-collapsed'
+                        );
+
+                    heading.setAttribute(
+                        'aria-expanded',
+                        isCollapsed
+                            ? 'false'
+                            : 'true'
+                    );
+
+                }
+
+
+                heading.addEventListener(
+                    'click',
+                    toggleSection
+                );
+
+
+                heading.addEventListener(
+                    'keydown',
+                    function(event) {
+
+                        if (
+                            event.key === 'Enter' ||
+                            event.key === ' '
+                        ) {
+
+                            event.preventDefault();
+
+                            toggleSection();
+
+                        }
+
+                    }
+                );
+
+
+                /*
+                 * CLICKING A LETTER IN A-Z
+                 */
+
+                alphabetLink.addEventListener(
+                    'click',
+                    function(event) {
+
+                        event.preventDefault();
+
+                        section.classList.remove(
+                            'abbr-collapsed'
+                        );
+
+                        heading.setAttribute(
+                            'aria-expanded',
+                            'true'
+                        );
+
+                        section.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+
+                    }
+                );
+
+            });
+
+
+        count.textContent =
+            abbreviations.length +
+            ' abbreviations';
+
+    }
+
+
+    renderAbbreviations();
+
+
+    /*
+     * GET GENERATED ELEMENTS
+     */
+
+    const items =
+        Array.from(
+            container.querySelectorAll(
+                '.abbr-item'
+            )
+        );
+
+    const sections =
+        Array.from(
+            container.querySelectorAll(
+                '.abbr-section'
+            )
+        );
+
+
+    /*
+     * SEARCH
+     */
+
+    function filterAbbreviations() {
+
+        const search =
+            input.value
+                .trim()
+                .toLowerCase();
+
+        let visibleCount = 0;
+
+
+        /*
+         * SHOW/HIDE INDIVIDUAL ABBREVIATIONS
+         */
+
+        items.forEach(function(item) {
+
+            const matches =
+                item.dataset.search.includes(
+                    search
+                );
+
+            item.style.display =
+                matches ? '' : 'none';
+
+            if (matches) {
+                visibleCount++;
+            }
+
+        });
+
+
+        /*
+         * SHOW/HIDE LETTER SECTIONS
+         */
+
+        sections.forEach(function(section) {
+
+            const visibleItems =
+                Array.from(
+                    section.querySelectorAll(
+                        '.abbr-item'
+                    )
+                )
+                .filter(function(item) {
+
+                    return (
+                        item.style.display !==
+                        'none'
+                    );
+
+                });
+
+
+            const heading =
+                section.querySelector(
+                    '.abbr-toggle'
+                );
+
+
+            /*
+             * WHILE SEARCHING:
+             * Hide letters with no matches and
+             * automatically open letters with matches.
+             */
+
+            if (search !== '') {
+
+                if (visibleItems.length > 0) {
+
+                    section.style.display = '';
+
+                    section.classList.remove(
+                        'abbr-collapsed'
+                    );
+
+                    heading.setAttribute(
+                        'aria-expanded',
+                        'true'
+                    );
+
+                } else {
+
+                    section.style.display =
+                        'none';
+
+                }
+
+            }
+
+
+            /*
+             * WHEN SEARCH IS EMPTY:
+             * Show every letter but collapse them.
+             */
+
+            else {
+
+                section.style.display = '';
+
+                section.classList.add(
+                    'abbr-collapsed'
+                );
+
+                heading.setAttribute(
+                    'aria-expanded',
+                    'false'
+                );
+
+            }
+
+        });
+
+
+        /*
+         * RESULTS COUNTER
+         */
+
+        if (search === '') {
+
+            count.textContent =
+                abbreviations.length +
+                ' abbreviations';
+
+        } else {
+
+            count.textContent =
+                visibleCount +
+                (
+                    visibleCount === 1
+                        ? ' result'
+                        : ' results'
+                );
+
+        }
+
+
+        /*
+         * NO RESULTS MESSAGE
+         */
+
+        noResults.hidden =
+            visibleCount !== 0;
+
+    }
+
+
+    input.addEventListener(
+        'input',
+        filterAbbreviations
+    );
+
+});</script><script>document.addEventListener('DOMContentLoaded', function () {
+
+    const menu = document.getElementById('menu');
+
+    if (!menu) return;
+
+
+    function getDirectOpener(li) {
+
+        for (const child of li.children) {
+
+            if (
+                child.classList &&
+                child.classList.contains('opener')
+            ) {
+                return child;
+            }
+
+        }
+
+        return null;
+    }
+
+
+    function closeBranch(li) {
+
+        li.querySelectorAll('.opener.active')
+            .forEach(function (opener) {
+                opener.classList.remove('active');
+            });
+
+    }
+
+
+    /*
+     * Replace Editorial 2's default submenu behaviour.
+     *
+     * This allows:
+     *
+     * CISSP
+     *   └ Security and Risk Management
+     *       └ CIA Triad
+     *
+     * without closing CISSP when the nested section opens.
+     */
+
+    document.addEventListener(
+        'click',
+        function (event) {
+
+            const target = event.target;
+
+            if (!target.closest) return;
+
+            const opener =
+                target.closest('#menu .opener');
+
+            if (!opener) return;
+
+
+            /*
+             * Stop Editorial 2's original click handler.
+             */
+
+            event.preventDefault();
+            event.stopPropagation();
+
+
+            const currentLi =
+                opener.parentElement;
+
+            const parentList =
+                currentLi.parentElement;
+
+            const wasOpen =
+                opener.classList.contains('active');
+
+
+            /*
+             * Close other items at THIS SAME LEVEL only.
+             *
+             * Crucially, this does not close parent menus.
+             */
+
+            Array.from(parentList.children)
+                .forEach(function (siblingLi) {
+
+                    if (siblingLi === currentLi) {
+                        return;
+                    }
+
+                    const siblingOpener =
+                        getDirectOpener(siblingLi);
+
+                    if (siblingOpener) {
+
+                        siblingOpener.classList.remove(
+                            'active'
+                        );
+
+                        closeBranch(siblingLi);
+                    }
+
+                });
+
+
+            /*
+             * Toggle clicked menu.
+             */
+
+            if (wasOpen) {
+
+                opener.classList.remove('active');
+
+                /*
+                 * Also close anything nested underneath it.
+                 */
+
+                currentLi
+                    .querySelectorAll('.opener.active')
+                    .forEach(function (childOpener) {
+
+                        if (childOpener !== opener) {
+                            childOpener.classList.remove(
+                                'active'
+                            );
+                        }
+
+                    });
+
+            } else {
+
+                opener.classList.add('active');
+
+            }
+
+
+            /*
+             * Tell Editorial 2 to recalculate sidebar height.
+             */
+
+            if (window.jQuery) {
+
+                window.jQuery(window)
+                    .triggerHandler(
+                        'resize.sidebar-lock'
+                    );
+
+            }
+
+        },
+        true
+    );
+
+
+    /*
+     * If we're currently viewing a submenu page,
+     * automatically open all of its parent sections.
+     */
+
+    const currentUrl =
+        window.location.href.replace(/\/$/, '');
+
+    menu.querySelectorAll('a')
+        .forEach(function (link) {
+
+            const linkUrl =
+                link.href.replace(/\/$/, '');
+
+            if (linkUrl !== currentUrl) {
+                return;
+            }
+
+            let parentLi =
+                link.closest('li');
+
+            while (parentLi) {
+
+                const parentList =
+                    parentLi.parentElement;
+
+                if (!parentList) break;
+
+                const parentMenuLi =
+                    parentList.closest(
+                        'li.has-submenu'
+                    );
+
+                if (!parentMenuLi) break;
+
+                const parentOpener =
+                    getDirectOpener(
+                        parentMenuLi
+                    );
+
+                if (parentOpener) {
+                    parentOpener.classList.add(
+                        'active'
+                    );
+                }
+
+                parentLi =
+                    parentMenuLi;
+            }
+
+        });
+
+});</script></body></html>

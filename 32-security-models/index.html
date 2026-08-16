@@ -1,0 +1,968 @@
+<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><title>3.2 Security Models - CyberPrepHub</title><meta name="description" content="CISSP Domain 3 · Security Architecture and Engineering 3.2 Security Models Security models provide formal ways of describing how information,&amp;hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://cyberprephub.github.io/32-security-models/"><link rel="alternate" type="application/atom+xml" href="https://cyberprephub.github.io/feed.xml" title="CyberPrepHub - RSS"><link rel="alternate" type="application/json" href="https://cyberprephub.github.io/feed.json" title="CyberPrepHub - JSON"><meta property="og:title" content="3.2 Security Models"><meta property="og:image" content="https://cyberprephub.github.io/media/website/ChatGPT-Image-Aug-16-2026-12_12_02-AM.png"><meta property="og:image:width" content="2804"><meta property="og:image:height" content="561"><meta property="og:site_name" content="CyberPrepHub"><meta property="og:description" content="CISSP Domain 3 · Security Architecture and Engineering 3.2 Security Models Security models provide formal ways of describing how information,&amp;hellip;"><meta property="og:url" content="https://cyberprephub.github.io/32-security-models/"><meta property="og:type" content="article"><link rel="stylesheet" href="https://cyberprephub.github.io/assets/css/fontawesome-all.min.css?v&#x3D;85514f933f9e0b82460af63f1a403fa5"><link rel="stylesheet" href="https://cyberprephub.github.io/assets/css/style.css?v&#x3D;b6313075409cf9af2fc486684c9a77bc"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://cyberprephub.github.io/32-security-models/"},"headline":"3.2 Security Models","datePublished":"2026-08-16T15:15+01:00","dateModified":"2026-08-16T15:22+01:00","image":{"@type":"ImageObject","url":"https://cyberprephub.github.io/media/website/ChatGPT-Image-Aug-16-2026-12_12_02-AM.png","height":561,"width":2804},"description":"CISSP Domain 3 · Security Architecture and Engineering 3.2 Security Models Security models provide formal ways of describing how information,&hellip;","author":{"@type":"Person","name":"Mateusz","url":"https://cyberprephub.github.io/authors/mateusz/"},"publisher":{"@type":"Organization","name":"Mateusz","logo":{"@type":"ImageObject","url":"https://cyberprephub.github.io/media/website/ChatGPT-Image-Aug-16-2026-12_12_02-AM.png","height":561,"width":2804}}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript><meta name="google-adsense-account" content="ca-pub-5833088653079961"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5833088653079961" crossorigin="anonymous"></script></head><body class="is-preload page-template"><div id="wrapper"><div id="main"><div class="inner"><header id="header"><a class="logo logo-image" href="https://cyberprephub.github.io/"><img src="https://cyberprephub.github.io/media/website/ChatGPT-Image-Aug-16-2026-12_12_02-AM.png" alt="CyberPrepHub" width="2804" height="561"></a><ul class="icons"><li><a href="https://www.linkedin.com/in/mateusz-o-1a580a28/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li></ul></header><article class="post"><header class="main post__header"><h1>3.2 Security Models</h1></header><div class="post__inner post__entry"><div><div class="cph-article"><section class="cph-hero-box"><span class="cph-eyebrow">CISSP Domain 3 · Security Architecture and Engineering</span><h2>3.2 Security Models</h2><p>Security models provide formal ways of describing how information, users, processes and systems should interact while preserving required security properties.</p><p>For CISSP, the most important distinction is understanding <strong>what each model is trying to protect</strong>.</p><div class="cph-cia-grid"><div class="cph-cia-card"><div class="cph-icon">🔒</div><h3>Bell-LaPadula</h3><p>Protects confidentiality by controlling information flow between security levels.</p><strong>CONFIDENTIALITY</strong></div><div class="cph-cia-card"><div class="cph-icon">✅</div><h3>Biba</h3><p>Protects integrity by preventing contamination from lower-integrity information.</p><strong>INTEGRITY</strong></div><div class="cph-cia-card"><div class="cph-icon">🏦</div><h3>Clark-Wilson</h3><p>Protects commercial integrity using controlled transactions and separation of duties.</p><strong>BUSINESS INTEGRITY</strong></div></div></section><section class="cph-section"><h2>The Big Idea</h2><p>A security model answers questions such as:</p><section class="cph-dad"><div class="cph-dad-row"><span>👤 Subject</span> <span>→</span> <strong>Who is requesting access?</strong></div><div class="cph-dad-row"><span>📄 Object</span> <span>→</span> <strong>What resource is being accessed?</strong></div><div class="cph-dad-row"><span>🏷️ Label</span> <span>→</span> <strong>What security level applies?</strong></div><div class="cph-dad-row"><span>📜 Rule</span> <span>→</span> <strong>Which interaction is permitted?</strong></div><div class="cph-dad-row"><span>➡️ Flow</span> <span>→</span> <strong>Where may information move?</strong></div><div class="cph-dad-row"><span>🛡️ Property</span> <span>→</span> <strong>What security objective must remain protected?</strong></div></section><div class="cph-callout"><strong>Start with the security objective</strong><p>When CISSP asks which security model is appropriate, first identify whether the scenario is mainly concerned with:</p><div class="cph-chip-list"><span>Confidentiality</span> <span>Integrity</span> <span>Conflict of Interest</span> <span>Information Flow</span> <span>Controlled Transactions</span></div></div></section><section class="cph-exam-box"><span class="cph-eyebrow">Essential Comparison</span><h2>The Four Models You Must Recognise</h2><div class="cph-table-wrap"><table class="cph-table"><thead><tr><th>Model</th><th>Primary focus</th><th>Main idea</th><th>Memory aid</th></tr></thead><tbody><tr><td><strong>Bell-LaPadula</strong></td><td>Confidentiality</td><td>Prevent information leaking from higher classifications to lower classifications.</td><td><strong>No Read Up<br>No Write Down</strong></td></tr><tr><td><strong>Biba</strong></td><td>Integrity</td><td>Prevent high-integrity information from being contaminated by lower-integrity information.</td><td><strong>No Read Down<br>No Write Up</strong></td></tr><tr><td><strong>Clark-Wilson</strong></td><td>Commercial integrity</td><td>Protect data through controlled transactions, validation and separation of duties.</td><td><strong>Well-Formed Transactions</strong></td></tr><tr><td><strong>Brewer-Nash</strong></td><td>Conflict of interest</td><td>Access changes dynamically depending on information previously accessed.</td><td><strong>Chinese Wall</strong></td></tr></tbody></table></div></section><details class="cph-accordion"><summary><span>👤</span> <span><strong>Subjects and Objects</strong> <small>The basic language used by security models</small></span></summary><div class="cph-accordion-content"><p>Many security models describe interactions between <strong>subjects</strong> and <strong>objects</strong>.</p><div class="cph-control-grid"><div><strong>Subject</strong><p>An active entity requesting access or performing an action.</p><p>Examples:</p><div class="cph-chip-list"><span>User</span> <span>Process</span> <span>Application</span> <span>Service</span></div></div><div><strong>Object</strong><p>A passive resource being accessed or manipulated.</p><p>Examples:</p><div class="cph-chip-list"><span>File</span> <span>Database</span> <span>Record</span> <span>Resource</span></div></div></div><div class="cph-example"><span>Example</span><p>Alice opens a classified document.</p><p><strong>Alice = Subject</strong></p><p><strong>Document = Object</strong></p></div><div class="cph-callout"><strong>Do not assume the subject must be a human</strong><p>An application process acting on behalf of a user can also be a subject.</p></div></div></details><details class="cph-accordion" open><summary><span>🔒</span> <span><strong>Bell-LaPadula Model</strong> <small>Protect confidentiality</small></span></summary><div class="cph-accordion-content"><p>The Bell-LaPadula model focuses primarily on <strong>confidentiality</strong>.</p><p>It is closely associated with environments where information and users have hierarchical security classifications.</p><div class="cph-callout"><strong>Bell-LaPadula asks:</strong><p>How do we prevent sensitive information from flowing to users who are not authorised to receive it?</p></div><h3>Example Security Levels</h3><section class="cph-dad"><div class="cph-dad-row"><span>🔴 Top Secret</span> <span>↑</span> <strong>Highest sensitivity</strong></div><div class="cph-dad-row"><span>🟠 Secret</span> <span>↑</span> <strong>Higher sensitivity</strong></div><div class="cph-dad-row"><span>🟡 Confidential</span> <span>↑</span> <strong>Protected information</strong></div><div class="cph-dad-row"><span>🟢 Unclassified</span> <span>↑</span> <strong>Lowest sensitivity</strong></div></section><h3>Simple Security Property</h3><div class="cph-memory"><h2>No Read Up</h2><div><strong>Lower clearance</strong> <span>Cannot READ higher classified information</span></div><p class="cph-memory-short"><strong>NO READ UP</strong></p></div><div class="cph-example"><span>Example</span><p>Alice has:</p><p><strong>SECRET clearance</strong></p><p>She attempts to read a:</p><p><strong>TOP SECRET document</strong>.</p><p>Access is denied.</p><strong>No Read Up.</strong></div><h3>*-Property - Star Property</h3><div class="cph-memory"><h2>No Write Down</h2><div><strong>Higher clearance</strong> <span>Cannot WRITE information to a lower classification</span></div><p class="cph-memory-short"><strong>NO WRITE DOWN</strong></p></div><div class="cph-example"><span>Example</span><p>Alice is working with:</p><p><strong>TOP SECRET information</strong>.</p><p>She attempts to write that information into an:</p><p><strong>UNCLASSIFIED file</strong>.</p><p>The action is denied.</p><strong>Otherwise confidential information could leak downwards.</strong></div><h3>Why these rules make sense</h3><section class="cph-dad"><div class="cph-dad-row"><span>LOW</span> <span>❌ READ</span> <strong>HIGH</strong></div><div class="cph-dad-row"><span>HIGH</span> <span>❌ WRITE</span> <strong>LOW</strong></div></section><div class="cph-callout"><strong>Think about information leakage</strong><p>Bell-LaPadula tries to prevent sensitive information from moving downward into areas where less-cleared subjects could access it.</p></div><h3>Discretionary Security Property</h3><p>Bell-LaPadula can also incorporate discretionary access controls.</p><p>A subject may have sufficient security clearance but still require appropriate permission to access a particular object.</p><div class="cph-example"><span>Example</span><p>Bob holds Secret clearance.</p><p>A document is classified Secret.</p><p>That does not necessarily mean Bob automatically receives access to every Secret document.</p></div><h3>Tranquility Principle</h3><p>Security labels should not change arbitrarily in ways that undermine the security policy.</p><div class="cph-control-grid"><div><strong>Strong Tranquility</strong><p>Security labels do not change while the system is operating.</p></div><div><strong>Weak Tranquility</strong><p>Labels may change only when doing so does not violate the security policy.</p></div></div><div class="cph-memory"><h2>Bell-LaPadula</h2><div><strong>B = Bell</strong> <span>Think of protecting secrets behind the Bell</span></div><div><strong>NO READ UP</strong> <span>Do not see information above your level</span></div><div><strong>NO WRITE DOWN</strong> <span>Do not leak information below your level</span></div><p class="cph-memory-short"><strong>Bell-LaPadula = Confidentiality</strong></p></div></div></details><details class="cph-accordion"><summary><span>✅</span> <span><strong>Biba Model</strong> <small>Protect integrity</small></span></summary><div class="cph-accordion-content"><p>Biba is primarily concerned with <strong>integrity</strong>.</p><p>Instead of preventing sensitive information from leaking downward, Biba attempts to prevent trusted information and processes from being contaminated by less trustworthy information.</p><div class="cph-callout"><strong>Biba asks:</strong><p>How do we prevent lower-integrity information or users from corrupting higher-integrity information?</p></div><h3>Simple Integrity Axiom</h3><div class="cph-memory"><h2>No Read Down</h2><div><strong>Higher integrity subject</strong> <span>Should not READ lower-integrity information</span></div><p class="cph-memory-short"><strong>NO READ DOWN</strong></p></div><div class="cph-example"><span>Example</span><p>A highly trusted financial calculation process should not use unverified information from an untrusted source.</p><p>Otherwise the high-integrity process could become contaminated by unreliable input.</p></div><h3>*-Integrity Axiom</h3><div class="cph-memory"><h2>No Write Up</h2><div><strong>Lower-integrity subject</strong> <span>Cannot WRITE to higher-integrity information</span></div><p class="cph-memory-short"><strong>NO WRITE UP</strong></p></div><div class="cph-example"><span>Example</span><p>A low-trust user cannot directly modify a highly trusted financial ledger.</p><strong>Otherwise lower-integrity information could corrupt higher-integrity information.</strong></div><h3>Invocation Property</h3><p>A lower-integrity subject should not be able to invoke or control a higher-integrity subject in a way that undermines the integrity model.</p><section class="cph-dad"><div class="cph-dad-row"><span>HIGH integrity</span> <span>❌ READ</span> <strong>LOW integrity</strong></div><div class="cph-dad-row"><span>LOW integrity</span> <span>❌ WRITE</span> <strong>HIGH integrity</strong></div></section><div class="cph-callout"><strong>Biba is effectively the opposite direction to Bell-LaPadula</strong><p>Bell-LaPadula protects secrets from leaking downward.</p><p>Biba protects trusted information from contamination moving upward.</p></div><div class="cph-memory"><h2>Biba</h2><div><strong>NO READ DOWN</strong> <span>Do not consume less trustworthy information</span></div><div><strong>NO WRITE UP</strong> <span>Do not contaminate more trustworthy information</span></div><p class="cph-memory-short"><strong>Biba = Integrity</strong></p></div></div></details><section class="cph-section"><h2>Bell-LaPadula vs Biba</h2><div class="cph-table-wrap"><table class="cph-table"><thead><tr><th></th><th>Bell-LaPadula</th><th>Biba</th></tr></thead><tbody><tr><td><strong>Protects</strong></td><td>Confidentiality</td><td>Integrity</td></tr><tr><td><strong>Read rule</strong></td><td>No Read Up</td><td>No Read Down</td></tr><tr><td><strong>Write rule</strong></td><td>No Write Down</td><td>No Write Up</td></tr><tr><td><strong>Main concern</strong></td><td>Information leakage</td><td>Information contamination</td></tr><tr><td><strong>Typical context</strong></td><td>Classified information</td><td>Trusted information and processes</td></tr></tbody></table></div><div class="cph-memory"><h2>The easiest way to remember them</h2><div><strong>Bell-LaPadula</strong> <span>Secrets should not LEAK DOWN</span></div><div><strong>Biba</strong> <span>Bad data should not CONTAMINATE UP</span></div><p class="cph-memory-short"><strong>Bell protects SECRETS. Biba protects TRUST.</strong></p></div></section><details class="cph-accordion"><summary><span>🏦</span> <span><strong>Clark-Wilson Model</strong> <small>Commercial integrity and well-formed transactions</small></span></summary><div class="cph-accordion-content"><p>Clark-Wilson is an integrity model designed around the realities of commercial and business systems.</p><p>Rather than relying mainly on hierarchical integrity labels, it protects important information by requiring users to interact with it through authorised and controlled transactions.</p><div class="cph-callout"><strong>Think banking and accounting</strong><p>Users should not directly manipulate critical business data.</p><p>They should perform authorised transactions that preserve the integrity of that data.</p></div><h3>Well-Formed Transactions</h3><p>Critical data should be modified only through approved programs or procedures that transform the information in a controlled way.</p><div class="cph-example"><span>Bank example</span><p>A bank employee should not directly edit:</p><p><strong>Account Balance = £10,000</strong></p><p>and change it to:</p><p><strong>Account Balance = £50,000</strong>.</p><p>Instead, the employee performs an authorised transaction:</p><p><strong>Deposit £40,000</strong></p><p>The trusted application performs the appropriate validation and updates the account.</p></div><h3>Clark-Wilson Components</h3><div class="cph-control-grid"><div><strong>CDI</strong><p><strong>Constrained Data Item</strong></p><p>Data whose integrity must be protected.</p></div><div><strong>UDI</strong><p><strong>Unconstrained Data Item</strong></p><p>Input that has not yet been validated as trusted.</p></div><div><strong>TP</strong><p><strong>Transformation Procedure</strong></p><p>An authorised operation that changes protected data while preserving integrity.</p></div><div><strong>IVP</strong><p><strong>Integrity Verification Procedure</strong></p><p>Checks that protected data remains in a valid state.</p></div></div><section class="cph-dad"><div class="cph-dad-row"><span>Untrusted Input</span> <span>→</span> <strong>UDI</strong></div><div class="cph-dad-row"><span>Validation / Transaction</span> <span>→</span> <strong>TP</strong></div><div class="cph-dad-row"><span>Protected Business Data</span> <span>→</span> <strong>CDI</strong></div><div class="cph-dad-row"><span>Integrity Check</span> <span>→</span> <strong>IVP</strong></div></section><h3>Separation of Duties</h3><p>Clark-Wilson also strongly supports <strong>separation of duties</strong>.</p><div class="cph-example"><span>Example</span><p>Employee A:</p><p><strong>Creates a payment</strong></p><p>Employee B:</p><p><strong>Approves the payment</strong></p><p>The system:</p><p><strong>Processes the authorised transaction</strong></p></div><div class="cph-memory"><h2>Clark-Wilson</h2><div><strong>CDI</strong> <span>Protected data</span></div><div><strong>UDI</strong> <span>Untrusted input</span></div><div><strong>TP</strong> <span>Controlled transformation</span></div><div><strong>IVP</strong> <span>Verify integrity</span></div><p class="cph-memory-short"><strong>Clark-Wilson = Transactions + Separation of Duties</strong></p></div></div></details><details class="cph-accordion"><summary><span>🧱</span> <span><strong>Brewer-Nash Model</strong> <small>The Chinese Wall model</small></span></summary><div class="cph-accordion-content"><p>The Brewer-Nash model addresses <strong>conflicts of interest</strong>.</p><p>Access decisions can change dynamically depending on information a subject has previously accessed.</p><div class="cph-example"><span>Consultancy example</span><p>A consultancy advises several competing banks:</p><div class="cph-chip-list"><span>Bank A</span> <span>Bank B</span> <span>Bank C</span></div><p>Alice starts working on:</p><p><strong>Bank A</strong>.</p><p>She may now be prevented from accessing confidential information belonging to:</p><p><strong>Bank B or Bank C</strong></p><p>because they belong to the same conflict-of-interest class.</p></div><section class="cph-dad"><div class="cph-dad-row"><span>Access Bank A</span> <span>→</span> <strong>Allowed</strong></div><div class="cph-dad-row"><span>Later access Bank A</span> <span>→</span> <strong>Allowed</strong></div><div class="cph-dad-row"><span>Later access competitor Bank B</span> <span>→</span> <strong>DENIED</strong></div></section><div class="cph-callout"><strong>Access changes dynamically</strong><p>This is what makes Brewer-Nash different from a simple static clearance model.</p><p>Previous access affects future access decisions.</p></div><div class="cph-memory"><h2>Brewer-Nash</h2><div><strong>Chinese Wall</strong> <span>Separate competing interests</span></div><div><strong>Previous Access</strong> <span>Influences future permissions</span></div><p class="cph-memory-short"><strong>Brewer-Nash = Conflict of Interest</strong></p></div></div></details><details class="cph-accordion"><summary><span>⚙️</span> <span><strong>State Machine Model</strong> <small>Secure states and secure transitions</small></span></summary><div class="cph-accordion-content"><p>A state machine model represents a system as a collection of <strong>states</strong>.</p><p>Operations cause the system to move from one state to another.</p><section class="cph-dad"><div class="cph-dad-row"><span>Secure State A</span> <span>→</span> <strong>Authorised Transition</strong></div><div class="cph-dad-row"><span>Authorised Transition</span> <span>→</span> <strong>Secure State B</strong></div></section><div class="cph-callout"><strong>Core concept</strong><p>If the system begins in a secure state and every permitted transition preserves the security policy, the resulting state should remain secure.</p></div><div class="cph-example"><span>Simple example</span><p>A file begins:</p><p><strong>Protected</strong></p><p>A permitted operation modifies the file while maintaining authorised permissions.</p><p>The system transitions to another:</p><p><strong>Protected state</strong>.</p></div><div class="cph-memory"><h2>State Machine</h2><div><strong>Secure State</strong> <span>+</span></div><div><strong>Secure Transition</strong> <span>=</span></div><div><strong>Secure State</strong> <span>Security preserved</span></div></div></div></details><details class="cph-accordion"><summary><span>➡️</span> <span><strong>Information Flow Model</strong> <small>Control where information is allowed to move</small></span></summary><div class="cph-accordion-content"><p>Information flow models focus on how information moves between subjects, objects and security domains.</p><p>The concern is not simply whether an entity can open a particular file.</p><p>The concern is:</p><div class="cph-question-box"><strong>Can information move from one security level or domain to another?</strong></div><div class="cph-example"><span>Example</span><p>Information moves from:</p><p><strong>Top Secret → Public</strong></p><p>Even if no user directly opened the original Top Secret document, the information flow itself could violate confidentiality.</p></div><div class="cph-callout"><strong>Bell-LaPadula is strongly related to information flow</strong><p>Its rules attempt to stop classified information from flowing into lower-security areas.</p></div></div></details><details class="cph-accordion"><summary><span>🚧</span> <span><strong>Noninterference Model</strong> <small>Higher-level activity should not influence lower-level observations</small></span></summary><div class="cph-accordion-content"><p>Noninterference attempts to ensure that activity at a higher security level cannot influence what a lower-level subject can observe in a way that reveals protected information.</p><div class="cph-example"><span>Conceptual example</span><p>A Top Secret process performs a confidential calculation.</p><p>An Unclassified user should not be able to determine information about that calculation by observing effects visible at their own level.</p></div><div class="cph-callout"><strong>Think isolation between security levels</strong><p>High-level activity should not interfere with lower-level observations in ways that leak protected information.</p></div><div class="cph-memory"><h2>Noninterference</h2><div><strong>HIGH activity</strong> <span>should not reveal itself through</span></div><div><strong>LOW observations</strong> <span>in a security-relevant way</span></div></div></div></details><details class="cph-accordion"><summary><span>🕸️</span> <span><strong>Lattice-Based Security Models</strong> <small>Labels, dominance and information flow</small></span></summary><div class="cph-accordion-content"><p>Lattice-based access models use security labels and mathematical relationships between those labels to determine permitted information flows.</p><div class="cph-example"><span>Simple classification example</span><section class="cph-dad"><div class="cph-dad-row"><span>Top Secret</span> <span>dominates</span> <strong>Secret</strong></div><div class="cph-dad-row"><span>Secret</span> <span>dominates</span> <strong>Confidential</strong></div><div class="cph-dad-row"><span>Confidential</span> <span>dominates</span> <strong>Unclassified</strong></div></section></div><p>Real security labels can also contain categories or compartments.</p><div class="cph-example"><span>Example</span><p>Alice:</p><p><strong>SECRET {NUCLEAR, EUROPE}</strong></p><p>Document:</p><p><strong>SECRET {NUCLEAR}</strong></p><p>Alice's label may dominate the document label because her classification is sufficient and she possesses the required category.</p></div><div class="cph-callout"><strong>Classification alone may not be enough</strong><p>Categories or compartments can further restrict access even when the user's overall clearance level is sufficiently high.</p></div></div></details><section class="cph-section"><span class="cph-eyebrow">From Model to Enforcement</span><h2>Reference Monitor, Security Kernel and TCB</h2><p>A security policy or model is useful only if the system has mechanisms capable of enforcing it.</p><div class="cph-control-grid"><div><strong>Reference Monitor</strong><p>An abstract concept representing the mechanism that mediates access between subjects and objects.</p></div><div><strong>Security Kernel</strong><p>The hardware and software mechanisms that implement the core reference-monitor functionality.</p></div><div><strong>Trusted Computing Base - TCB</strong><p>The collection of protection mechanisms within a system that must operate correctly for the system's security policy to be enforced.</p></div></div><h3>Reference Monitor Requirements</h3><section class="cph-dad"><div class="cph-dad-row"><span>1️⃣ Complete Mediation</span> <span>→</span> <strong>Every relevant access must be checked</strong></div><div class="cph-dad-row"><span>2️⃣ Tamper Resistant</span> <span>→</span> <strong>The mechanism must be protected from modification</strong></div><div class="cph-dad-row"><span>3️⃣ Verifiable</span> <span>→</span> <strong>It must be small/simple enough to analyse and test</strong></div></section><div class="cph-memory"><h2>Reference Monitor</h2><div><strong>ALWAYS</strong> <span>checks access</span></div><div><strong>CANNOT</strong> <span>be bypassed or modified easily</span></div><div><strong>CAN</strong> <span>be verified</span></div><p class="cph-memory-short"><strong>Mediates. Protected. Verifiable.</strong></p></div></section><details class="cph-accordion"><summary><span>📚</span> <span><strong>Other Models Worth Recognising</strong> <small>Useful supporting CISSP knowledge</small></span></summary><div class="cph-accordion-content"><div class="cph-control-grid"><div><strong>Take-Grant Model</strong><p>Represents permissions using a graph and examines how rights can be transferred between subjects and objects.</p><p>Think: <strong>Who can give or take rights?</strong></p></div><div><strong>Graham-Denning Model</strong><p>Examines secure creation and deletion of subjects and objects and how access rights can be transferred.</p><p>Think: <strong>Managing access rights securely.</strong></p></div><div><strong>Harrison-Ruzzo-Ullman Model</strong><p>Examines access rights and whether a protection system can reach a state where particular rights are acquired.</p><p>Think: <strong>Access-right safety.</strong></p></div><div><strong>Access Matrix</strong><p>Represents the rights subjects have over objects.</p><p>Rows commonly represent subjects and columns represent objects.</p></div></div><div class="cph-callout"><strong>Exam priority</strong><p>Bell-LaPadula, Biba, Clark-Wilson and Brewer-Nash are generally the models you should recognise most quickly.</p><p>The others are useful for understanding the broader theory of access-control and protection systems.</p></div></div></details><section class="cph-scenario"><span class="cph-eyebrow">Practical Scenario</span><h2>Designing a Financial Trading Platform</h2><p>A financial organisation is designing a platform used by traders, financial analysts, compliance staff and administrators.</p><p>Different security models may address different parts of the problem.</p><div class="cph-control-grid"><div><strong>Bell-LaPadula</strong><p>Prevent highly confidential deal information from being disclosed to users without sufficient clearance.</p></div><div><strong>Biba</strong><p>Prevent low-trust information from directly contaminating trusted financial calculations.</p></div><div><strong>Clark-Wilson</strong><p>Require financial records to be changed through authorised transactions rather than direct editing.</p></div><div><strong>Brewer-Nash</strong><p>Prevent consultants or analysts from accessing confidential information belonging to competing clients.</p></div><div><strong>State Machine</strong><p>Ensure permitted operations transition the system between valid and secure states.</p></div><div><strong>Information Flow</strong><p>Prevent protected information from moving into unauthorised security domains.</p></div></div></section><details class="cph-accordion"><summary><span>🎓</span> <span><strong>CISSP Scenarios</strong> <small>Identify the model from the requirement</small></span></summary><div class="cph-accordion-content"><div class="cph-question-box"><strong>Scenario 1</strong><p>A Secret-cleared user attempts to read a Top Secret document.</p><p><strong>Which model and rule apply?</strong></p><p><strong>Bell-LaPadula - No Read Up.</strong></p></div><div class="cph-question-box"><strong>Scenario 2</strong><p>A Top Secret process attempts to copy classified information into an Unclassified file.</p><p><strong>Which rule prevents this?</strong></p><p><strong>Bell-LaPadula - No Write Down.</strong></p></div><div class="cph-question-box"><strong>Scenario 3</strong><p>A highly trusted financial process is prevented from consuming data from an untrusted source.</p><p><strong>Which model?</strong></p><p><strong>Biba - No Read Down.</strong></p></div><div class="cph-question-box"><strong>Scenario 4</strong><p>A low-integrity user is prevented from modifying a high-integrity accounting record.</p><p><strong>Which model?</strong></p><p><strong>Biba - No Write Up.</strong></p></div><div class="cph-question-box"><strong>Scenario 5</strong><p>Employees may modify financial balances only through authorised business transactions.</p><p><strong>Which model?</strong></p><p><strong>Clark-Wilson.</strong></p></div><div class="cph-question-box"><strong>Scenario 6</strong><p>One employee initiates a payment and another must approve it.</p><p><strong>Which model strongly supports this concept?</strong></p><p><strong>Clark-Wilson - Separation of Duties.</strong></p></div><div class="cph-question-box"><strong>Scenario 7</strong><p>A consultant accesses confidential records belonging to Bank A and is subsequently prevented from accessing Bank B's records.</p><p><strong>Which model?</strong></p><p><strong>Brewer-Nash / Chinese Wall.</strong></p></div><div class="cph-question-box"><strong>Scenario 8</strong><p>An architect wants to demonstrate that every permitted system transition moves the system from one secure condition to another.</p><p><strong>Which model?</strong></p><p><strong>State Machine Model.</strong></p></div><div class="cph-question-box"><strong>Scenario 9</strong><p>The primary concern is preventing information from moving between security domains in an unauthorised direction.</p><p><strong>Which model concept?</strong></p><p><strong>Information Flow Model.</strong></p></div><div class="cph-question-box"><strong>Scenario 10</strong><p>Activity in a highly classified environment must not affect outputs observable by low-classification users in a way that reveals information.</p><p><strong>Which model?</strong></p><p><strong>Noninterference.</strong></p></div><div class="cph-question-box"><strong>Scenario 11</strong><p>A system compares a user's security label with an object's label and determines access based on dominance relationships.</p><p><strong>Which concept?</strong></p><p><strong>Lattice-Based Security.</strong></p></div><div class="cph-question-box"><strong>Scenario 12</strong><p>A security mechanism must mediate every subject-to-object access, resist tampering and be capable of verification.</p><p><strong>Which concept?</strong></p><p><strong>Reference Monitor.</strong></p></div></div></details><section class="cph-exam-box"><span class="cph-eyebrow">CISSP Exam Perspective</span><h2>Recognise the Clue Words</h2><div class="cph-exam-grid"><div><h3>Confidentiality</h3><p>Classified information</p><p>No Read Up</p><p>No Write Down</p><strong>Bell-LaPadula</strong></div><div><h3>Integrity</h3><p>Trusted data</p><p>No Read Down</p><p>No Write Up</p><strong>Biba</strong></div><div><h3>Business Transactions</h3><p>CDI / UDI</p><p>TP / IVP</p><p>Separation of Duties</p><strong>Clark-Wilson</strong></div><div><h3>Conflict of Interest</h3><p>Consultants</p><p>Competitors</p><p>Previous access</p><strong>Brewer-Nash</strong></div><div><h3>Secure Transitions</h3><p>Secure state</p><p>State transition</p><strong>State Machine</strong></div><div><h3>Information Movement</h3><p>Information direction</p><p>Security domains</p><strong>Information Flow</strong></div><div><h3>Isolation</h3><p>High activity must not influence low observations</p><strong>Noninterference</strong></div><div><h3>Labels & Dominance</h3><p>Clearance</p><p>Classification</p><p>Compartments</p><strong>Lattice</strong></div></div></section><details class="cph-accordion"><summary><span>⚠️</span> <span><strong>Common CISSP Mistakes</strong> <small>These models are deliberately easy to confuse</small></span></summary><div class="cph-accordion-content"><div class="cph-mistake"><strong>Bell-LaPadula ≠ Integrity</strong><p>Bell-LaPadula's primary concern is <strong>CONFIDENTIALITY</strong>.</p></div><div class="cph-mistake"><strong>Biba ≠ Confidentiality</strong><p>Biba's primary concern is <strong>INTEGRITY</strong>.</p></div><div class="cph-mistake"><strong>The Bell/Biba memory rules are reversed</strong><p>Bell-LaPadula: <strong>No Read Up, No Write Down.</strong></p><p>Biba: <strong>No Read Down, No Write Up.</strong></p></div><div class="cph-mistake"><strong>Clark-Wilson is not simply another label model</strong><p>Its key ideas are controlled transformation, validation and separation of duties.</p></div><div class="cph-mistake"><strong>Brewer-Nash permissions are dynamic</strong><p>What you accessed previously may determine what you are allowed to access next.</p></div><div class="cph-mistake"><strong>Clearance does not always equal permission</strong><p>Having an adequate security level does not necessarily mean a subject has a legitimate requirement or discretionary permission to access every object at that level.</p></div><div class="cph-mistake"><strong>Security models describe policy</strong><p>A model does not automatically enforce itself.</p><p>The system requires trustworthy mechanisms capable of implementing and enforcing the model.</p></div></div></details><section class="cph-section"><h2>Fast Identification Table</h2><div class="cph-table-wrap"><table class="cph-table"><thead><tr><th>If you see...</th><th>Think...</th></tr></thead><tbody><tr><td>Military-style confidentiality</td><td><strong>Bell-LaPadula</strong></td></tr><tr><td>No Read Up</td><td><strong>Bell-LaPadula</strong></td></tr><tr><td>No Write Down</td><td><strong>Bell-LaPadula</strong></td></tr><tr><td>Protect integrity</td><td><strong>Biba</strong></td></tr><tr><td>No Read Down</td><td><strong>Biba</strong></td></tr><tr><td>No Write Up</td><td><strong>Biba</strong></td></tr><tr><td>Well-formed transactions</td><td><strong>Clark-Wilson</strong></td></tr><tr><td>CDI / UDI / TP / IVP</td><td><strong>Clark-Wilson</strong></td></tr><tr><td>Separation of duties + integrity</td><td><strong>Clark-Wilson</strong></td></tr><tr><td>Consultants working with competitors</td><td><strong>Brewer-Nash</strong></td></tr><tr><td>Chinese Wall</td><td><strong>Brewer-Nash</strong></td></tr><tr><td>Secure state → secure state</td><td><strong>State Machine</strong></td></tr><tr><td>Direction information is allowed to move</td><td><strong>Information Flow</strong></td></tr><tr><td>High-level activity must not affect low-level observation</td><td><strong>Noninterference</strong></td></tr><tr><td>Labels, compartments and dominance</td><td><strong>Lattice Model</strong></td></tr><tr><td>Mediates every access</td><td><strong>Reference Monitor</strong></td></tr></tbody></table></div></section><section class="cph-memory"><h2>Security Models Master Memory Aid</h2><div><strong>Bell-LaPadula</strong> <span>CONFIDENTIALITY</span></div><div><strong>Biba</strong> <span>INTEGRITY</span></div><div><strong>Clark-Wilson</strong> <span>BUSINESS TRANSACTIONS</span></div><div><strong>Brewer-Nash</strong> <span>CONFLICT OF INTEREST</span></div><div><strong>State Machine</strong> <span>SECURE TRANSITIONS</span></div><div><strong>Information Flow</strong> <span>WHERE DATA MAY MOVE</span></div><div><strong>Noninterference</strong> <span>HIGH MUST NOT REVEAL TO LOW</span></div><p class="cph-memory-short"><strong>Bell = Secrets · Biba = Trust · Clark = Transactions · Brewer = Conflict</strong></p></section><section class="cph-memory"><h2>The Bell & Biba Shortcut</h2><div><strong>Bell-LaPadula</strong> <span>NO READ UP</span></div><div><strong>Bell-LaPadula</strong> <span>NO WRITE DOWN</span></div><div><strong>Biba</strong> <span>NO READ DOWN</span></div><div><strong>Biba</strong> <span>NO WRITE UP</span></div><p class="cph-memory-short"><strong>Bell stops secrets going DOWN. Biba stops bad data going UP.</strong></p></section><section class="cph-takeaways"><h2>Key Takeaways</h2><p>Security models describe rules for protecting information and controlling interactions between subjects and objects.</p><p><strong>Bell-LaPadula protects confidentiality.</strong></p><p>Its core memory rules are <strong>No Read Up</strong> and <strong>No Write Down</strong>.</p><p><strong>Biba protects integrity.</strong></p><p>Its core memory rules are <strong>No Read Down</strong> and <strong>No Write Up</strong>.</p><p>Bell-LaPadula prevents sensitive information from leaking downward while Biba prevents less-trusted information from contaminating higher-integrity information.</p><p><strong>Clark-Wilson focuses on commercial integrity through well-formed transactions, validation and separation of duties.</strong></p><p>Clark-Wilson uses concepts including CDIs, UDIs, Transformation Procedures and Integrity Verification Procedures.</p><p><strong>Brewer-Nash addresses conflicts of interest and is also known as the Chinese Wall model.</strong></p><p>Brewer-Nash is dynamic because previous access can influence future access decisions.</p><p>State machine models focus on preserving security while the system moves between different states.</p><p>Information flow models focus on whether information is permitted to move between subjects, objects or security domains.</p><p>Noninterference aims to prevent higher-security activity from affecting what lower-security subjects can observe in a security-relevant way.</p><p>Lattice models use security labels and dominance relationships to determine permitted access and information flow.</p><p>The reference monitor concept describes a mechanism that mediates security-relevant access and should be protected from tampering, consistently invoked and capable of verification.</p><p><strong>For CISSP, first identify the objective: confidentiality, integrity, business integrity or conflict of interest. The correct model usually becomes much easier to recognise.</strong></p></section><details class="cph-accordion"><summary><span>📚</span> <span><strong>Sources & Further Reading</strong> <small>Security model terminology and architecture references</small></span></summary><div class="cph-accordion-content"><ul class="cph-clean-list"><li><strong>ISC2 - CISSP Certification Exam Outline</strong><br><a href="https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline" target="_blank" rel="noopener">View the CISSP Exam Outline</a></li><li><strong>NIST Computer Security Resource Center - Glossary</strong><br><a href="https://csrc.nist.gov/glossary" target="_blank" rel="noopener">Browse NIST security terminology</a></li><li><strong>NIST SP 800-160 Vol. 1 Rev. 1 - Engineering Trustworthy Secure Systems</strong><br><a href="https://csrc.nist.gov/pubs/sp/800/160/v1/r1/final" target="_blank" rel="noopener">View NIST systems security engineering guidance</a></li></ul></div></details></div></div></div></article></div></div><div id="sidebar"><div class="inner"><nav id="menu"><header class="major"><h2>Menu</h2></header><ul><li><a href="https://cyberprephub.github.io/" target="_self">Home</a></li><li class="has-submenu"><span aria-haspopup="true" class="opener">CISSP</span><ul class="submenu level-2" aria-hidden="true"><li class="has-submenu"><span aria-haspopup="true" class="opener">1. Security and Risk Management</span><ul class="submenu level-3" aria-hidden="true"><li><a href="https://cyberprephub.github.io/11-professional-ethics/" target="_self">1.1 Professional Ethics</a></li><li><a href="https://cyberprephub.github.io/the-cia-triad-confidentiality-integrity-and-availability-2/" target="_self">1.2 CIA Triad &amp; Security Concepts</a></li><li><a href="https://cyberprephub.github.io/13-security-governance/" target="_self">1.3 Security Governance</a></li><li><a href="https://cyberprephub.github.io/14-law-compliance-and-privacy/" target="_self">1.4 Law, Compliance &amp; Privacy</a></li><li><a href="https://cyberprephub.github.io/15-security-investigations/" target="_self">1.5 Security Investigations</a></li><li><a href="https://cyberprephub.github.io/16-security-policies-and-standards/" target="_self">1.6 Security Policies &amp; Standards</a></li><li><a href="https://cyberprephub.github.io/17-business-continuity-and-bia/" target="_self">1.7 Business Continuity &amp; BIA</a></li><li><a href="https://cyberprephub.github.io/18-personnel-security/" target="_self">1.8 Personnel Security</a></li><li><a href="https://cyberprephub.github.io/19-risk-management/" target="_self">1.9 Risk Management</a></li><li><a href="https://cyberprephub.github.io/110-threat-modeling/" target="_self">1.10 Threat Modeling</a></li><li><a href="https://cyberprephub.github.io/111-supply-chain-risk/" target="_self">1.11 Supply Chain Risk</a></li><li><a href="https://cyberprephub.github.io/112-security-awareness-and-training/" target="_self">1.12 Security Awareness &amp; Training</a></li></ul></li><li class="has-submenu"><span aria-haspopup="true" class="opener">2. Asset Security</span><ul class="submenu level-3" aria-hidden="true"><li><a href="https://cyberprephub.github.io/21-information-and-asset-classification/" target="_self">2.1 Information &amp; Asset Classification</a></li><li><a href="https://cyberprephub.github.io/22-information-and-asset-handling/" target="_self">2.2 Information &amp; Asset Handling</a></li><li><a href="https://cyberprephub.github.io/23-secure-provisioning-and-asset-management/" target="_self">2.3 Secure Provisioning &amp; Asset Management</a></li><li><a href="https://cyberprephub.github.io/24-data-lifecycle-management/" target="_self">2.4 Data Lifecycle Management</a></li><li><a href="https://cyberprephub.github.io/25-asset-retention-eol-and-eos/" target="_self">2.5 Asset Retention, EOL &amp; EOS</a></li><li><a href="https://cyberprephub.github.io/26-data-security-controls/" target="_self">2.6 Data Security Controls</a></li></ul></li><li><a href="https://cyberprephub.github.io/cissp-exam-guide/" target="_self">CISSP Exam Guide</a></li><li><a href="https://cyberprephub.github.io/mock-exams/" target="_self">CISSP Mock Exams &amp; Practice Tests</a></li></ul></li><li><a href="https://cyberprephub.github.io/cissp-exam-guide/" target="_self">CISSP Exam Guide</a></li><li class="has-submenu"><span aria-haspopup="true" class="opener">Study Tools</span><ul class="submenu level-2" aria-hidden="true"><li><a href="https://cyberprephub.github.io/abbreviations/" target="_self">Abbreviations</a></li><li><a href="https://cyberprephub.github.io/cybersecurity-glossary/" target="_self">Cybersecurity Glossary</a></li></ul></li><li><a href="https://cyberprephub.github.io/tags/blog/" target="_self">Blog</a></li><li><a href="https://cyberprephub.github.io/contact/" target="_self">Contact</a></li><li><a href="https://cyberprephub.github.io/about-me/" target="_self">About me</a></li></ul></nav><section><header class="major"><h2>Get in touch</h2></header><p>I’m always happy to connect with others working in cybersecurity, technology and security consulting.<br><br>You can connect with me on LinkedIn or send me a message directly using the CyberPrepHub contact form.<br><br><a href="https://www.linkedin.com/in/mateusz-o-1a580a28/" target="_blank" rel="noopener">Connect with me on LinkedIn</a></p><p><a href="https://cyberprephub.github.io/contact/">Send me a message</a></p></section><footer id="footer"><p class="copyright">© CyberPrepHub - All rights reserved<br><a href="https://cyberprephub.github.io/privacy-and-cookie-policy/">Privacy &amp; Cookie Policy</a> | <a href="https://cyberprephub.github.io/terms/">Terms of Use</a><br>Design by HTML5 UP, Powered by Publii</p></footer></div></div></div><script src="https://cyberprephub.github.io/assets/js/jquery.min.js?v&#x3D;7c14a783dfeb3d238ccd3edd840d82ee"></script><script src="https://cyberprephub.github.io/assets/js/browser.min.js?v&#x3D;c07298dd19048a8a69ad97e754dfe8d0"></script><script src="https://cyberprephub.github.io/assets/js/breakpoints.min.js?v&#x3D;81a479eb099e3b187613943b085923b8"></script><script src="https://cyberprephub.github.io/assets/js/util.min.js?v&#x3D;cbdaf7c20ac2883c77ae23acfbabd47e"></script><script src="https://cyberprephub.github.io/assets/js/main.min.js?v&#x3D;08add7f6d435054ad38ec38d7cf8be40"></script><script>var images=document.querySelectorAll("img[loading]");for(var i=0;i<images.length;i++){if(images[i].complete){images[i].classList.add("is-loaded")}else{images[i].addEventListener("load",function(){this.classList.add("is-loaded")},false)}};</script><script>document.addEventListener('DOMContentLoaded', function () {
+
+    const container = document.getElementById('cyberprep-abbreviations');
+    if (!container) return;
+
+    /*
+     * CYBERPREPHUB ABBREVIATION DATABASE
+     *
+     * FORMAT:
+     * ABBREVIATION|Full name|Description
+     *
+     * To add a new abbreviation later, simply add another line.
+     */
+
+    const abbreviationText = `
+AAA|Authentication, Authorization and Accounting|A framework for verifying identity, determining permitted access and recording user or system activity.
+ABAC|Attribute-Based Access Control|An access control model that makes decisions using attributes associated with users, resources and environmental conditions.
+ACL|Access Control List|A set of rules defining which users, systems or network traffic can access a resource.
+AD|Active Directory|Microsoft's directory service for managing identities, computers, groups and other resources within a Windows domain.
+AES|Advanced Encryption Standard|A widely used symmetric encryption algorithm supporting 128, 192 and 256-bit keys.
+AH|Authentication Header|An IPsec protocol that provides integrity and authentication for IP packets but does not encrypt their contents.
+ALE|Annualized Loss Expectancy|The expected financial loss from a particular risk over one year. ALE is calculated as SLE multiplied by ARO.
+API|Application Programming Interface|A defined mechanism allowing applications or systems to communicate and exchange data or functionality.
+APT|Advanced Persistent Threat|A sophisticated threat actor or campaign designed to maintain long-term access to a target environment.
+ARP|Address Resolution Protocol|A protocol used to map IPv4 addresses to MAC addresses on a local network.
+ARO|Annualized Rate of Occurrence|The estimated number of times a particular risk event is expected to occur during one year.
+ASLR|Address Space Layout Randomization|A security technique that randomises memory locations to make memory exploitation more difficult.
+AV|Asset Value|The financial or business value assigned to an asset when performing quantitative risk analysis.
+
+BCP|Business Continuity Plan|A documented plan for maintaining or restoring critical business operations during a disruption.
+BGP|Border Gateway Protocol|The routing protocol primarily used to exchange routing information between autonomous systems on the internet.
+BIA|Business Impact Analysis|An assessment used to identify critical business processes and determine the effects of their disruption.
+BYOD|Bring Your Own Device|A policy allowing users to use personally owned devices for organisational work or access.
+BYOK|Bring Your Own Key|A cloud security model in which an organisation supplies or controls the cryptographic keys used by a cloud service.
+
+C2|Command and Control|Infrastructure or communication channels used by attackers to control compromised systems or malware.
+CA|Certificate Authority|A trusted entity responsible for issuing and managing digital certificates within a Public Key Infrastructure.
+CASB|Cloud Access Security Broker|Technology positioned between users and cloud services to provide security controls, visibility and policy enforcement.
+CDE|Cardholder Data Environment|Systems, people and processes that store, process or transmit payment card information.
+CERT|Computer Emergency Response Team|A team responsible for helping organisations prepare for, detect and respond to cybersecurity incidents.
+CIA|Confidentiality, Integrity and Availability|The three fundamental security objectives collectively known as the CIA Triad.
+CIDR|Classless Inter-Domain Routing|A method of allocating IP addresses and representing network ranges using prefix notation such as /24.
+CISO|Chief Information Security Officer|The senior executive responsible for an organisation's information security programme and strategy.
+CNAPP|Cloud-Native Application Protection Platform|A platform combining multiple cloud security capabilities to protect cloud-native applications and workloads.
+COPE|Corporate-Owned, Personally Enabled|A device ownership model where an organisation owns a device but permits some personal use.
+CSP|Cloud Service Provider|A company providing cloud computing services such as infrastructure, platforms or applications.
+CSP|Content Security Policy|A browser security mechanism that restricts which sources a web page can load content or execute scripts from.
+CSPM|Cloud Security Posture Management|Technology used to identify cloud misconfigurations, policy violations and security weaknesses.
+CSRF|Cross-Site Request Forgery|An attack that causes an authenticated user's browser to perform an unintended action on a website.
+CSIRT|Computer Security Incident Response Team|A team responsible for coordinating the investigation and response to cybersecurity incidents.
+CSR|Certificate Signing Request|A request containing information and a public key that is submitted to a Certificate Authority to obtain a certificate.
+CVE|Common Vulnerabilities and Exposures|A standard system for assigning unique identifiers to publicly known cybersecurity vulnerabilities.
+CVSS|Common Vulnerability Scoring System|A framework for describing and scoring the technical severity of vulnerabilities.
+CWE|Common Weakness Enumeration|A catalogue of common software and hardware weakness types that can lead to vulnerabilities.
+CWPP|Cloud Workload Protection Platform|Technology designed to secure workloads such as virtual machines, containers and serverless applications.
+
+DAC|Discretionary Access Control|An access control model in which resource owners can determine who receives access to their resources.
+DAST|Dynamic Application Security Testing|Security testing performed against a running application to identify exploitable vulnerabilities.
+DDoS|Distributed Denial of Service|An attack using multiple systems to overwhelm a service or network and make it unavailable.
+DH|Diffie-Hellman|A cryptographic key exchange method allowing two parties to establish a shared secret over an insecure channel.
+DHCP|Dynamic Host Configuration Protocol|A network protocol that automatically provides devices with IP addresses and related network configuration.
+DKIM|DomainKeys Identified Mail|An email authentication mechanism that uses digital signatures to help verify that email has not been altered.
+DLP|Data Loss Prevention|Technologies and processes designed to prevent sensitive information from being disclosed or transferred improperly.
+DMARC|Domain-based Message Authentication, Reporting and Conformance|An email authentication policy that builds on SPF and DKIM to help prevent email spoofing.
+DMZ|Demilitarized Zone|A network segment that separates externally accessible services from an organisation's internal network.
+DNS|Domain Name System|The distributed system that translates domain names into IP addresses and other DNS records.
+DoS|Denial of Service|An attack intended to make a service, system or resource unavailable to legitimate users.
+DRP|Disaster Recovery Plan|A documented plan describing how technology and data will be restored following a serious disruption.
+
+EAP|Extensible Authentication Protocol|An authentication framework supporting multiple authentication methods, commonly used in network access technologies.
+ECC|Elliptic Curve Cryptography|Public-key cryptography based on elliptic curves that provides strong security with relatively small key sizes.
+EDR|Endpoint Detection and Response|Technology that monitors endpoints to detect, investigate and respond to suspicious activity.
+EF|Exposure Factor|The percentage of an asset's value expected to be lost if a particular risk event occurs.
+EOL|End of Life|The point at which a product or technology is no longer supported by its manufacturer or developer.
+EPP|Endpoint Protection Platform|A security platform providing preventative protection for endpoint devices against malware and other threats.
+ESP|Encapsulating Security Payload|An IPsec protocol that can provide encryption, integrity and authentication for network traffic.
+
+FDE|Full-Disk Encryption|Encryption protecting the contents of an entire storage device or disk.
+FIDO|Fast Identity Online|Authentication standards designed to reduce reliance on passwords and support strong cryptographic authentication.
+FIM|File Integrity Monitoring|A security control that detects unexpected or unauthorised changes to important files.
+FQDN|Fully Qualified Domain Name|The complete domain name identifying a specific host within the DNS hierarchy.
+FTP|File Transfer Protocol|A protocol used for transferring files that does not provide encryption by default.
+FTPS|File Transfer Protocol Secure|FTP protected using TLS to provide encrypted file transfer.
+
+GCM|Galois/Counter Mode|An authenticated encryption mode commonly used with AES to provide confidentiality and integrity.
+GDPR|General Data Protection Regulation|European legislation governing the processing and protection of personal data.
+GPO|Group Policy Object|A collection of Microsoft Active Directory configuration settings applied to users and computers.
+GRC|Governance, Risk and Compliance|An organisational approach combining governance, risk management and compliance activities.
+
+HIDS|Host-based Intrusion Detection System|An intrusion detection system that monitors activity occurring on an individual endpoint or host.
+HIPS|Host-based Intrusion Prevention System|A security system that monitors and can actively block suspicious activity on an individual host.
+HMAC|Hash-based Message Authentication Code|A mechanism combining a cryptographic hash function with a secret key to provide integrity and authentication.
+HOTP|HMAC-based One-Time Password|A one-time password algorithm based on HMAC and a counter value.
+HSM|Hardware Security Module|A specialised hardware device used to securely generate, protect and use cryptographic keys.
+HTTP|Hypertext Transfer Protocol|The application-layer protocol primarily used to transfer web content.
+HTTPS|Hypertext Transfer Protocol Secure|HTTP protected using TLS to provide encrypted and authenticated web communication.
+
+IaaS|Infrastructure as a Service|A cloud model providing virtualised computing infrastructure such as servers, networks and storage.
+IAM|Identity and Access Management|Policies, processes and technologies for managing digital identities and controlling access to resources.
+IAST|Interactive Application Security Testing|Application security testing that analyses applications while they operate during testing.
+ICMP|Internet Control Message Protocol|A network protocol used for diagnostics and error reporting, including tools such as ping.
+IDS|Intrusion Detection System|A system that monitors activity for signs of attacks or security policy violations and generates alerts.
+IdP|Identity Provider|A system that authenticates users and provides identity information to applications or service providers.
+IoA|Indicator of Attack|Evidence suggesting that malicious activity or an attack is currently occurring.
+IoC|Indicator of Compromise|Evidence such as a malicious IP address, domain or file hash that may indicate compromise.
+IoT|Internet of Things|Physical devices containing computing and networking capabilities that communicate with other systems.
+IP|Internet Protocol|The network-layer protocol responsible for addressing and routing packets across networks.
+IPS|Intrusion Prevention System|A system capable of detecting malicious network activity and automatically blocking or preventing it.
+IPsec|Internet Protocol Security|A suite of protocols used to authenticate and encrypt IP network communications.
+IR|Incident Response|The organised process for identifying, investigating, containing and recovering from cybersecurity incidents.
+ISMS|Information Security Management System|A structured system of policies, processes and controls used to manage information security risk.
+ISO|International Organization for Standardization|An international standards body responsible for standards including the ISO/IEC 27000 information security family.
+IV|Initialization Vector|A value used with some encryption algorithms to ensure identical plaintext does not always produce identical ciphertext.
+
+JWT|JSON Web Token|A compact token format commonly used to securely transmit claims between systems.
+
+KDC|Key Distribution Center|A trusted component in Kerberos responsible for issuing authentication tickets and session keys.
+KDF|Key Derivation Function|A cryptographic function used to derive secure cryptographic keys from another secret value.
+KMS|Key Management System|A system for generating, storing, distributing, rotating and managing cryptographic keys.
+
+LAN|Local Area Network|A network connecting devices within a relatively limited geographical area.
+LDAP|Lightweight Directory Access Protocol|A protocol used to access and manage information stored in directory services.
+
+MAC|Mandatory Access Control|An access control model in which access decisions are enforced centrally using security labels and classifications.
+MAC|Media Access Control|A networking mechanism and addressing system associated primarily with the data link layer.
+MAC|Message Authentication Code|A cryptographic value used to verify the integrity and authenticity of a message.
+MAM|Mobile Application Management|Technology used to manage and secure applications installed on mobile devices.
+MDR|Managed Detection and Response|A managed security service providing continuous threat monitoring, investigation and response.
+MFA|Multi-Factor Authentication|Authentication requiring evidence from two or more different authentication factor categories.
+MITM|Man-in-the-Middle|An attack where an adversary intercepts communications between two parties and may observe or alter them.
+MPLS|Multiprotocol Label Switching|A networking technique that forwards traffic using labels rather than traditional IP routing alone.
+MTBF|Mean Time Between Failures|A reliability metric representing the average operating time between system failures.
+MTD|Maximum Tolerable Downtime|The longest period a business process can remain unavailable before unacceptable consequences occur.
+MTTR|Mean Time to Repair|A metric representing the average time required to restore a failed system or service.
+
+NAC|Network Access Control|Technology used to enforce security requirements before allowing devices to connect to a network.
+NAT|Network Address Translation|A mechanism that translates one set of IP addresses into another, commonly private addresses to public addresses.
+NDR|Network Detection and Response|Technology that analyses network activity to identify and investigate suspicious behaviour.
+NIDS|Network Intrusion Detection System|An intrusion detection system that analyses network traffic for malicious activity.
+NIST|National Institute of Standards and Technology|A US organisation publishing widely used cybersecurity standards, frameworks and guidance.
+NTP|Network Time Protocol|A protocol used to synchronise clocks across networked systems.
+
+OAuth|OAuth Authorization Framework|A framework enabling applications to obtain delegated access to resources without receiving a user's password.
+OCSP|Online Certificate Status Protocol|A protocol used to determine whether a digital certificate has been revoked.
+OIDC|OpenID Connect|An identity layer built on OAuth 2.0 that enables authentication and exchange of identity information.
+OSI|Open Systems Interconnection|A seven-layer conceptual model describing how network communication functions.
+OSINT|Open-Source Intelligence|Intelligence collected and analysed from publicly available information sources.
+OTP|One-Time Password|A password or authentication code that is valid for only one authentication attempt or limited period.
+OWASP|Open Worldwide Application Security Project|A nonprofit organisation providing open resources, tools and guidance for improving application security.
+
+PaaS|Platform as a Service|A cloud model providing a managed platform on which customers can develop and run applications.
+PAM|Privileged Access Management|Processes and technologies used to secure and monitor accounts with elevated privileges.
+PAT|Port Address Translation|A type of NAT that allows multiple private hosts to share a public IP address using different ports.
+PCI DSS|Payment Card Industry Data Security Standard|A security standard establishing requirements for environments that handle payment card data.
+PFS|Perfect Forward Secrecy|A property ensuring compromise of a long-term cryptographic key does not expose previously established session keys.
+PII|Personally Identifiable Information|Information that can identify or be linked to a specific individual.
+PKI|Public Key Infrastructure|The certificates, keys, authorities, policies and processes supporting public-key cryptography.
+PoLP|Principle of Least Privilege|The principle that users and systems should receive only the minimum access required to perform their functions.
+PRNG|Pseudo-Random Number Generator|An algorithm that generates sequences of values designed to behave like random numbers.
+PSK|Pre-Shared Key|A secret cryptographic key shared between parties before secure communication begins.
+
+QoS|Quality of Service|Techniques used to prioritise and manage network traffic to meet performance requirements.
+
+RA|Registration Authority|An entity that verifies certificate applicants before a Certificate Authority issues a digital certificate.
+RADIUS|Remote Authentication Dial-In User Service|A protocol commonly used for centralised network authentication, authorization and accounting.
+RASP|Runtime Application Self-Protection|Security technology operating within an application to detect and potentially block attacks during execution.
+RBAC|Role-Based Access Control|An access control model where permissions are assigned to roles and users are assigned those roles.
+RCE|Remote Code Execution|A vulnerability or attack that allows an attacker to execute code on another system remotely.
+RPO|Recovery Point Objective|The maximum acceptable amount of data loss measured in time following a disruption.
+RSA|Rivest-Shamir-Adleman|A public-key cryptographic algorithm used for encryption, digital signatures and key-related operations.
+RTO|Recovery Time Objective|The target maximum time within which a system or business process should be restored following disruption.
+
+SaaS|Software as a Service|A cloud model where complete applications are provided and managed by a service provider.
+SAML|Security Assertion Markup Language|An XML-based standard commonly used to exchange authentication and authorization information for federated identity.
+SASE|Secure Access Service Edge|An architecture combining networking and cloud-delivered security capabilities into an integrated service.
+SAST|Static Application Security Testing|Security testing that analyses application source code or compiled code without running the application.
+SBOM|Software Bill of Materials|An inventory identifying software components and dependencies contained within an application or product.
+SCA|Software Composition Analysis|Technology used to identify open-source components, dependencies and associated vulnerabilities.
+SDLC|Software Development Life Cycle|The structured process covering planning, development, testing, deployment and maintenance of software.
+SDN|Software-Defined Networking|A networking architecture that separates network control logic from packet-forwarding infrastructure.
+SFTP|SSH File Transfer Protocol|A secure file transfer protocol operating over SSH.
+SHA|Secure Hash Algorithm|A family of cryptographic hash functions including SHA-256 and SHA-3.
+SIEM|Security Information and Event Management|A platform that collects and analyses security logs and events to support monitoring and investigation.
+SLE|Single Loss Expectancy|The expected financial loss from one occurrence of a risk event. SLE equals Asset Value multiplied by Exposure Factor.
+SOAR|Security Orchestration, Automation and Response|Technology for coordinating security tools, automating workflows and supporting incident response.
+SOC|Security Operations Centre|A team or function responsible for monitoring, detecting, investigating and responding to cybersecurity threats.
+SQLi|SQL Injection|A vulnerability where malicious SQL input can alter database queries executed by an application.
+SSH|Secure Shell|A cryptographic protocol commonly used for secure remote administration and command-line access.
+SSL|Secure Sockets Layer|A deprecated cryptographic protocol that preceded TLS and should no longer be used for secure communications.
+SSO|Single Sign-On|An authentication approach allowing a user to authenticate once and access multiple connected services.
+SSRF|Server-Side Request Forgery|A vulnerability that allows an attacker to cause a server to make unintended network requests.
+STIX|Structured Threat Information eXpression|A standardised language and format for representing and sharing cyber threat intelligence.
+
+TACACS+|Terminal Access Controller Access-Control System Plus|A protocol commonly used to provide centralised authentication, authorization and accounting for network devices.
+TCP|Transmission Control Protocol|A connection-oriented transport protocol providing reliable and ordered data delivery.
+TGT|Ticket Granting Ticket|A Kerberos ticket that allows an authenticated user to request service tickets without repeatedly providing credentials.
+TLS|Transport Layer Security|A cryptographic protocol used to protect data in transit through encryption, integrity and authentication.
+TOTP|Time-based One-Time Password|A temporary authentication code generated from a shared secret and the current time.
+TPM|Trusted Platform Module|A hardware security component used for protected cryptographic operations and secure key storage.
+TTP|Tactics, Techniques and Procedures|A description of how threat actors operate, including their strategic goals, methods and specific actions.
+
+UDP|User Datagram Protocol|A connectionless transport protocol prioritising speed and low overhead over guaranteed delivery.
+UEBA|User and Entity Behavior Analytics|Technology that analyses behavioural patterns to identify potentially suspicious user or system activity.
+UEFI|Unified Extensible Firmware Interface|Modern firmware technology used to initialise hardware and start an operating system.
+URL|Uniform Resource Locator|The address used to identify and locate a resource on a network or the web.
+
+VLAN|Virtual Local Area Network|A logical network segment allowing devices to be grouped independently of their physical network location.
+VM|Virtual Machine|A software-based computer running an operating system within a virtualised environment.
+VPN|Virtual Private Network|Technology that creates a protected network connection across another network such as the internet.
+
+WAF|Web Application Firewall|A security control that monitors and filters web traffic to protect applications from malicious requests.
+WAN|Wide Area Network|A network connecting systems across large geographical areas.
+WEP|Wired Equivalent Privacy|An obsolete and insecure wireless encryption standard that has been replaced by stronger technologies.
+WPA2|Wi-Fi Protected Access 2|A widely used wireless security standard that replaced WEP and introduced stronger cryptographic protection.
+WPA3|Wi-Fi Protected Access 3|A newer Wi-Fi security standard providing stronger authentication and protection than WPA2.
+
+X.509|X.509 Certificate Standard|A standard defining the structure and use of public-key digital certificates.
+XDR|Extended Detection and Response|Security technology combining and correlating detection data from multiple security layers.
+XML|Extensible Markup Language|A structured markup language used to represent and exchange data.
+XSS|Cross-Site Scripting|A web vulnerability allowing attacker-controlled script content to execute in another user's browser.
+
+ZTA|Zero Trust Architecture|A security architecture based on continuously evaluating access rather than implicitly trusting users or systems.
+ZTNA|Zero Trust Network Access|Technology providing application access according to Zero Trust principles rather than broad network-level access.
+    `;
+
+
+    /*
+     * CONVERT DATABASE INTO JAVASCRIPT OBJECTS
+     *
+     * Blank lines are deliberately ignored.
+     * Malformed lines are also ignored so that one typo does not
+     * break the entire dictionary.
+     */
+
+    const abbreviations = abbreviationText
+        .trim()
+        .split('\n')
+        .map(function(line) {
+            return line.trim();
+        })
+        .filter(function(line) {
+            return line.length > 0;
+        })
+        .map(function(line) {
+
+            const parts = line.split('|');
+
+            if (parts.length < 3) {
+                return null;
+            }
+
+            return {
+                abbr: parts[0].trim(),
+                name: parts[1].trim(),
+                description: parts.slice(2).join('|').trim()
+            };
+
+        })
+        .filter(function(item) {
+            return item !== null;
+        })
+        .sort(function(a, b) {
+
+            return a.abbr.localeCompare(
+                b.abbr,
+                undefined,
+                {
+                    numeric: true,
+                    sensitivity: 'base'
+                }
+            );
+
+        });
+
+
+    /*
+     * PAGE ELEMENTS
+     */
+
+    const input =
+        document.getElementById('abbr-search-input');
+
+    const alphabet =
+        document.getElementById('abbr-alphabet');
+
+    const list =
+        document.getElementById('abbr-list');
+
+    const count =
+        document.getElementById('abbr-results-count');
+
+    const noResults =
+        document.getElementById('abbr-no-results');
+
+
+    if (
+        !input ||
+        !alphabet ||
+        !list ||
+        !count ||
+        !noResults
+    ) {
+        return;
+    }
+
+
+    /*
+     * DETERMINE WHICH LETTER AN ABBREVIATION BELONGS TO
+     */
+
+    function getLetter(abbreviation) {
+
+        const match =
+            abbreviation.match(/[A-Za-z]/);
+
+        return match
+            ? match[0].toUpperCase()
+            : '#';
+    }
+
+
+    /*
+     * GROUP ABBREVIATIONS BY LETTER
+     */
+
+    function createGroups() {
+
+        const groups = {};
+
+        abbreviations.forEach(function(item) {
+
+            const letter =
+                getLetter(item.abbr);
+
+            if (!groups[letter]) {
+                groups[letter] = [];
+            }
+
+            groups[letter].push(item);
+
+        });
+
+        return groups;
+    }
+
+
+    /*
+     * BUILD THE PAGE
+     */
+
+    function renderAbbreviations() {
+
+        alphabet.innerHTML = '';
+        list.innerHTML = '';
+
+        const groups = createGroups();
+
+        Object.keys(groups)
+            .sort()
+            .forEach(function(letter) {
+
+
+                /*
+                 * A-Z BUTTON
+                 */
+
+                const alphabetLink =
+                    document.createElement('a');
+
+                alphabetLink.href =
+                    '#abbr-' + letter.toLowerCase();
+
+                alphabetLink.textContent =
+                    letter;
+
+                alphabet.appendChild(
+                    alphabetLink
+                );
+
+
+                /*
+                 * LETTER SECTION
+                 */
+
+                const section =
+                    document.createElement('section');
+
+                section.className =
+                    'abbr-section abbr-collapsed';
+
+                section.id =
+                    'abbr-' + letter.toLowerCase();
+
+
+                /*
+                 * LETTER HEADING
+                 */
+
+                const heading =
+                    document.createElement('h2');
+
+                heading.className =
+                    'abbr-toggle';
+
+                heading.textContent =
+                    letter;
+
+                heading.setAttribute(
+                    'role',
+                    'button'
+                );
+
+                heading.setAttribute(
+                    'tabindex',
+                    '0'
+                );
+
+                heading.setAttribute(
+                    'aria-expanded',
+                    'false'
+                );
+
+                section.appendChild(
+                    heading
+                );
+
+
+                /*
+                 * ABBREVIATIONS UNDER THIS LETTER
+                 */
+
+                groups[letter].forEach(
+                    function(item) {
+
+                        const abbreviationItem =
+                            document.createElement('div');
+
+                        abbreviationItem.className =
+                            'abbr-item';
+
+
+                        /*
+                         * TEXT USED BY SEARCH
+                         */
+
+                        abbreviationItem.dataset.search =
+                            (
+                                item.abbr +
+                                ' ' +
+                                item.name +
+                                ' ' +
+                                item.description
+                            ).toLowerCase();
+
+
+                        /*
+                         * ABBREVIATION HEADING
+                         */
+
+                        const itemHeading =
+                            document.createElement('h3');
+
+                        itemHeading.textContent =
+                            item.abbr +
+                            ' — ' +
+                            item.name;
+
+
+                        /*
+                         * DESCRIPTION
+                         */
+
+                        const description =
+                            document.createElement('p');
+
+                        description.textContent =
+                            item.description;
+
+
+                        abbreviationItem.appendChild(
+                            itemHeading
+                        );
+
+                        abbreviationItem.appendChild(
+                            description
+                        );
+
+                        section.appendChild(
+                            abbreviationItem
+                        );
+
+                    }
+                );
+
+
+                list.appendChild(section);
+
+
+                /*
+                 * OPEN/CLOSE A LETTER
+                 */
+
+                function toggleSection() {
+
+                    const isCollapsed =
+                        section.classList.toggle(
+                            'abbr-collapsed'
+                        );
+
+                    heading.setAttribute(
+                        'aria-expanded',
+                        isCollapsed
+                            ? 'false'
+                            : 'true'
+                    );
+
+                }
+
+
+                heading.addEventListener(
+                    'click',
+                    toggleSection
+                );
+
+
+                heading.addEventListener(
+                    'keydown',
+                    function(event) {
+
+                        if (
+                            event.key === 'Enter' ||
+                            event.key === ' '
+                        ) {
+
+                            event.preventDefault();
+
+                            toggleSection();
+
+                        }
+
+                    }
+                );
+
+
+                /*
+                 * CLICKING A LETTER IN A-Z
+                 */
+
+                alphabetLink.addEventListener(
+                    'click',
+                    function(event) {
+
+                        event.preventDefault();
+
+                        section.classList.remove(
+                            'abbr-collapsed'
+                        );
+
+                        heading.setAttribute(
+                            'aria-expanded',
+                            'true'
+                        );
+
+                        section.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+
+                    }
+                );
+
+            });
+
+
+        count.textContent =
+            abbreviations.length +
+            ' abbreviations';
+
+    }
+
+
+    renderAbbreviations();
+
+
+    /*
+     * GET GENERATED ELEMENTS
+     */
+
+    const items =
+        Array.from(
+            container.querySelectorAll(
+                '.abbr-item'
+            )
+        );
+
+    const sections =
+        Array.from(
+            container.querySelectorAll(
+                '.abbr-section'
+            )
+        );
+
+
+    /*
+     * SEARCH
+     */
+
+    function filterAbbreviations() {
+
+        const search =
+            input.value
+                .trim()
+                .toLowerCase();
+
+        let visibleCount = 0;
+
+
+        /*
+         * SHOW/HIDE INDIVIDUAL ABBREVIATIONS
+         */
+
+        items.forEach(function(item) {
+
+            const matches =
+                item.dataset.search.includes(
+                    search
+                );
+
+            item.style.display =
+                matches ? '' : 'none';
+
+            if (matches) {
+                visibleCount++;
+            }
+
+        });
+
+
+        /*
+         * SHOW/HIDE LETTER SECTIONS
+         */
+
+        sections.forEach(function(section) {
+
+            const visibleItems =
+                Array.from(
+                    section.querySelectorAll(
+                        '.abbr-item'
+                    )
+                )
+                .filter(function(item) {
+
+                    return (
+                        item.style.display !==
+                        'none'
+                    );
+
+                });
+
+
+            const heading =
+                section.querySelector(
+                    '.abbr-toggle'
+                );
+
+
+            /*
+             * WHILE SEARCHING:
+             * Hide letters with no matches and
+             * automatically open letters with matches.
+             */
+
+            if (search !== '') {
+
+                if (visibleItems.length > 0) {
+
+                    section.style.display = '';
+
+                    section.classList.remove(
+                        'abbr-collapsed'
+                    );
+
+                    heading.setAttribute(
+                        'aria-expanded',
+                        'true'
+                    );
+
+                } else {
+
+                    section.style.display =
+                        'none';
+
+                }
+
+            }
+
+
+            /*
+             * WHEN SEARCH IS EMPTY:
+             * Show every letter but collapse them.
+             */
+
+            else {
+
+                section.style.display = '';
+
+                section.classList.add(
+                    'abbr-collapsed'
+                );
+
+                heading.setAttribute(
+                    'aria-expanded',
+                    'false'
+                );
+
+            }
+
+        });
+
+
+        /*
+         * RESULTS COUNTER
+         */
+
+        if (search === '') {
+
+            count.textContent =
+                abbreviations.length +
+                ' abbreviations';
+
+        } else {
+
+            count.textContent =
+                visibleCount +
+                (
+                    visibleCount === 1
+                        ? ' result'
+                        : ' results'
+                );
+
+        }
+
+
+        /*
+         * NO RESULTS MESSAGE
+         */
+
+        noResults.hidden =
+            visibleCount !== 0;
+
+    }
+
+
+    input.addEventListener(
+        'input',
+        filterAbbreviations
+    );
+
+});</script><script>document.addEventListener('DOMContentLoaded', function () {
+
+    const menu = document.getElementById('menu');
+
+    if (!menu) return;
+
+
+    function getDirectOpener(li) {
+
+        for (const child of li.children) {
+
+            if (
+                child.classList &&
+                child.classList.contains('opener')
+            ) {
+                return child;
+            }
+
+        }
+
+        return null;
+    }
+
+
+    function closeBranch(li) {
+
+        li.querySelectorAll('.opener.active')
+            .forEach(function (opener) {
+                opener.classList.remove('active');
+            });
+
+    }
+
+
+    /*
+     * Replace Editorial 2's default submenu behaviour.
+     *
+     * This allows:
+     *
+     * CISSP
+     *   └ Security and Risk Management
+     *       └ CIA Triad
+     *
+     * without closing CISSP when the nested section opens.
+     */
+
+    document.addEventListener(
+        'click',
+        function (event) {
+
+            const target = event.target;
+
+            if (!target.closest) return;
+
+            const opener =
+                target.closest('#menu .opener');
+
+            if (!opener) return;
+
+
+            /*
+             * Stop Editorial 2's original click handler.
+             */
+
+            event.preventDefault();
+            event.stopPropagation();
+
+
+            const currentLi =
+                opener.parentElement;
+
+            const parentList =
+                currentLi.parentElement;
+
+            const wasOpen =
+                opener.classList.contains('active');
+
+
+            /*
+             * Close other items at THIS SAME LEVEL only.
+             *
+             * Crucially, this does not close parent menus.
+             */
+
+            Array.from(parentList.children)
+                .forEach(function (siblingLi) {
+
+                    if (siblingLi === currentLi) {
+                        return;
+                    }
+
+                    const siblingOpener =
+                        getDirectOpener(siblingLi);
+
+                    if (siblingOpener) {
+
+                        siblingOpener.classList.remove(
+                            'active'
+                        );
+
+                        closeBranch(siblingLi);
+                    }
+
+                });
+
+
+            /*
+             * Toggle clicked menu.
+             */
+
+            if (wasOpen) {
+
+                opener.classList.remove('active');
+
+                /*
+                 * Also close anything nested underneath it.
+                 */
+
+                currentLi
+                    .querySelectorAll('.opener.active')
+                    .forEach(function (childOpener) {
+
+                        if (childOpener !== opener) {
+                            childOpener.classList.remove(
+                                'active'
+                            );
+                        }
+
+                    });
+
+            } else {
+
+                opener.classList.add('active');
+
+            }
+
+
+            /*
+             * Tell Editorial 2 to recalculate sidebar height.
+             */
+
+            if (window.jQuery) {
+
+                window.jQuery(window)
+                    .triggerHandler(
+                        'resize.sidebar-lock'
+                    );
+
+            }
+
+        },
+        true
+    );
+
+
+    /*
+     * If we're currently viewing a submenu page,
+     * automatically open all of its parent sections.
+     */
+
+    const currentUrl =
+        window.location.href.replace(/\/$/, '');
+
+    menu.querySelectorAll('a')
+        .forEach(function (link) {
+
+            const linkUrl =
+                link.href.replace(/\/$/, '');
+
+            if (linkUrl !== currentUrl) {
+                return;
+            }
+
+            let parentLi =
+                link.closest('li');
+
+            while (parentLi) {
+
+                const parentList =
+                    parentLi.parentElement;
+
+                if (!parentList) break;
+
+                const parentMenuLi =
+                    parentList.closest(
+                        'li.has-submenu'
+                    );
+
+                if (!parentMenuLi) break;
+
+                const parentOpener =
+                    getDirectOpener(
+                        parentMenuLi
+                    );
+
+                if (parentOpener) {
+                    parentOpener.classList.add(
+                        'active'
+                    );
+                }
+
+                parentLi =
+                    parentMenuLi;
+            }
+
+        });
+
+});</script></body></html>
